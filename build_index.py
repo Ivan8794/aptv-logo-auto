@@ -67,6 +67,9 @@ def name_keys(value):
     candidates.extend(re.findall(r"\(([^()]*)\)", without_provider))
     candidates.append(re.sub(r"\s*\([^()]*\)", "", without_provider))
     candidates.append(re.sub(r"\s*\([^()]*\)", "", without_number))
+    # Also recover the channel name before nested or malformed parentheses.
+    candidates.append(without_provider.split("(", 1)[0].strip())
+    candidates.append(without_number.split("(", 1)[0].strip())
 
     keys = []
     for candidate in candidates:
