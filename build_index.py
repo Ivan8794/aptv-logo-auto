@@ -1,6 +1,8 @@
 
 import concurrent.futures
 import contextlib
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import json
 import os
 import re
@@ -27,7 +29,10 @@ CUSTOM_LOGOS = Path("custom-logos.json")
 TIMEOUT = 15
 RETRIES = 2
 WORKERS = 12
-WIKIMEDIA_REQUESTS = threading.Semaphore(3)
+WIKIMEDIA_REQUESTS = threading.Semaphore(1)
+WIKIMEDIA_STATE_LOCK = threading.Lock()
+WIKIMEDIA_NEXT_ALLOWED = 0.0
+WIKIMEDIA_MIN_INTERVAL = 0.75
 HEADERS = {
     "User-Agent": "APTV-Logo-Index/4.0",
     "Accept": "image/*,*/*;q=0.8",
@@ -172,6 +177,39 @@ def image_type(data):
     return ""
 
 
+def wait_for_wikimedia_slot():
+    global WIKIMEDIA_NEXT_ALLOWED
+    with WIKIMEDIA_STATE_LOCK:
+        now = time.monotonic()
+        wait = max(0.0, WIKIMEDIA_NEXT_ALLOWED - now)
+        WIKIMEDIA_NEXT_ALLOWED = max(now, WIKIMEDIA_NEXT_ALLOWED) + WIKIMEDIA_MIN_INTERVAL
+    if wait:
+        time.sleep(wait)
+
+
+def defer_wikimedia_requests(seconds):
+    global WIKIMEDIA_NEXT_ALLOWED
+    with WIKIMEDIA_STATE_LOCK:
+        WIKIMEDIA_NEXT_ALLOWED = max(
+            WIKIMEDIA_NEXT_ALLOWED, time.monotonic() + seconds
+        )
+
+
+def retry_after_seconds(header, attempt):
+    if header:
+        try:
+            return min(60.0, max(0.0, float(header)))
+        except (TypeError, ValueError):
+            try:
+                retry_at = parsedate_to_datetime(header)
+                if retry_at.tzinfo is None:
+                    retry_at = retry_at.replace(tzinfo=timezone.utc)
+                return min(60.0, max(0.0, (retry_at - datetime.now(timezone.utc)).total_seconds()))
+            except (TypeError, ValueError, OverflowError):
+                pass
+    return min(30.0, 5.0 * (attempt + 1))
+
+
 def check_image(url):
     """404/410 or non-image content is invalid; transient errors remain pending."""
     reason = "unknown"
@@ -183,6 +221,8 @@ def check_image(url):
             req = urllib.request.Request(url, headers=HEADERS)
             gate = WIKIMEDIA_REQUESTS if wikimedia else contextlib.nullcontext()
             with gate:
+                if wikimedia:
+                    wait_for_wikimedia_slot()
                 with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
                     data = r.read(128 * 1024)
             kind = image_type(data)
@@ -193,11 +233,9 @@ def check_image(url):
             if e.code in (404, 410):
                 return {"status": "invalid", "reason": f"http-{e.code}"}
             reason = f"http-{e.code}"
-            if e.code == 429:
-                try:
-                    retry_after = min(30.0, max(0.0, float(e.headers.get("Retry-After", ""))))
-                except (TypeError, ValueError):
-                    retry_after = 2.0 * (attempt + 1)
+            if wikimedia and e.code == 429:
+                retry_after = retry_after_seconds(e.headers.get("Retry-After"), attempt)
+                defer_wikimedia_requests(retry_after)
         except (urllib.error.URLError, TimeoutError, OSError) as e:
             reason = type(e).__name__
         except Exception as e:
