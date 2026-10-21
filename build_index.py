@@ -1,9 +1,11 @@
 
 import concurrent.futures
+import contextlib
 import json
 import os
 import re
 import time
+import threading
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -25,6 +27,7 @@ CUSTOM_LOGOS = Path("custom-logos.json")
 TIMEOUT = 15
 RETRIES = 2
 WORKERS = 12
+WIKIMEDIA_REQUESTS = threading.Semaphore(3)
 HEADERS = {
     "User-Agent": "APTV-Logo-Index/4.0",
     "Accept": "image/*,*/*;q=0.8",
@@ -172,26 +175,39 @@ def image_type(data):
 def check_image(url):
     """404/410 or non-image content is invalid; transient errors remain pending."""
     reason = "unknown"
+    host = urllib.parse.urlsplit(url).hostname or ""
+    wikimedia = host.casefold() == "upload.wikimedia.org"
     for attempt in range(RETRIES + 1):
+        retry_after = None
         try:
             req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
-                data = r.read(128 * 1024)
-                kind = image_type(data)
-                if kind:
-                    return {"status": "valid", "reason": kind}
-                return {"status": "invalid", "reason": "not-an-image"}
+            gate = WIKIMEDIA_REQUESTS if wikimedia else contextlib.nullcontext()
+            with gate:
+                with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+                    data = r.read(128 * 1024)
+            kind = image_type(data)
+            if kind:
+                return {"status": "valid", "reason": kind}
+            return {"status": "invalid", "reason": "not-an-image"}
         except urllib.error.HTTPError as e:
             if e.code in (404, 410):
                 return {"status": "invalid", "reason": f"http-{e.code}"}
             reason = f"http-{e.code}"
+            if e.code == 429:
+                try:
+                    retry_after = min(30.0, max(0.0, float(e.headers.get("Retry-After", ""))))
+                except (TypeError, ValueError):
+                    retry_after = 2.0 * (attempt + 1)
         except (urllib.error.URLError, TimeoutError, OSError) as e:
             reason = type(e).__name__
         except Exception as e:
             reason = type(e).__name__
 
         if attempt < RETRIES:
-            time.sleep(0.5 * (attempt + 1))
+            delay = 0.5 * (attempt + 1)
+            if retry_after is not None:
+                delay = max(delay, retry_after)
+            time.sleep(delay)
     return {"status": "pending", "reason": reason}
 
 
