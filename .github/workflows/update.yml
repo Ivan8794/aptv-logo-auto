@@ -31,7 +31,6 @@ jobs:
         env:
           M3U_URL: ${{ secrets.M3U_URL }}
         run: |
-          test -n "$M3U_URL" || (echo "Missing repository Actions secret: M3U_URL" && exit 1)
           python -u build_index.py
 
       - name: Check generated index
