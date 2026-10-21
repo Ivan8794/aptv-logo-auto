@@ -20,6 +20,7 @@ FAN_TREE_URL = "https://api.github.com/repos/fanmingming/live/git/trees/main?rec
 FAN_BASE = "https://live.fanmingming.cn/"
 OUTPUT = Path("logos-map.json")
 REPORT = Path("logo-check-report.json")
+CUSTOM_LOGOS = Path("custom-logos.json")
 
 TIMEOUT = 15
 RETRIES = 2
@@ -174,7 +175,51 @@ def add_candidate(target, source, url):
         target.append({"source": source, "url": url})
 
 
+def load_custom_logos():
+    """Load persistent public logo overrides; invalid entries are skipped safely."""
+    result = {"byId": {}, "byName": {}}
+    invalid = 0
+    if not CUSTOM_LOGOS.exists():
+        return result, invalid
+
+    try:
+        data = json.loads(CUSTOM_LOGOS.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return result, 1
+
+    if not isinstance(data, dict):
+        return result, 1
+
+    for section in ("byId", "byName"):
+        entries = data.get(section, {})
+        if not isinstance(entries, dict):
+            invalid += 1
+            continue
+        for key, value in entries.items():
+            if not isinstance(key, str) or not key.strip() or not isinstance(value, str):
+                invalid += 1
+                continue
+            url = clean_url(value)
+            if not url:
+                invalid += 1
+                continue
+            parsed = urllib.parse.urlsplit(url)
+            if parsed.username or parsed.password:
+                invalid += 1
+                continue
+            result[section][key.strip()] = url
+
+    return result, invalid
+
+
 def main():
+    custom_logos, invalid_custom_logos = load_custom_logos()
+    custom_logo_count = len(custom_logos["byId"]) + len(custom_logos["byName"])
+    if custom_logo_count:
+        log(f"Custom logo overrides configured: {custom_logo_count}")
+    if invalid_custom_logos:
+        log(f"Skipped invalid custom logo entries: {invalid_custom_logos}")
+
     log("[1/6] 读取 EPG，并先清除明显占位符和空地址...")
     root = ET.fromstring(fetch(EPG_URL))
     channels = root.findall(".//channel")
@@ -304,6 +349,11 @@ def main():
             all_urls.add(c["url"])
         matched.append({**rec, "candidates": candidates})
 
+    all_urls.update(
+        url
+        for section in custom_logos.values()
+        for url in section.values()
+    )
     log(f"Candidate references prepared; unique URLs: {len(all_urls)}")
     log("[5/6] 统一检测候选图片（404/非图片会淘汰，超时标记待复查）...")
     checks = {}
@@ -355,11 +405,29 @@ def main():
             if key:
                 result["byName"].setdefault(key, chosen["url"])
 
+    for section, target in (("byId", "byId"), ("byName", "byName")):
+        for raw_key, url in custom_logos[section].items():
+            key = normalize(raw_key)
+            if not key:
+                continue
+            check = checks.get(url, {"status": "pending", "reason": "not-checked"})
+            if check["status"] == "valid":
+                result[target][key] = url
+                selected["custom"] += 1
+                continue
+            item = {"url": url, "source": "custom", "reason": check["reason"]}
+            if check["status"] == "invalid":
+                invalid_urls[url] = item
+            else:
+                pending_urls[url] = item
+
     result["meta"] = {
         "epg_url": EPG_URL,
         "epg_channels_read": epg_channel_count,
         "m3u_entries_read": len(m3u_records),
         "m3u_loaded": m3u_loaded,
+        "custom_logo_overrides_configured": custom_logo_count,
+        "custom_logo_overrides_applied": selected.get("custom", 0),
         "combined_records_read": len(records),
         "byId_count": len(result["byId"]),
         "byName_count": len(result["byName"]),
@@ -369,8 +437,8 @@ def main():
         "pending_unique_urls": len(pending_urls),
         "unmatched_channels": len(unmatched),
         "image_urls_verified": True,
-        "policy": "EPG logo first, then M3U tvg-logo, then iptv-org, then existing Fanmingming filenames; verified images only",
-        "note": "Always uses EPG and adds M3U metadata when available; does not edit stream URLs or EPG settings.",
+        "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
+        "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings.",
     }
 
     report = {
