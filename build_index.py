@@ -430,6 +430,7 @@ def main():
     result = {"byId": {}, "byName": {}, "meta": {}}
     selected = Counter()
     invalid_urls, pending_urls, unmatched = {}, {}, []
+    invalid_epg_channels = {}
 
     # Priority: EPG logo, M3U tvg-logo, iptv-org, then Fanmingming.
     for rec in matched:
@@ -446,6 +447,11 @@ def main():
             }
             if check["status"] == "invalid":
                 invalid_urls[c["url"]] = item
+                if c["source"] == "epg":
+                    refs = invalid_epg_channels.setdefault(c["url"], [])
+                    ref = {"id": rec["id"], "names": rec["names"]}
+                    if ref not in refs:
+                        refs.append(ref)
             else:
                 pending_urls[c["url"]] = item
 
@@ -502,7 +508,10 @@ def main():
 
     report = {
         "meta": result["meta"],
-        "invalid_urls": list(invalid_urls.values()),
+        "invalid_urls": [
+            {**item, **({"channels": invalid_epg_channels[item["url"]]} if item["url"] in invalid_epg_channels else {})}
+            for item in invalid_urls.values()
+        ],
         "pending_urls": list(pending_urls.values()),
         "unmatched_channels": unmatched,
     }
