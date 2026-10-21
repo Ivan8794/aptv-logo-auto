@@ -28,7 +28,7 @@ jobs:
           python-version: "3.12"
 
       - name: Build logo index
-        run: python build_index.py
+        run: python -u build_index.py
 
       - name: Check generated index
         run: |
