@@ -175,9 +175,6 @@ def add_candidate(target, source, url):
 
 
 def main():
-    if not M3U_URL:
-        raise RuntimeError("Missing M3U_URL secret. Add the M3U_URL repository Actions secret before running.")
-
     log("[1/6] 读取 EPG，并先清除明显占位符和空地址...")
     root = ET.fromstring(fetch(EPG_URL))
     channels = root.findall(".//channel")
@@ -197,16 +194,29 @@ def main():
 
     epg_channel_count = len(records)
     log(f"EPG channels: {epg_channel_count}")
-    log("[2/6] 读取 M3U 频道元数据（不改动节目源地址）...")
-    m3u_req = urllib.request.Request(
-        M3U_URL,
-        headers={"User-Agent": "APTV-Logo-Index/4.0", "Accept": "*/*"},
-    )
-    with urllib.request.urlopen(m3u_req, timeout=TIMEOUT) as response:
-        m3u_text = response.read().decode("utf-8-sig", errors="replace")
-    m3u_records = parse_m3u(m3u_text)
+    log("[2/6] 读取可选的 M3U 频道元数据（不改动节目源地址）...")
+    m3u_records = []
+    m3u_loaded = False
+    if not M3U_URL:
+        log("M3U_URL 未配置；继续使用 EPG 生成台标索引。")
+    else:
+        try:
+            m3u_req = urllib.request.Request(
+                M3U_URL,
+                headers={"User-Agent": "APTV-Logo-Index/4.0", "Accept": "*/*"},
+            )
+            with urllib.request.urlopen(m3u_req, timeout=TIMEOUT) as response:
+                m3u_text = response.read().decode("utf-8-sig", errors="replace")
+            m3u_records = parse_m3u(m3u_text)
+            m3u_loaded = True
+            log(f"M3U entries: {len(m3u_records)}")
+        except urllib.error.HTTPError as e:
+            log(f"M3U unavailable (HTTP {e.code}); continuing with EPG only.")
+        except Exception as e:
+            log(f"M3U unavailable ({type(e).__name__}); continuing with EPG only.")
+
     records.extend(m3u_records)
-    log(f"M3U entries: {len(m3u_records)}; combined records: {len(records)}")
+    log(f"Combined records: {len(records)}")
     log("[3/6] 下载 iptv-org 与 Fanmingming 文件清单...")
     org_channels = json.loads(fetch(CHANNELS_URL))
     org_logos = json.loads(fetch(LOGOS_URL))
@@ -266,7 +276,7 @@ def main():
             fan_by_name.setdefault(key, [])
             fan_by_name[key].append(urllib.parse.urljoin(FAN_BASE, path))
 
-    log("[4/6] 完成 EPG 与 M3U 的候选匹配，之后才统一检测图片...")
+    log("[4/6] 完成 EPG 与可用 M3U 的候选匹配，之后才统一检测图片...")
     matched = []
     all_urls = set()
 
@@ -349,6 +359,7 @@ def main():
         "epg_url": EPG_URL,
         "epg_channels_read": epg_channel_count,
         "m3u_entries_read": len(m3u_records),
+        "m3u_loaded": m3u_loaded,
         "combined_records_read": len(records),
         "byId_count": len(result["byId"]),
         "byName_count": len(result["byName"]),
@@ -359,7 +370,7 @@ def main():
         "unmatched_channels": len(unmatched),
         "image_urls_verified": True,
         "policy": "EPG logo first, then M3U tvg-logo, then iptv-org, then existing Fanmingming filenames; verified images only",
-        "note": "Reads M3U metadata and EPG only; does not edit stream URLs or EPG settings. Network errors remain pending.",
+        "note": "Always uses EPG and adds M3U metadata when available; does not edit stream URLs or EPG settings.",
     }
 
     report = {
