@@ -85,7 +85,7 @@ def names_of(channel):
 
 def parse_m3u(text):
     """Read M3U metadata only; stream URLs are never edited or written to the logo index."""
-    lines = text.lstrip("\\ufeff").splitlines()
+    lines = text.lstrip("\ufeff").splitlines()
     records = []
     pending = None
 
@@ -96,7 +96,7 @@ def parse_m3u(text):
         if line.startswith("#EXTINF:"):
             attrs = {
                 key.casefold(): value.strip()
-                for key, value in re.findall(r'([\\w-]+)\\s*=\\s*"([^"]*)"', line)
+                for key, value in re.findall(r'([\w-]+)\s*=\s*"([^"]*)"', line)
             }
             title = line.rsplit(",", 1)[1].strip() if "," in line else ""
             names = list(dict.fromkeys(
