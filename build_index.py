@@ -55,7 +55,7 @@ def normalize(value):
     value = re.sub(r"\.(png|jpe?g|webp|svg|gif|avif|apng)$", "", value)
     return re.sub(r"[^a-z0-9\u0080-\uffff]+", "", value)
 
-def name_keys(value):
+def name_keys(value, min_length=4):
     """Return conservative aliases after removing provider labels and channel numbers."""
     value = unicodedata.normalize("NFKC", value or "").strip()
     candidates = [value]
@@ -77,7 +77,7 @@ def name_keys(value):
     keys = []
     for candidate in candidates:
         key = normalize(candidate)
-        if key and (key == normalize(value) or len(key) >= 4) and key not in keys:
+        if key and (key == normalize(value) or len(key) >= min_length) and key not in keys:
             keys.append(key)
     return keys
 
@@ -381,7 +381,7 @@ def main():
         if id_key in custom_by_id:
             add_candidate(candidates, "custom", custom_by_id[id_key])
         for name in rec["names"]:
-            for key in name_keys(name):
+            for key in name_keys(name, min_length=3):
                 if key in custom_by_name:
                     add_candidate(candidates, "custom", custom_by_name[key])
 
