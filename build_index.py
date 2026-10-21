@@ -347,6 +347,10 @@ def main():
     matched = []
     all_urls = set()
 
+    custom_by_id = {
+        normalize(channel_id): url
+        for channel_id, url in custom_logos["byId"].items()
+    }
     custom_by_name = {
         normalize(name): url
         for name, url in custom_logos["byName"].items()
@@ -355,8 +359,8 @@ def main():
     for rec in records:
         candidates = []
         id_key = normalize(rec["id"])
-        if id_key in custom_logos["byId"]:
-            add_candidate(candidates, "custom", custom_logos["byId"][id_key])
+        if id_key in custom_by_id:
+            add_candidate(candidates, "custom", custom_by_id[id_key])
         for name in rec["names"]:
             for key in name_keys(name):
                 if key in custom_by_name:
