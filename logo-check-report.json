@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 84,
+    "custom_logo_overrides_applied": 89,
     "combined_records_read": 2391,
-    "byId_count": 1205,
-    "byName_count": 1936,
+    "byId_count": 1202,
+    "byName_count": 1937,
     "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
       "epg": 1658,
-      "iptv-org": 236,
-      "custom": 84
+      "iptv-org": 234,
+      "custom": 89
     },
     "invalid_unique_urls": 52,
-    "pending_unique_urls": 37,
-    "unmatched_channels": 452,
+    "pending_unique_urls": 43,
+    "unmatched_channels": 451,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -26,267 +26,3425 @@
     {
       "url": "https://myeth-epg.github.io/icons2/t3230.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[TW-III] 300 雲端創作音樂台"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[TW-III] 301 雲端電音音樂台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons2/t3227.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[TW-III] 302 吉馬欣代音樂"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons/%E6%9D%B1%E6%A3%AE%E6%96%B0%E8%81%9E0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.TW.華視新聞資訊.mod",
+          "names": [
+            "052 華視新聞"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons2/t5192.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "192 倪珍播新聞"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons2/0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "myvideo.DAZN體育台",
+          "names": [
+            "010 DAZN"
+          ]
+        },
+        {
+          "id": "myvideo.MyVideo體育台",
+          "names": [
+            "012 MyVideo體育台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons/n0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[NowTV] 801 Now App Extra"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons3/0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.MY.astro.premier.league.4",
+          "names": [
+            "[astro] 808 Astro Premier League 4"
+          ]
+        },
+        {
+          "id": "pw.MY.astro.premier.league.5",
+          "names": [
+            "[astro] 809 Astro Premier League 5"
+          ]
+        },
+        {
+          "id": "pw.SG.mio.sports.a",
+          "names": [
+            "111 mio Sports"
+          ]
+        },
+        {
+          "id": "pw.SG.mio.sports.2.a",
+          "names": [
+            "112 mio Sports 2"
+          ]
+        },
+        {
+          "id": "pw.SG.mio.sports.3.a",
+          "names": [
+            "113 mio Sports 3"
+          ]
+        },
+        {
+          "id": "pw.SG.fight.sports.b",
+          "names": [
+            "119 Fight Sports (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.fifa.a",
+          "names": [
+            "141 FIFA World Cup CH01"
+          ]
+        },
+        {
+          "id": "pw.SG.fifa.a",
+          "names": [
+            "142 FIFA World Cup CH02"
+          ]
+        },
+        {
+          "id": "pw.SG.cnn.a",
+          "names": [
+            "167 CNN International"
+          ]
+        },
+        {
+          "id": "pw.SG.crime.investigation.b",
+          "names": [
+            "206 C+I (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.cgtn.a",
+          "names": [
+            "211 CGTN-Documentary"
+          ]
+        },
+        {
+          "id": "pw.SG.outdoor.channel.a",
+          "names": [
+            "259 (HD) Outdoor Channel"
+          ]
+        },
+        {
+          "id": "pw.SG.now.jelli.a",
+          "names": [
+            "512 now Jelli (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.one.mandarin.a",
+          "names": [
+            "513 ONE HD (Mandarin)"
+          ]
+        },
+        {
+          "id": "charm.starhub.tvbsnews",
+          "names": [
+            "516 TVBS News"
+          ]
+        },
+        {
+          "id": "charm.starhub.ettvasia",
+          "names": [
+            "521 ETTV Asia (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.cctv.entertainment.a",
+          "names": [
+            "534 CCTV Entertainment"
+          ]
+        },
+        {
+          "id": "charm.starhub.dragontv",
+          "names": [
+            "535 Dragon TV Intl"
+          ]
+        },
+        {
+          "id": "pw.SG.hunan.international.a",
+          "names": [
+            "536 Hunan International"
+          ]
+        },
+        {
+          "id": "pw.SG.brtv.international.a",
+          "names": [
+            "537 BRTV International"
+          ]
+        },
+        {
+          "id": "pw.SG.china.movie.channel.a",
+          "names": [
+            "538 China Movie Channel"
+          ]
+        },
+        {
+          "id": "charm.starhub.phoenixinfonews",
+          "names": [
+            "547 Phoenix InfoNews"
+          ]
+        },
+        {
+          "id": "pw.SG.ettv.asia.b",
+          "names": [
+            "561 ETTV Asia News (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.one.malay.a",
+          "names": [
+            "604 ONE HD (Malay)"
+          ]
+        },
+        {
+          "id": "pw.SG.citra.drama.a",
+          "names": [
+            "610 Citra Drama (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.drama.channel.a",
+          "names": [
+            "618 Drama Channel"
+          ]
+        },
+        {
+          "id": "pw.SG.adithya.tv.b",
+          "names": [
+            "628 Adithya TV"
+          ]
+        },
+        {
+          "id": "pw.SG.sony.yay.a",
+          "names": [
+            "630 Sony YAY"
+          ]
+        },
+        {
+          "id": "pw.SG.zee.tamil.a",
+          "names": [
+            "632 Zee Tamil HD"
+          ]
+        },
+        {
+          "id": "pw.SG.vijay.tv.starhubtv",
+          "names": [
+            "634 Vijay TV (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.asianet.movies.b",
+          "names": [
+            "639 Asianet Movies"
+          ]
+        },
+        {
+          "id": "pw.SG.set.hindi.a",
+          "names": [
+            "644 SET (HINDI)"
+          ]
+        },
+        {
+          "id": "pw.SG.zee.tv.a",
+          "names": [
+            "646 Zee TV"
+          ]
+        },
+        {
+          "id": "pw.SG.sab.tv.a",
+          "names": [
+            "648 SAB TV"
+          ]
+        },
+        {
+          "id": "pw.SG.star.bharat.a",
+          "names": [
+            "654 Star Bharat"
+          ]
+        },
+        {
+          "id": "pw.SG.star.plus.a",
+          "names": [
+            "656 STAR Plus"
+          ]
+        },
+        {
+          "id": "pw.SG.mtv.india.a",
+          "names": [
+            "658 MTV India"
+          ]
+        },
+        {
+          "id": "pw.SG.star.gold.a",
+          "names": [
+            "662 STAR Gold"
+          ]
+        },
+        {
+          "id": "pw.SG.sony.max.a",
+          "names": [
+            "668 Sony MAX"
+          ]
+        },
+        {
+          "id": "pw.SG.maa.movies",
+          "names": [
+            "670 maa movies"
+          ]
+        },
+        {
+          "id": "pw.SG.star.maa.a",
+          "names": [
+            "671 Star Maa"
+          ]
+        },
+        {
+          "id": "pw.SG.times.now.a",
+          "names": [
+            "676 Times Now"
+          ]
+        },
+        {
+          "id": "pw.SG.zoom.tv.a",
+          "names": [
+            "677 Zoom TV"
+          ]
+        },
+        {
+          "id": "pw.SG.wion.a",
+          "names": [
+            "680 WION"
+          ]
+        },
+        {
+          "id": "pw.SG.gma.pinoy.tv.a",
+          "names": [
+            "688 GMA Pinoy TV"
+          ]
+        },
+        {
+          "id": "pw.SG.gma.life.tv.a",
+          "names": [
+            "689 GMA Life TV"
+          ]
+        },
+        {
+          "id": "pw.SG.gma.news.tv.a",
+          "names": [
+            "690 GMA News TV Intl"
+          ]
+        },
+        {
+          "id": "pw.SG.the.filipino.ch.a",
+          "names": [
+            "693 The Filipino Ch (HD)"
+          ]
+        },
+        {
+          "id": "pw.SG.abs.cbn.news.channel.a",
+          "names": [
+            "694 ABS-CBN News Channel"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ub423.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.UK.lfctv",
+          "names": [
+            "[UK-I] 423 LFCTV"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons3/sg0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.SG.karisma.a",
+          "names": [
+            "116 Karisma"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons/0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.SG.one.malay.starhubtv",
+          "names": [
+            "124 ONE (Malay)"
+          ]
+        },
+        {
+          "id": "pw.SG.zee.tv.a",
+          "names": [
+            "125 Zee TV HD"
+          ]
+        },
+        {
+          "id": "pw.SG.sony.entertainment.television.starhubtv",
+          "names": [
+            "127 Sony Entertainment Television"
+          ]
+        },
+        {
+          "id": "pw.SG.sony.max.a",
+          "names": [
+            "131 SONY MAX"
+          ]
+        },
+        {
+          "id": "pw.SG.vijay.tv.starhubtv",
+          "names": [
+            "135 Vijay TV HD"
+          ]
+        },
+        {
+          "id": "pw.SG.vannathirai.starhubtv",
+          "names": [
+            "136 Vannathirai"
+          ]
+        },
+        {
+          "id": "pw.SG.kalaignar.tv.a",
+          "names": [
+            "141 Kalaignar TV"
+          ]
+        },
+        {
+          "id": "pw.SG.the.filipino.channel.a",
+          "names": [
+            "144 The Filipino Channel HD"
+          ]
+        },
+        {
+          "id": "pw.SG.tvmonde.5.starhubtv",
+          "names": [
+            "152 TV5MONDE HD"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.sports.7.b",
+          "names": [
+            "207 Hub Sports 7 HD"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.sports.8.b",
+          "names": [
+            "208 Hub Sports 8 HD"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.premier.7.a",
+          "names": [
+            "227 Hub Premier 7"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.premier.9.a",
+          "names": [
+            "229 Hub Premier 9"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.premier.10.a",
+          "names": [
+            "230 Hub Premier 10"
+          ]
+        },
+        {
+          "id": "pw.SG.hub.premier.11.a",
+          "names": [
+            "231 Hub Premier 11"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons5/0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.JP.fuji",
+          "names": [
+            "[JP-I] FU JI"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] 大阪TV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] 読売テレビ"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] 毎日放送"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] 関西テレビ"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] MUSIC ON! TV"
+          ]
+        },
+        {
+          "id": "pw.JP.kidsstation",
+          "names": [
+            "[JP-I] キッズステーション"
+          ]
+        },
+        {
+          "id": "pw.JP.jsports1",
+          "names": [
+            "[JP-I] JSPORTS 1"
+          ]
+        },
+        {
+          "id": "pw.JP.jsports2",
+          "names": [
+            "[JP-I] JSPORTS 2"
+          ]
+        },
+        {
+          "id": "pw.JP.tokyomx1",
+          "names": [
+            "[JP-I] TOKYO MX 1"
+          ]
+        },
+        {
+          "id": "pw.JP.tokyomx2",
+          "names": [
+            "[JP-I] TOKYO MX 2"
+          ]
+        },
+        {
+          "id": "pw.JP.bs.nihoneiga",
+          "names": [
+            "[JP-I] BS日本映画専門Ch"
+          ]
+        },
+        {
+          "id": "pw.JP.tvasahi1",
+          "names": [
+            "[JP-I] テレ朝チャンネル1"
+          ]
+        },
+        {
+          "id": "pw.JP.tvasahi2",
+          "names": [
+            "[JP-I] テレ朝チャンネル2"
+          ]
+        },
+        {
+          "id": "pw.JP.ntvgplus",
+          "names": [
+            "[JP-I] 日テレG+"
+          ]
+        },
+        {
+          "id": "pw.JP.fujione",
+          "names": [
+            "[JP-I] フジone"
+          ]
+        },
+        {
+          "id": "pw.JP.fujitwo",
+          "names": [
+            "[JP-I] フジ two"
+          ]
+        },
+        {
+          "id": "pw.JP.fujinext",
+          "names": [
+            "[JP-I] フジ next"
+          ]
+        },
+        {
+          "id": "pw.JP.tabich",
+          "names": [
+            "[JP-I] 旅チャンネル"
+          ]
+        },
+        {
+          "id": "pw.JP.sportsliveplus",
+          "names": [
+            "[JP-I] スポーツライブ＋"
+          ]
+        },
+        {
+          "id": "pw.JP.eiseigekijo",
+          "names": [
+            "[JP-I] 衛星劇場"
+          ]
+        },
+        {
+          "id": "pw.JP.bs.japan",
+          "names": [
+            "[JP-I] BSジャパン"
+          ]
+        },
+        {
+          "id": "pw.JP.asahi.bc",
+          "names": [
+            "[JP-I] 朝日放送テレビ"
+          ]
+        },
+        {
+          "id": "pw.JP.tbs2",
+          "names": [
+            "[JP-I] TBS-2"
+          ]
+        },
+        {
+          "id": "pw.JP.fujitv",
+          "names": [
+            "[JP-I] フジテレビ"
+          ]
+        },
+        {
+          "id": "pw.JP.tbs3",
+          "names": [
+            "[JP-I] TBS-3"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-I] BS-富士"
+          ]
+        },
+        {
+          "id": "pw.JP.fuji.fuji",
+          "names": [
+            "[JP-I] フジテレビ富士"
+          ]
+        },
+        {
+          "id": "pw.JP.bs.tbs2",
+          "names": [
+            "[JP-I] BS-TBS-2"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 01 \"キャンプ\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 02 \"アニメ\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 03 \"韓流\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 04 \"ｱｼﾞｱﾄﾞﾗﾏ\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 05 \"九州\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 06 \"ﾌｧｯｼｮﾝ\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 07 \"ビジネス\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 08 \"ゴルフ\""
+          ]
+        },
+        {
+          "id": "pw.JP.jidaigeki",
+          "names": [
+            "[JP-II] 09 \"時代劇\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 10 \"落語\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 11 \"北海道\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 12 \"東海\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 13 \"料理\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 14 \"囲碁・将棋\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 15 \"ｴﾝﾀﾒﾆｭｰｽ\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 16 \"ペット\""
+          ]
+        },
+        {
+          "id": "pw.JP.tabich",
+          "names": [
+            "[JP-II] 17 \"旅行\""
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[JP-II] 18 \"バラエティ\""
+          ]
+        },
+        {
+          "id": "Elshinta TV",
+          "names": [
+            "[Indonesia] 010 ELSHINTA TV"
+          ]
+        },
+        {
+          "id": "vidio.gtv",
+          "names": [
+            "[Indonesia] 011 GLOBAL TV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[Indonesia] 023 NET"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[Indonesia] 023 NET (a)"
+          ]
+        },
+        {
+          "id": "vidio.nusantaratv",
+          "names": [
+            "[Indonesia] 024 NUSANTARA TV"
+          ]
+        },
+        {
+          "id": "dens.rodjatv",
+          "names": [
+            "[Indonesia] 027 RODJA TV"
+          ]
+        },
+        {
+          "id": "dens.rodjatv",
+          "names": [
+            "[Indonesia] 027 RODJA TV (a)"
+          ]
+        },
+        {
+          "id": "cubmu.tvri",
+          "names": [
+            "[Indonesia] 038 TVRI NASIONAL"
+          ]
+        },
+        {
+          "id": "cubmu.tvri",
+          "names": [
+            "[Indonesia] 038 TVRI NASIONAL (a)"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[Indonesia] 039 ZEE BIOSKOP"
+          ]
+        },
+        {
+          "id": "skylife.중화tv",
+          "names": [
+            "[KR-I] 01 중화TV"
+          ]
+        },
+        {
+          "id": "skylife.cj.온스타일",
+          "names": [
+            "[KR-I] 07 CJ 온스타일+"
+          ]
+        },
+        {
+          "id": "skylife.매일경제tv",
+          "names": [
+            "[KR-I] 22 매일경제TV"
+          ]
+        },
+        {
+          "id": "skylife.애니박스",
+          "names": [
+            "[KR-I] 25 ANIBOX"
+          ]
+        },
+        {
+          "id": "skylife.히스토리",
+          "names": [
+            "[KR-I] 34 히스토리"
+          ]
+        },
+        {
+          "id": "skylife.jtbc",
+          "names": [
+            "[KR-I] 41 JTBC news 아카이브"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 42 TV CHOSUN NEWS24"
+          ]
+        },
+        {
+          "id": "skylife.jtbc",
+          "names": [
+            "[KR-I] 43 JTBC news NOW"
+          ]
+        },
+        {
+          "id": "skylife.sbs",
+          "names": [
+            "[KR-I] 44 SBS No.1 뉴스라이브"
+          ]
+        },
+        {
+          "id": "skylife.mbn",
+          "names": [
+            "[KR-I] 45 MBN NEWS"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 46 KBS 인간극장"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 47 KBS 역사저널 그날"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 48 KBS 사극"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 49 KBS 주말드라마 명작"
+          ]
+        },
+        {
+          "id": "skylife.mbc",
+          "names": [
+            "[KR-I] 50 MBC 라디오 예능"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 51 KBS 사랑과 전쟁"
+          ]
+        },
+        {
+          "id": "skylife.kbs1",
+          "names": [
+            "[KR-I] 52 KBS 1박 2일"
+          ]
+        },
+        {
+          "id": "skylife.mbc",
+          "names": [
+            "[KR-I] 53 MBC 뉴스"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 54 한국경제TV 글로벌"
+          ]
+        },
+        {
+          "id": "MTN 머니투데이방송.kr",
+          "names": [
+            "[KR-I] 55 머니투데이방송"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 56 MBC 무한도전"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 57 MBC 나 혼자 산다"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 58 채널A NEWS"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 59 MBC 거침없이 하이킥"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 60 MBC 놀면 뭐하니"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 61 MBC 전지적 참견 시점"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 62 MBC 심야괴담회"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "[KR-I] 63 MBC 오은영리포트 결혼지옥"
+          ]
+        },
+        {
+          "id": "pw.CA.uvagut.tv",
+          "names": [
+            "0118 Uvagut TV"
+          ]
+        },
+        {
+          "id": "pw.CA.yes.tv.calgary",
+          "names": [
+            "0124 Yes TV Calgary"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.calgary",
+          "names": [
+            "0127 TWN Calgary"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0128 TWN AB"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0145 CW LA"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.halifax",
+          "names": [
+            "0200 CBC Halifax"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.toronto",
+          "names": [
+            "0201 CBC Toronto"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.winnipeg",
+          "names": [
+            "0202 CBC Winnipeg"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.edmonton",
+          "names": [
+            "0203 CBC Edmonton"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.vancouver",
+          "names": [
+            "0205 CBC Vancouver"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.winnipeg",
+          "names": [
+            "0208 CTV Winnipeg"
+          ]
+        },
+        {
+          "id": "pw.CA.citytv.montreal",
+          "names": [
+            "0209 CTV Montreal"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.halifax",
+          "names": [
+            "0210 CTV Halifax"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.toronto",
+          "names": [
+            "0211 CTV Toronto"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.edmonton",
+          "names": [
+            "0212 CTV Edmonton"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.vancouver",
+          "names": [
+            "0214 CTV Vancouver"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.halifax",
+          "names": [
+            "0220 Global Halifax"
+          ]
+        },
+        {
+          "id": "pw.CA.global.toronto",
+          "names": [
+            "0221 Global Toronto"
+          ]
+        },
+        {
+          "id": "pw.CA.global.edmonton",
+          "names": [
+            "0222 Global Edmonton"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.vancouver",
+          "names": [
+            "0224 Global Vancouver"
+          ]
+        },
+        {
+          "id": "pw.CA.citytv.toronto",
+          "names": [
+            "0230 Citytv Toronto"
+          ]
+        },
+        {
+          "id": "pw.CA.citytv.edmonton",
+          "names": [
+            "0231 Citytv Edmonton"
+          ]
+        },
+        {
+          "id": "pw.CA.citytv.vancouver",
+          "names": [
+            "0233 Citytv Vancouver"
+          ]
+        },
+        {
+          "id": "pw.CA.ntv",
+          "names": [
+            "0240 NTV STJN"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0250 ABC Boston"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0255 CBS Boston"
+          ]
+        },
+        {
+          "id": "pw.CA.wbts.cd",
+          "names": [
+            "0260 WBTS NBC"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0265 FOX Boston"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0270 PBS Boston"
+          ]
+        },
+        {
+          "id": "pw.CA.ytv",
+          "names": [
+            "0275 MyTV New York HD"
+          ]
+        },
+        {
+          "id": "pw.CA.ytv",
+          "names": [
+            "0280 WSBK MyTV TV38 Boston"
+          ]
+        },
+        {
+          "id": "pw.CA.wgn",
+          "names": [
+            "0285 CW Chicago"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0286 CW New York"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0300 A&E Canada"
+          ]
+        },
+        {
+          "id": "pw.CA.showcase.canada",
+          "names": [
+            "0301 Showcase"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.drama",
+          "names": [
+            "0302 CTV Drama Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.home.network",
+          "names": [
+            "0306 Home Network"
+          ]
+        },
+        {
+          "id": "pw.CA.home.and.garden.television",
+          "names": [
+            "0308 Home & Garden TV"
+          ]
+        },
+        {
+          "id": "pw.CA.magnolia.network",
+          "names": [
+            "0312 Magnolia"
+          ]
+        },
+        {
+          "id": "pw.CA.flavour.network",
+          "names": [
+            "0313 Flavour Network"
+          ]
+        },
+        {
+          "id": "pw.CA.food.network",
+          "names": [
+            "0314 Food Network"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.life",
+          "names": [
+            "0315 CTV Life Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.w.network",
+          "names": [
+            "0328 W Network West"
+          ]
+        },
+        {
+          "id": "pw.CA.w.network",
+          "names": [
+            "0329 W Network East"
+          ]
+        },
+        {
+          "id": "pw.CA.slice",
+          "names": [
+            "0331 Slice"
+          ]
+        },
+        {
+          "id": "pw.CA.bravo.canada",
+          "names": [
+            "0332 Bravo"
+          ]
+        },
+        {
+          "id": "pw.CA.lifetime",
+          "names": [
+            "0333 E Canada"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0347 OUT tv"
+          ]
+        },
+        {
+          "id": "pw.CA.outtv",
+          "names": [
+            "0348 OUTTV Pacific"
+          ]
+        },
+        {
+          "id": "pw.CA.one.soccer",
+          "names": [
+            "0349 One"
+          ]
+        },
+        {
+          "id": "pw.CA.cottage.life",
+          "names": [
+            "0355 Cottage Life"
+          ]
+        },
+        {
+          "id": "pw.CA.aquarium",
+          "names": [
+            "0356 Rural Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.wild.tv",
+          "names": [
+            "0359 Wild TV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0360 RFD TV"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsman",
+          "names": [
+            "0361 Sportsman Channel"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0370 GSN"
+          ]
+        },
+        {
+          "id": "pw.CA.gametv.canada",
+          "names": [
+            "0372 GameTV"
+          ]
+        },
+        {
+          "id": "pw.CA.bbc.first",
+          "names": [
+            "0375 BBC First"
+          ]
+        },
+        {
+          "id": "pw.CA.oxygen.true.crime",
+          "names": [
+            "0378 Oxygen True Crime"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0382 T+E"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.sci.fi",
+          "names": [
+            "0392 CTV Sci-Fi Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.fx",
+          "names": [
+            "0393 FX East"
+          ]
+        },
+        {
+          "id": "pw.CA.fx",
+          "names": [
+            "0394 FXX East"
+          ]
+        },
+        {
+          "id": "pw.CA.fx",
+          "names": [
+            "0395 FXX West"
+          ]
+        },
+        {
+          "id": "pw.CA.fx",
+          "names": [
+            "0396 FX West"
+          ]
+        },
+        {
+          "id": "pw.CA.crave.1.west",
+          "names": [
+            "0406 Crave 1 West"
+          ]
+        },
+        {
+          "id": "pw.CA.crave.2.west",
+          "names": [
+            "0407 Crave 2 West"
+          ]
+        },
+        {
+          "id": "pw.CA.crave.3.west",
+          "names": [
+            "0408 Crave 3 West"
+          ]
+        },
+        {
+          "id": "pw.CA.crave1",
+          "names": [
+            "0409 Crave 1 East"
+          ]
+        },
+        {
+          "id": "pw.CA.super.fuse",
+          "names": [
+            "0417 Super Channel Fuse"
+          ]
+        },
+        {
+          "id": "pw.CA.super.heart.and.home",
+          "names": [
+            "0418 Super Channel Heart & Home"
+          ]
+        },
+        {
+          "id": "pw.CA.super.vault",
+          "names": [
+            "0419 Super Channel Vault"
+          ]
+        },
+        {
+          "id": "pw.CA.super.quest",
+          "names": [
+            "0420 Super Channel Quest"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0426 Hollywood Suite 70s+"
+          ]
+        },
+        {
+          "id": "pw.CA.hollywood.suite.80s.and.90s",
+          "names": [
+            "0427 Hollywood Suite 80s & 90s"
+          ]
+        },
+        {
+          "id": "pw.CA.hollywood.suite.2000s",
+          "names": [
+            "0428 Hollywood Suite 2000s"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0429 Hollywood Suite 2010s+"
+          ]
+        },
+        {
+          "id": "pw.CA.starz.1.west",
+          "names": [
+            "0431 STARZ 1 West"
+          ]
+        },
+        {
+          "id": "pw.CA.starz.2.west",
+          "names": [
+            "0432 STARZ 2 West"
+          ]
+        },
+        {
+          "id": "pw.CA.movietime",
+          "names": [
+            "0445 Movietime"
+          ]
+        },
+        {
+          "id": "pw.CA.adult.swim",
+          "names": [
+            "0449 Adult Swim"
+          ]
+        },
+        {
+          "id": "pw.CA.rewind",
+          "names": [
+            "0457 Rewind"
+          ]
+        },
+        {
+          "id": "pw.CA.silver.screen.classics",
+          "names": [
+            "0460 Silverscreen"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0462 TCM"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.comedy",
+          "names": [
+            "0500 CTV Comedy Channel East"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.comedy.west",
+          "names": [
+            "0501 CTV Comedy Channel West"
+          ]
+        },
+        {
+          "id": "pw.CA.dtour",
+          "names": [
+            "0504 DTour"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0506 Dejaview"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0511 Peachtree"
+          ]
+        },
+        {
+          "id": "pw.CA.country.music.television",
+          "names": [
+            "0555 CMT"
+          ]
+        },
+        {
+          "id": "pw.CA.mu.music",
+          "names": [
+            "0557 MUCH"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.vibe",
+          "names": [
+            "0580 Stingray Vibe"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.loud",
+          "names": [
+            "0581 Stingray Loud"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.retro",
+          "names": [
+            "0582 Stingray Retro"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.country",
+          "names": [
+            "0583 Stingray Country"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.alternative",
+          "names": [
+            "0585 Stingray Classica"
+          ]
+        },
+        {
+          "id": "pw.CA.ytv",
+          "names": [
+            "0600 YTV East"
+          ]
+        },
+        {
+          "id": "pw.CA.treehouse",
+          "names": [
+            "0601 Treehouse"
+          ]
+        },
+        {
+          "id": "pw.CA.hpitv.west",
+          "names": [
+            "0606 Disney West"
+          ]
+        },
+        {
+          "id": "pw.CA.omni.east",
+          "names": [
+            "0607 Disney East"
+          ]
+        },
+        {
+          "id": "pw.CA.ytvp",
+          "names": [
+            "0613 YTVP HD"
+          ]
+        },
+        {
+          "id": "pw.CA.boomerang.network.canada",
+          "names": [
+            "0627 Boomerang Network Canada"
+          ]
+        },
+        {
+          "id": "pw.CA.national.geographic.canada",
+          "names": [
+            "0700 National Geographic"
+          ]
+        },
+        {
+          "id": "pw.CA.usa.network",
+          "names": [
+            "0701 USA Network"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.nature",
+          "names": [
+            "0702 CTV Nature"
+          ]
+        },
+        {
+          "id": "pw.CA.history",
+          "names": [
+            "0704 History West"
+          ]
+        },
+        {
+          "id": "pw.CA.history.television",
+          "names": [
+            "0705 History East"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0706 H2"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.speed",
+          "names": [
+            "0711 CTV Speed"
+          ]
+        },
+        {
+          "id": "pw.CA.smithsonian",
+          "names": [
+            "0715 Smithsonian Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.wild",
+          "names": [
+            "0721 CTV Wild"
+          ]
+        },
+        {
+          "id": "pw.CA.national.geographic.wild.canada",
+          "names": [
+            "0723 National Geographic Wild"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0730 Water"
+          ]
+        },
+        {
+          "id": "pw.CA.documentary",
+          "names": [
+            "0731 Documentary"
+          ]
+        },
+        {
+          "id": "pw.CA.z.470775",
+          "names": [
+            "0750 Mezzo"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0752 Museum"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.news.network",
+          "names": [
+            "0800 CBC News Network"
+          ]
+        },
+        {
+          "id": "pw.CA.ctv.news",
+          "names": [
+            "0801 CTV News Channel"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0804 MS NOW"
+          ]
+        },
+        {
+          "id": "pw.CA.bnn.bloomberg",
+          "names": [
+            "0815 BNN Bloomberg"
+          ]
+        },
+        {
+          "id": "pw.CA.hln",
+          "names": [
+            "0819 HLN"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0834 CGTN News"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0841 CPAC English"
+          ]
+        },
+        {
+          "id": "pw.CA.the.news.forum",
+          "names": [
+            "0842 News Forum West HD"
+          ]
+        },
+        {
+          "id": "pw.CA.ontario.legislature",
+          "names": [
+            "0843 Alberta Legislature"
+          ]
+        },
+        {
+          "id": "pw.CA.global.bc",
+          "names": [
+            "0845 Global BC1"
+          ]
+        },
+        {
+          "id": "pw.CA.the.miracle.cjil",
+          "names": [
+            "0870 Miracle Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.vision.tv",
+          "names": [
+            "0871 Vision TV"
+          ]
+        },
+        {
+          "id": "pw.CA.daystar.canada",
+          "names": [
+            "0872 Daystar"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0873 Salt and Light"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "0875 Faith TV"
+          ]
+        },
+        {
+          "id": "pw.CA.ami.audio",
+          "names": [
+            "0888 AMI TV"
+          ]
+        },
+        {
+          "id": "pw.CA.tsn.1",
+          "names": [
+            "0900 TSN 1"
+          ]
+        },
+        {
+          "id": "pw.CA.tsn.2",
+          "names": [
+            "0901 TSN 2"
+          ]
+        },
+        {
+          "id": "pw.CA.tsn.3",
+          "names": [
+            "0902 TSN 3"
+          ]
+        },
+        {
+          "id": "pw.CA.tsn.4",
+          "names": [
+            "0903 TSN 4"
+          ]
+        },
+        {
+          "id": "pw.CA.tsn.5",
+          "names": [
+            "0904 TSN 5"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet.west",
+          "names": [
+            "0911 Sportsnet West"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet",
+          "names": [
+            "0912 Sportsnet 1"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet",
+          "names": [
+            "0913 Sportsnet Oilers"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet",
+          "names": [
+            "0914 Sportsnet Flames"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet",
+          "names": [
+            "0915 Sportsnet Pacific"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet.ontario",
+          "names": [
+            "0916 Sportsnet Ontario"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet.east",
+          "names": [
+            "0917 Sportsnet East"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet.360",
+          "names": [
+            "0918 Sportsnet 360"
+          ]
+        },
+        {
+          "id": "pw.CA.game.10",
+          "names": [
+            "0924 Game Plus"
+          ]
+        },
+        {
+          "id": "pw.CA.golf",
+          "names": [
+            "0925 Golf Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.network.alt.canadian.feed",
+          "names": [
+            "0926 NFL Network"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.tv.canada",
+          "names": [
+            "0937 NBA TV Canada"
+          ]
+        },
+        {
+          "id": "pw.CA.the.fight.network",
+          "names": [
+            "0945 Fight"
+          ]
+        },
+        {
+          "id": "pw.CA.fox.sports.racing",
+          "names": [
+            "0960 FOX Sports Racing"
+          ]
+        },
+        {
+          "id": "pw.CA.rev.tv.canada",
+          "names": [
+            "0962 REV TV"
+          ]
+        },
+        {
+          "id": "pw.CA.aquarium",
+          "names": [
+            "0971 Cowboy Channel"
+          ]
+        },
+        {
+          "id": "pw.CA.one.soccer",
+          "names": [
+            "0980 One Soccer"
+          ]
+        },
+        {
+          "id": "pw.CA.bein.sports",
+          "names": [
+            "0983 BeIN Sports"
+          ]
+        },
+        {
+          "id": "pw.CA.sportsnet.world",
+          "names": [
+            "1001 Sportsnet World"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1002 SNET World 1 HD"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1003 SNET World 2 HD"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1004 SNET World 3 HD"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1005 SNET World 4 HD"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1101 NHL Center Ice 1"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1102 NHL Center Ice 2"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1103 NHL Center Ice 3"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1104 NHL Center Ice 4"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1105 NHL Center Ice 5"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1106 NHL Center Ice 6"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1107 NHL Center Ice 7"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1108 NHL Center Ice 8"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1109 NHL Center Ice 9"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1110 NHL Center Ice 10"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1111 NHL Center Ice 11"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1112 NHL Center Ice 12"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1113 NHL Center Ice 13"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1114 NHL Center Ice 14"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1115 NHL Center Ice 15"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1116 NHL Center Ice 16"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.1",
+          "names": [
+            "1301 MLB Extra Innings 1"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.2",
+          "names": [
+            "1302 MLB Extra Innings 2"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.3",
+          "names": [
+            "1303 MLB Extra Innings 3"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.4",
+          "names": [
+            "1304 MLB Extra Innings 4"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.5",
+          "names": [
+            "1305 MLB Extra Innings 5"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.6",
+          "names": [
+            "1306 MLB Extra Innings 6"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.7",
+          "names": [
+            "1307 MLB Extra Innings 7"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.8",
+          "names": [
+            "1308 MLB Extra Innings 8"
+          ]
+        },
+        {
+          "id": "pw.CA.mlb.extra.innings.9",
+          "names": [
+            "1309 MLB Extra Innings 9"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1310 MLB Extra Innings 10"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "1311 MLB Extra Innings 11"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.1",
+          "names": [
+            "1401 NBA League Pass 1"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.2",
+          "names": [
+            "1402 NBA League Pass 2"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.3",
+          "names": [
+            "1403 NBA League Pass 3"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.4",
+          "names": [
+            "1404 NBA League Pass 4"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.5",
+          "names": [
+            "1405 NBA League Pass 5"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.6",
+          "names": [
+            "1406 NBA League Pass 6"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.7",
+          "names": [
+            "1407 NBA League Pass 7"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.8",
+          "names": [
+            "1408 NBA League Pass 8"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.league.pass.9",
+          "names": [
+            "1409 NBA League Pass 9"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl1",
+          "names": [
+            "1501 NFL Sunday Ticket 1"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl2",
+          "names": [
+            "1502 NFL Sunday Ticket 2"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl3",
+          "names": [
+            "1503 NFL Sunday Ticket 3"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl4",
+          "names": [
+            "1504 NFL Sunday Ticket 4"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl5",
+          "names": [
+            "1505 NFL Sunday Ticket 5"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl6",
+          "names": [
+            "1506 NFL Sunday Ticket 6"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl7",
+          "names": [
+            "1507 NFL Sunday Ticket 7"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl8",
+          "names": [
+            "1508 NFL Sunday Ticket 8"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl9",
+          "names": [
+            "1509 NFL Sunday TIcket 9"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl10",
+          "names": [
+            "1510 NFL Sunday Ticket 10"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl11",
+          "names": [
+            "1511 NFL Sunday Ticket 11"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl12",
+          "names": [
+            "1512 NFL Sunday Ticket 12"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl13",
+          "names": [
+            "1513 NFL Sunday Ticket 13"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl14",
+          "names": [
+            "1514 NFL Sunday Ticket 14"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl15",
+          "names": [
+            "1515 NFL Sunday Ticket 15"
+          ]
+        },
+        {
+          "id": "pw.CA.nfl.sunday.ticket.nfl16",
+          "names": [
+            "1516 NFL Sunday Ticket 16"
+          ]
+        },
+        {
+          "id": "pw.CA.ici.artv",
+          "names": [
+            "2001 ICI Alberta"
+          ]
+        },
+        {
+          "id": "pw.CA.citytv.montreal",
+          "names": [
+            "2002 ICI Montreal"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.toronto",
+          "names": [
+            "2003 ICI Toronto"
+          ]
+        },
+        {
+          "id": "pw.CA.tva",
+          "names": [
+            "2005 TVA Ouest"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2006 TVA Montreal East"
+          ]
+        },
+        {
+          "id": "pw.CA.noovo",
+          "names": [
+            "2007 Noovo Québec"
+          ]
+        },
+        {
+          "id": "pw.CA.canal.d",
+          "names": [
+            "2008 Canal D"
+          ]
+        },
+        {
+          "id": "pw.CA.le.canal.vie",
+          "names": [
+            "2009 Canal Vie"
+          ]
+        },
+        {
+          "id": "pw.CA.zeste",
+          "names": [
+            "2010 Zeste"
+          ]
+        },
+        {
+          "id": "pw.CA.ici.artv.canada",
+          "names": [
+            "2011 ARTV"
+          ]
+        },
+        {
+          "id": "pw.CA.addik",
+          "names": [
+            "2013 ADDIK"
+          ]
+        },
+        {
+          "id": "pw.CA.canal.evasion",
+          "names": [
+            "2015 Evasion"
+          ]
+        },
+        {
+          "id": "pw.CA.historia",
+          "names": [
+            "2017 Historia"
+          ]
+        },
+        {
+          "id": "pw.CA.z.470775",
+          "names": [
+            "2019 Z Tele"
+          ]
+        },
+        {
+          "id": "pw.CA.tfo",
+          "names": [
+            "2025 TFO"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2032 QUB"
+          ]
+        },
+        {
+          "id": "pw.CA.t.l.toon.fran.ais",
+          "names": [
+            "2033 Télétoon"
+          ]
+        },
+        {
+          "id": "pw.CA.elle.fictions",
+          "names": [
+            "2040 ELLE FICTIONS"
+          ]
+        },
+        {
+          "id": "pw.CA.max",
+          "names": [
+            "2041 MAX"
+          ]
+        },
+        {
+          "id": "pw.CA.stingray.hits",
+          "names": [
+            "2045 Stingray Hits"
+          ]
+        },
+        {
+          "id": "pw.CA.palmar.sadisq.par.stingray",
+          "names": [
+            "2046 Stingray Palmarès"
+          ]
+        },
+        {
+          "id": "pw.CA.cbc.calgary",
+          "names": [
+            "2050 Meteo Calgary"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2051 CPAC Français"
+          ]
+        },
+        {
+          "id": "pw.CA.ici.rdi",
+          "names": [
+            "2053 ICI RDI"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2055 LCN"
+          ]
+        },
+        {
+          "id": "pw.CA.canal.s.ries.plus",
+          "names": [
+            "2059 Séries Plus"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2070 Planète+"
+          ]
+        },
+        {
+          "id": "pw.CA.ici.explora",
+          "names": [
+            "2071 Explora"
+          ]
+        },
+        {
+          "id": "pw.CA.rds2",
+          "names": [
+            "2080 RDS"
+          ]
+        },
+        {
+          "id": "pw.CA.rds2",
+          "names": [
+            "2081 RDS2 West"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2084 RDSi"
+          ]
+        },
+        {
+          "id": "pw.CA.tva.sports",
+          "names": [
+            "2085 TVA Sports 1"
+          ]
+        },
+        {
+          "id": "pw.CA.tva.sports.2",
+          "names": [
+            "2086 TVA Sports 2"
+          ]
+        },
+        {
+          "id": "pw.CA.hpitv.west",
+          "names": [
+            "2088 Unis West"
+          ]
+        },
+        {
+          "id": "pw.CA.omni.east",
+          "names": [
+            "2089 TV5 East"
+          ]
+        },
+        {
+          "id": "pw.CA.hpitv.west",
+          "names": [
+            "2090 TV5 West"
+          ]
+        },
+        {
+          "id": "pw.CA.ami.t.l",
+          "names": [
+            "2288 AMI Télé"
+          ]
+        },
+        {
+          "id": "pw.CA.atn.colors",
+          "names": [
+            "2303 ATN"
+          ]
+        },
+        {
+          "id": "pw.CA.atn.colors",
+          "names": [
+            "2310 ATN Sony"
+          ]
+        },
+        {
+          "id": "pw.CA.atn.colors",
+          "names": [
+            "2315 ATN Aapka"
+          ]
+        },
+        {
+          "id": "pw.CA.zee.tv.canada",
+          "names": [
+            "2318 Zee TV Canada"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2350 NEWS ONLY"
+          ]
+        },
+        {
+          "id": "pw.CA.ndtv.24x7.canada",
+          "names": [
+            "2363 NDTV 24X7"
+          ]
+        },
+        {
+          "id": "pw.CA.atn.colors",
+          "names": [
+            "2371 ATN CBN"
+          ]
+        },
+        {
+          "id": "pw.CA.atn.colors",
+          "names": [
+            "2391 ATN Movies"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2400 Halla Bol"
+          ]
+        },
+        {
+          "id": "pw.CA.aquarium",
+          "names": [
+            "2418 Channel Y"
+          ]
+        },
+        {
+          "id": "pw.CA.aquarium",
+          "names": [
+            "2423 Channel Punjabi"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2424 Sanjha TV"
+          ]
+        },
+        {
+          "id": "pw.CA.filipino.tv",
+          "names": [
+            "2601 FILIPINO TV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2605 Kapatid"
+          ]
+        },
+        {
+          "id": "pw.CA.rai.italia",
+          "names": [
+            "2653 Rai Italia"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2655 Canale Quattro"
+          ]
+        },
+        {
+          "id": "pw.CA.mediaset.italia.canada",
+          "names": [
+            "2657 Mediaset Italia Canada"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2690 SIC Noticias"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2692 FPTV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2701 Afroglobal"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2813 CCTV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2828 WOW TV"
+          ]
+        },
+        {
+          "id": "pw.CA.talentvision.vancouver",
+          "names": [
+            "2831 Talentvision"
+          ]
+        },
+        {
+          "id": "pw.CA.phoenix.satellite.tv",
+          "names": [
+            "2835 Phoenix"
+          ]
+        },
+        {
+          "id": "pw.CA.ntv",
+          "names": [
+            "2836 CNTV"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2863 New Tang Dynasty Canada (Pacific)"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2911 All TV West"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2912 All TV K West"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "2923 Nippon"
+          ]
+        },
+        {
+          "id": "pw.CA.nba.tv.canada",
+          "names": [
+            "[NBA LIVE] 01 NBA TV (APP)"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Latino"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Jenny Live"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Music"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Gold"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Life"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV DJ"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Fashion"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Foods"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Mystery"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Models"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Spain"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Health"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Cuaima"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV LIVE Streaming"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Hilton Miami Aventura"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Miami TV Events"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "V2Beat"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "Radiom20"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TotalMusic"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TotalMusic 80s"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TotalMusic 2000s"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TotalMusic Concerts"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TotalMusic Dance"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/ic1ons5/0.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "skylife.mbc",
+          "names": [
+            "[KR-I] 40 MBC 라디오 시사"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca01.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "465239",
+          "names": [
+            "[America] 01 MLB Network"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca05.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "465108",
+          "names": [
+            "[America] 05 ESPN U"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca201.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[America] 201 東森中国台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca209.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[America] 209 超視美洲台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca210.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[America] 210 東森美洲衛視"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca212.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[America] 212 東森美洲台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/uca213.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[America] 213 中旺電視台"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp01.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK12.PEACOCK",
+          "names": [
+            "[Peacock] 01 Dateline 24/7"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp03.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK22.PEACOCK",
+          "names": [
+            "[Peacock] 03 NBC Sports on Peacock"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp04.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK3.PEACOCK",
+          "names": [
+            "[Peacock] 04 SNL Vault"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp05.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 05 LOL! Network"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp06.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "THISOH.PEACOCK",
+          "names": [
+            "[Peacock] 06 This Old House"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp07.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 07 Nosey"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp08.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 08 Confess by Nosey"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp09.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 09 MovieSphere by Lionsgate"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp10.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 10 Ghost Hunters Channel"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp11.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 11 Ebony TV by Lionsgate"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp12.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 12 Telemundo Al Dia"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp13.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 13 NFL Channel"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp14.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK24.PEACOCK",
+          "names": [
+            "[Peacock] 14 GolfPass"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp15.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 15 Premier League TV"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp16.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK6.PEACOCK",
+          "names": [
+            "[Peacock] 16 WWE Network"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp17.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK13.PEACOCK",
+          "names": [
+            "[Peacock] 17 TEAM USA TV"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp18.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 18 Law & Crime Network"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp19.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 19 Top Gear"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp20.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "PK20.PEACOCK",
+          "names": [
+            "[Peacock] 20 TODAY All Day"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp22.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 22 Noticias Telemundo Ahora"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp23.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 23 NBC Chicago News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp24.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 24 NBC New York News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp25.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 25 NBC Philadelphia News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp26.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 26 NBC South Florida News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp27.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 27 NBC Boston News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp28.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 28 NBC Los Angeles News"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucp29.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 29 Circle Country"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucn01.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[Peacock] 30 NBC LX Home"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucc07.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[CRAVE] 07 Sego1"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucc08.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[CRAVE] 08 Sego2"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucc09.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[CRAVE] 09 Sego3"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons4/ucc10.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "[CRAVE] 10 Sego4"
+          ]
+        }
+      ]
     },
     {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
-      "reason": "http-404"
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 111 TSN 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 113 Sportsnet 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 114 Sportsnet One 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 115 Travel XP 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 116 INULTRA 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 117 Stingray Now 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 118 Stingray Ambiance 4K"
+          ]
+        },
+        {
+          "id": "0",
+          "names": [
+            "TelusTV 119 Stingray Festival 4K"
+          ]
+        }
+      ]
     }
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/960px-NBA_TV.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WWE_Network_logo.svg/500px-WWE_Network_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -296,22 +3454,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/FIFA%2B_%282025%29.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -323,16 +3471,6 @@
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
       "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
-      "source": "custom",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
-      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -381,7 +3519,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/CTV_Life_Channel_2019.svg/500px-CTV_Life_Channel_2019.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -391,12 +3529,27 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Wild_TV_logo_2020.png/960px-Wild_TV_logo_2020.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Oxygen_TV_%282017_Logo%29.svg/960px-Oxygen_TV_%282017_Logo%29.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/BBC_First_Foxtel_logo.svg/960px-BBC_First_Foxtel_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/E%21_Logo_Flat_2012.svg/960px-E%21_Logo_Flat_2012.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Movietime.svg/960px-Movietime.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -406,7 +3559,17 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -416,7 +3579,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2016_CPAC_logo.svg/960px-2016_CPAC_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/BNN_Bloomberg.svg/960px-BNN_Bloomberg.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -426,7 +3589,17 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/SN_360_logo.svg/960px-SN_360_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Golf_Channel_logo_2025.svg/960px-Golf_Channel_logo_2025.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -436,7 +3609,22 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -446,7 +3634,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/T%C3%A9l%C3%A9toon%2B_Logo.png/960px-T%C3%A9l%C3%A9toon%2B_Logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -697,13 +3885,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "464912",
-      "names": [
-        "[NBA] 01 NBA TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "astro.280.tennis2",
       "names": [
         "[astro] 818 Astro Tennis 2"
@@ -784,6 +3965,13 @@
       "id": "0",
       "names": [
         "[US-II] 011 Premier League TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 012 WWE Network"
       ],
       "reason": "no-verified-image"
     },
@@ -1040,13 +4228,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.SG.fifa.a",
-      "names": [
-        "120 FIFA+"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.SG.river.monsters.a",
       "names": [
         "113 River Monsters"
@@ -1089,13 +4270,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.SG.fifa.a",
-      "names": [
-        "121 FIFA+"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.SG.river.monsters.a",
       "names": [
         "114 River Monsters"
@@ -1131,13 +4305,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.SG.fifa.a",
-      "names": [
-        "122 FIFA+"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.SG.river.monsters.a",
       "names": [
         "115 River Monsters"
@@ -1169,13 +4336,6 @@
       "id": "pw.SG.drama.hebat",
       "names": [
         "121 Drama Hebat"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.SG.fifa.a",
-      "names": [
-        "123 FIFA+"
       ],
       "reason": "no-verified-image"
     },
@@ -1432,20 +4592,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "cubmu.tvri",
-      "names": [
-        "[Indonesia] 038 TVRI NASIONAL"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "cubmu.tvri",
-      "names": [
-        "[Indonesia] 038 TVRI NASIONAL (a)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "[Indonesia] 039 ZEE BIOSKOP"
@@ -1463,13 +4609,6 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "trueid.mono",
-      "names": [
-        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
       ],
       "reason": "no-verified-image"
     },
@@ -1722,6 +4861,13 @@
       "id": "0",
       "names": [
         "[Peacock] 15 Premier League TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK6.PEACOCK",
+      "names": [
+        "[Peacock] 16 WWE Network"
       ],
       "reason": "no-verified-image"
     },
@@ -2090,9 +5236,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.flavour.network",
+      "id": "pw.CA.ctv.life",
       "names": [
-        "0313 Flavour Network"
+        "0315 CTV Life Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -2146,13 +5292,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.wild.tv",
-      "names": [
-        "0359 Wild TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "0370 GSN"
@@ -2163,6 +5302,13 @@
       "id": "0",
       "names": [
         "0382 T+E"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -2272,6 +5418,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.adult.swim",
+      "names": [
+        "0449 Adult Swim"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "0462 TCM"
@@ -2317,6 +5470,13 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -2405,6 +5565,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.ctv.wild",
       "names": [
         "0721 CTV Wild"
@@ -2433,6 +5600,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.bnn.bloomberg",
+      "names": [
+        "0815 BNN Bloomberg"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.hln",
       "names": [
         "0819 HLN"
@@ -2443,13 +5617,6 @@
       "id": "0",
       "names": [
         "0834 CGTN News"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "0841 CPAC English"
       ],
       "reason": "no-verified-image"
     },
@@ -2576,6 +5743,13 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0980 One Soccer"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.world",
+      "names": [
+        "1001 Sportsnet World"
       ],
       "reason": "no-verified-image"
     },
@@ -2762,6 +5936,20 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.noovo",
+      "names": [
+        "2007 Noovo Québec"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.d",
+      "names": [
+        "2008 Canal D"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.le.canal.vie",
       "names": [
         "2009 Canal Vie"
@@ -2797,9 +5985,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.elle.fictions",
+      "id": "pw.CA.t.l.toon.fran.ais",
       "names": [
-        "2040 ELLE FICTIONS"
+        "2033 Télétoon"
       ],
       "reason": "no-verified-image"
     },
@@ -3010,13 +6198,6 @@
       "id": "0",
       "names": [
         "2923 Nippon"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.nba.tv.canada",
-      "names": [
-        "[NBA LIVE] 01 NBA TV (APP)"
       ],
       "reason": "no-verified-image"
     },
