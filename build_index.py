@@ -1,9 +1,7 @@
 
 import json
 import re
-import time
 import unicodedata
-import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -14,12 +12,13 @@ CHANNELS_URL = "https://iptv-org.github.io/api/channels.json"
 LOGOS_URL = "https://iptv-org.github.io/api/logos.json"
 FANMINGMING_BASE = "https://live.fanmingming.cn/tv/"
 OUTPUT = Path("logos-map.json")
-TIMEOUT = 20
+TIMEOUT = 30
 
-HEADERS = {
-    "User-Agent": "APTV-Logo-Index/2.0",
-    "Accept": "*/*",
-}
+HEADERS = {"User-Agent": "APTV-Logo-Index/3.0", "Accept": "*/*"}
+
+
+def log(message):
+    print(message, flush=True)
 
 
 def fetch(url):
@@ -31,22 +30,20 @@ def fetch(url):
 def normalize(value):
     value = unicodedata.normalize("NFKC", value or "").casefold()
     value = re.sub(r"\.(png|jpe?g|webp|svg)$", "", value)
-    value = re.sub(r"[^a-z0-9\u0080-\uffff]+", "", value)
-    return value.strip()
+    return re.sub(r"[^a-z0-9\u0080-\uffff]+", "", value)
 
 
 def safe_url(url):
-    """Percent-encode non-ASCII characters in URL path and query."""
     url = (url or "").strip()
     try:
         parts = urllib.parse.urlsplit(url)
         if parts.scheme.lower() not in ("http", "https") or not parts.netloc:
             return ""
         path = urllib.parse.quote(
-            urllib.parse.unquote(parts.path), safe="/%:@!$&'()*+,;=-._~"
+            parts.path, safe="/%:@!$&'()*+,;=-._~"
         )
         query = urllib.parse.quote(
-            urllib.parse.unquote(parts.query), safe="=&;%:@!$'()*+,/?-._~"
+            parts.query, safe="=&;%:@!$'()*+,/?-._~"
         )
         return urllib.parse.urlunsplit(
             (parts.scheme, parts.netloc, path, query, parts.fragment)
@@ -55,221 +52,191 @@ def safe_url(url):
         return ""
 
 
-def is_placeholder(url):
+def usable_url(url):
+    url = safe_url(url)
     if not url:
-        return True
-    value = url.strip().casefold()
-    return any(term in value for term in (
-        "placeholder", "no-logo", "no_logo", "default-logo",
-        "default_logo", "blank.png", "empty.png"
-    ))
+        return ""
+    low = url.casefold()
+    if any(term in low for term in (
+        "placeholder", "no-logo", "no_logo",
+        "default-logo", "default_logo", "blank.png", "empty.png"
+    )):
+        return ""
+    return url
 
 
-def image_url_responds(url):
-    url = safe_url(url)
-    if not url or is_placeholder(url):
-        return False
-
-    req = urllib.request.Request(
-        url,
-        headers={**HEADERS, "Range": "bytes=0-1023"},
-        method="GET",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=10) as response:
-            content_type = response.headers.get("Content-Type", "").lower()
-            data = response.read(1024)
-            if not 200 <= response.status < 300:
-                return False
-            if content_type.startswith("image/"):
-                return bool(data)
-            return data.startswith(
-                (b"\x89PNG", b"\xff\xd8\xff", b"GIF8", b"RIFF")
-            )
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
-        # Some image hosts reject automated checks; don't crash the whole build.
-        return False
-
-
-def add_candidate(index, key, url, source):
+def add(index, key, url):
     key = normalize(key)
-    url = safe_url(url)
-    if not key or not url or is_placeholder(url):
-        return
-    options = index.setdefault(key, [])
-    candidate = {"url": url, "source": source}
-    if candidate not in options:
-        options.append(candidate)
+    url = usable_url(url)
+    if key and url:
+        index.setdefault(key, url)
 
 
 def fanmingming_url(name):
     name = (name or "").strip()
     if not name:
         return ""
-    # Keep the original display name; encode it as a URL path segment.
     return FANMINGMING_BASE + urllib.parse.quote(name, safe="") + ".png"
 
 
 def main():
-    print("Downloading EPG...")
-    epg_data = fetch(EPG_URL)
-    root = ET.fromstring(epg_data)
+    log("[1/4] Downloading EPG...")
+    root = ET.fromstring(fetch(EPG_URL))
+    epg_channels = root.findall(".//channel")
+    log(f"EPG channels read: {len(epg_channels)}")
 
-    candidates = {}
-    epg_names = {}
-    epg_ids = set()
-    epg_channels = 0
+    # Build all EPG name/ID indexes in one pass.
+    epg_by_id = {}
+    epg_by_name = {}
+    all_epg_names = {}
 
-    for channel in root.findall(".//channel"):
-        epg_channels += 1
-        channel_id = (channel.get("id") or "").strip()
+    for channel in epg_channels:
+        cid = (channel.get("id") or "").strip()
         names = [
             node.text.strip()
             for node in channel.findall("display-name")
             if node.text and node.text.strip()
         ]
         icons = [
-            node.get("src", "").strip()
+            usable_url(node.get("src", ""))
             for node in channel.findall("icon")
             if node.get("src")
         ]
+        logo = next((url for url in icons if url), "")
 
-        if channel_id:
-            epg_ids.add(normalize(channel_id))
-            epg_names.setdefault(normalize(channel_id), names)
+        if cid:
+            key = normalize(cid)
+            epg_by_id.setdefault(key, logo)
+            all_epg_names.setdefault(key, names)
 
         for name in names:
-            epg_names.setdefault(normalize(name), names)
+            key = normalize(name)
+            if key:
+                all_epg_names.setdefault(key, names)
+                if logo:
+                    epg_by_name.setdefault(key, logo)
 
-        for icon_url in icons:
-            if not safe_url(icon_url) or is_placeholder(icon_url):
-                continue
-            if channel_id:
-                add_candidate(candidates, channel_id, icon_url, "epg")
-            for name in names:
-                add_candidate(candidates, name, icon_url, "epg")
-
-    print(f"EPG channels read: {epg_channels}")
-    print("Downloading iptv-org channel and logo databases...")
-
+    log("[2/4] Downloading iptv-org databases...")
     channels = json.loads(fetch(CHANNELS_URL))
     logos = json.loads(fetch(LOGOS_URL))
 
     channel_by_id = {
-        str(channel.get("id", "")): channel
-        for channel in channels
-        if channel.get("id")
+        str(item["id"]): item
+        for item in channels
+        if item.get("id")
     }
 
+    org_by_id = {}
+    org_by_name = {}
+
     for logo in logos:
-        channel_id = str(logo.get("channel", "") or "")
-        url = str(logo.get("url", "") or "")
-        if not safe_url(url) or is_placeholder(url):
+        cid = str(logo.get("channel", "") or "")
+        url = usable_url(str(logo.get("url", "") or ""))
+        if not url:
             continue
 
-        channel = channel_by_id.get(channel_id, {})
-        if channel_id:
-            add_candidate(candidates, channel_id, url, "iptv-org")
+        if cid:
+            org_by_id.setdefault(normalize(cid), url)
 
+        channel = channel_by_id.get(cid, {})
+        names = []
         for field in ("name", "alt_names"):
             value = channel.get(field)
             if isinstance(value, str):
-                add_candidate(candidates, value, url, "iptv-org")
+                names.append(value)
             elif isinstance(value, list):
-                for name in value:
-                    if isinstance(name, str):
-                        add_candidate(candidates, name, url, "iptv-org")
+                names.extend(
+                    item for item in value if isinstance(item, str)
+                )
 
+        for name in names:
+            key = normalize(name)
+            if key:
+                org_by_name.setdefault(key, url)
+
+    log("[3/4] Building logo index (without slow image probes)...")
     result = {"byId": {}, "byName": {}, "meta": {}}
-    checked = {}
     stats = {"epg": 0, "iptv-org": 0, "fanmingming": 0}
-    fanmingming_checked = {}
 
-    def choose(key, target, original_names=None):
-        options = list(candidates.get(key, []))
-        options.sort(key=lambda item: (
-            0 if item["source"] == "epg" else 1,
-            item["url"]
-        ))
+    def choose(key, names, epg_logo=""):
+        # Prefer an EPG-provided logo.
+        if epg_logo:
+            stats["epg"] += 1
+            return epg_logo
 
-        for item in options:
-            url = item["url"]
-            if url not in checked:
-                checked[url] = image_url_responds(url)
-                time.sleep(0.02)
-            if checked[url]:
-                target[key] = url
-                stats[item["source"]] += 1
-                return
+        # Prefer an existing indexed public logo to avoid guessing
+        # a Fanmingming filename that may not exist.
+        url = org_by_id.get(key, "")
+        if not url:
+            for name in names:
+                url = org_by_name.get(normalize(name), "")
+                if url:
+                    break
+        if url:
+            stats["iptv-org"] += 1
+            return url
 
-        # No usable EPG/iptv-org logo: try Fanmingming with original names.
-        for name in original_names or []:
-            fallback = safe_url(fanmingming_url(name))
-            if not fallback:
-                continue
-            if fallback not in fanmingming_checked:
-                fanmingming_checked[fallback] = image_url_responds(fallback)
-                time.sleep(0.02)
-            if fanmingming_checked[fallback]:
-                target[key] = fallback
+        # Last-resort candidate. Existence is not verified at build time.
+        for name in names:
+            url = fanmingming_url(name)
+            if url:
                 stats["fanmingming"] += 1
-                return
+                return url
+        return ""
 
-    # Exact channel-ID index.
-    for channel in root.findall(".//channel"):
-        channel_id = (channel.get("id") or "").strip()
-        if not channel_id:
-            continue
-        key = normalize(channel_id)
+    for channel in epg_channels:
+        cid = (channel.get("id") or "").strip()
         names = [
             node.text.strip()
             for node in channel.findall("display-name")
             if node.text and node.text.strip()
         ]
-        choose(key, result["byId"], names)
+        icons = [
+            usable_url(node.get("src", ""))
+            for node in channel.findall("icon")
+            if node.get("src")
+        ]
+        epg_logo = next((url for url in icons if url), "")
+        key = normalize(cid) if cid else ""
 
-    # Name index: includes EPG names even if the EPG had no icon.
-    all_name_keys = set(candidates)
-    for names in epg_names.values():
+        if key:
+            url = choose(key, names, epg_logo)
+            if url:
+                result["byId"][key] = url
+
         for name in names:
-            key = normalize(name)
-            if key:
-                all_name_keys.add(key)
-
-    for key in sorted(all_name_keys):
-        names = epg_names.get(key, [])
-        if not names:
-            # Recover names from EPG channels when their normalized name is the key.
-            for channel in root.findall(".//channel"):
-                display_names = [
-                    node.text.strip()
-                    for node in channel.findall("display-name")
-                    if node.text and node.text.strip()
-                ]
-                if any(normalize(name) == key for name in display_names):
-                    names = display_names
-                    break
-        choose(key, result["byName"], names)
+            name_key = normalize(name)
+            if not name_key:
+                continue
+            # If duplicate display names exist, keep the first mapping.
+            if name_key not in result["byName"]:
+                url = choose(
+                    name_key, names,
+                    epg_by_name.get(name_key, "")
+                )
+                if url:
+                    result["byName"][name_key] = url
 
     result["meta"] = {
         "epg_url": EPG_URL,
-        "epg_channels_read": epg_channels,
-        "candidate_keys": len(candidates),
-        "checked_image_urls": len(checked),
-        "fanmingming_urls_checked": len(fanmingming_checked),
+        "epg_channels_read": len(epg_channels),
+        "byId_count": len(result["byId"]),
+        "byName_count": len(result["byName"]),
         "matched_by_source": stats,
+        "image_urls_verified": False,
         "note": (
-            "Logo index only. Does not edit or remove M3U channels, "
-            "stream URLs, or EPG settings."
+            "Logo index only. Does not modify M3U channels, stream URLs, "
+            "or EPG settings. Image availability is not checked at build time."
         ),
     }
 
+    log("[4/4] Writing logos-map.json...")
     OUTPUT.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(json.dumps(result["meta"], ensure_ascii=False, indent=2))
-    print(f"Created {OUTPUT}")
+    log(json.dumps(result["meta"], ensure_ascii=False, indent=2))
+    log("SUCCESS: Created logos-map.json")
 
 
 if __name__ == "__main__":
