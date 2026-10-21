@@ -19,12 +19,22 @@
     "trueid.boomerang": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
     "trueid.tidtopnews": "https://i.imgur.com/tRFnV9M.png",
     "trueid.ch7hd": "https://i.imgur.com/SBCIwek.png",
-    "trueid.mono": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg"
+    "trueid.mono": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
+    "trueid.tidyateemtv": "https://i.imgur.com/cHwPZMF.png",
+    "trueid.arirang": "https://i.imgur.com/Asu5pE9.png"
   },
   "byName": {
     "Thai Chaiyo": "https://i.imgur.com/uOfb3y1.png",
     "Thaichaiyo": "https://i.imgur.com/uOfb3y1.png",
     "White Channel": "https://i.imgur.com/Chx0AV9.png",
-    "WhiteChannel": "https://i.imgur.com/Chx0AV9.png"
+    "WhiteChannel": "https://i.imgur.com/Chx0AV9.png",
+    "ETV": "https://i.imgur.com/HTnQGcs.png",
+    "MVTV": "https://i.imgur.com/fLUPiaW.png",
+    "Arirang": "https://i.imgur.com/Asu5pE9.png",
+    "TV5MONDE": "https://i.imgur.com/FRsRXRR.png",
+    "TOP News": "https://i.imgur.com/tRFnV9M.png",
+    "Top News": "https://i.imgur.com/tRFnV9M.png",
+    "Yateem TV": "https://i.imgur.com/cHwPZMF.png",
+    "YATEEM TV": "https://i.imgur.com/cHwPZMF.png"
   }
 }
