@@ -52,6 +52,29 @@ def normalize(value):
     value = re.sub(r"\.(png|jpe?g|webp|svg|gif|avif|apng)$", "", value)
     return re.sub(r"[^a-z0-9\u0080-\uffff]+", "", value)
 
+def name_keys(value):
+    """Return conservative aliases after removing provider labels and channel numbers."""
+    value = unicodedata.normalize("NFKC", value or "").strip()
+    candidates = [value]
+    candidates.extend(part.strip() for part in value.split("|") if part.strip())
+
+    without_provider = re.sub(r"^\s*\[[^\]]+\]\s*", "", value)
+    candidates.append(without_provider)
+    without_number = re.sub(r"^\s*\d{1,5}\s+", "", without_provider)
+    candidates.append(without_number)
+
+    # EPG feeds often include the alternate name in parentheses.
+    candidates.extend(re.findall(r"\(([^()]*)\)", without_provider))
+    candidates.append(re.sub(r"\s*\([^()]*\)", "", without_provider))
+    candidates.append(re.sub(r"\s*\([^()]*\)", "", without_number))
+
+    keys = []
+    for candidate in candidates:
+        key = normalize(candidate)
+        if key and (key == normalize(value) or len(key) >= 4) and key not in keys:
+            keys.append(key)
+    return keys
+
 
 def clean_url(url):
     url = (url or "").strip()
@@ -297,8 +320,7 @@ def main():
             elif isinstance(v, list):
                 aliases.extend(x for x in v if isinstance(x, str))
         for alias in aliases:
-            key = normalize(alias)
-            if key:
+            for key in name_keys(alias):
                 org_by_name.setdefault(key, [])
                 if url not in org_by_name[key]:
                     org_by_name[key].append(url)
@@ -325,25 +347,39 @@ def main():
     matched = []
     all_urls = set()
 
+    custom_by_name = {
+        normalize(name): url
+        for name, url in custom_logos["byName"].items()
+    }
+
     for rec in records:
         candidates = []
+        id_key = normalize(rec["id"])
+        if id_key in custom_logos["byId"]:
+            add_candidate(candidates, "custom", custom_logos["byId"][id_key])
+        for name in rec["names"]:
+            for key in name_keys(name):
+                if key in custom_by_name:
+                    add_candidate(candidates, "custom", custom_by_name[key])
+
         for x in rec["epg_candidates"]:
             add_candidate(candidates, "epg", x["url"])
         for x in rec.get("m3u_candidates", []):
             add_candidate(candidates, "m3u", x["url"])
 
-        id_key = normalize(rec["id"])
         for url in org_by_id.get(id_key, []):
             add_candidate(candidates, "iptv-org", url)
 
         for name in rec["names"]:
-            for url in org_by_name.get(normalize(name), []):
-                add_candidate(candidates, "iptv-org", url)
+            for key in name_keys(name):
+                for url in org_by_name.get(key, []):
+                    add_candidate(candidates, "iptv-org", url)
 
         # Only use Fanmingming filenames that actually exist in its repository.
         for name in rec["names"]:
-            for url in fan_by_name.get(normalize(name), []):
-                add_candidate(candidates, "fanmingming", url)
+            for key in name_keys(name):
+                for url in fan_by_name.get(key, []):
+                    add_candidate(candidates, "fanmingming", url)
 
         for c in candidates:
             all_urls.add(c["url"])
