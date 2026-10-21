@@ -1,0 +1,5333 @@
+{
+  "meta": {
+    "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
+    "epg_channels_read": 2391,
+    "m3u_entries_read": 0,
+    "m3u_loaded": false,
+    "custom_logo_overrides_configured": 0,
+    "custom_logo_overrides_applied": 0,
+    "combined_records_read": 2391,
+    "byId_count": 1043,
+    "byName_count": 1657,
+    "candidate_urls_unique": 1069,
+    "selected_channels_by_source": {
+      "epg": 1660,
+      "iptv-org": 12
+    },
+    "invalid_unique_urls": 52,
+    "pending_unique_urls": 2,
+    "unmatched_channels": 719,
+    "image_urls_verified": true,
+    "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
+    "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
+  },
+  "invalid_urls": [
+    {
+      "url": "https://myeth-epg.github.io/icons2/t3230.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons2/t3227.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons/%E6%9D%B1%E6%A3%AE%E6%96%B0%E8%81%9E0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons2/t5192.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons2/0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons/n0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons3/0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ub423.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons3/sg0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons/0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons5/0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/ic1ons5/0.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca01.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca05.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca201.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca209.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca210.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca212.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/uca213.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp01.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp03.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp04.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp05.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp06.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp07.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp08.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp09.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp10.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp11.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp12.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp13.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp14.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp15.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp16.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp17.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp18.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp19.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp20.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp22.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp23.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp24.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp25.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp26.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp27.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp28.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucp29.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucn01.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucc07.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucc08.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucc09.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons4/ucc10.png",
+      "source": "epg",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://myeth-epg.github.io/icons/f.png",
+      "source": "epg",
+      "reason": "http-404"
+    }
+  ],
+  "pending_urls": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    }
+  ],
+  "unmatched_channels": [
+    {
+      "id": "0",
+      "names": [
+        "[TW-II] 1742 Hami美國職籃台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-II] 2115 麥卡貝綜藝"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "hami.HAMI大聯盟1台",
+      "names": [
+        "[TW-II] 2124 Hami大聯盟1台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "hami.HAMI大聯盟2台",
+      "names": [
+        "[TW-II] 2125 Hami大聯盟2台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "hami.Hami亞運熱播台",
+      "names": [
+        "[TW-II] 2126 Hami熱播台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 107 軍武大觀"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 106 永康情報局"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 108 政治狠狠問"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 110 謝龍介直播"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 130 台灣啟示錄"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 145 小宇宙大爆發(健康)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 300 雲端創作音樂台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 301 雲端電音音樂台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 302 吉馬欣代音樂"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 306 花甲少年趣旅行"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 303 全民星攻略"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 304 行動電源出發吧"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 753 SECT35(測試)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 997 歡樂看入戲太深篇(V)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TW-III] 996 歡樂看熱血青年篇(V)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.TW.華視新聞資訊.mod",
+      "names": [
+        "052 華視新聞"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "087 CLASSICA 古典樂"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "088 灣聲線上音樂廳"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.TW.outtv",
+      "names": [
+        "140 OUTtv"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.TW.好消息2台.4gtv",
+      "names": [
+        "161 好消息2台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "192 倪珍播新聞"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "myvideo.DAZN體育台",
+      "names": [
+        "010 DAZN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "myvideo.MyVideo體育台",
+      "names": [
+        "012 MyVideo體育台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.nowtv.nowsports英超8台",
+      "names": [
+        "[NowTV] 628 Sports 英超8台|比賽時開放"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.nowtv.nowsports英超9台",
+      "names": [
+        "[NowTV] 629 Sports 英超9台|比賽時開放"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[NowTV] 801 Now App Extra"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[BreadTV] 01 面包台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[UTV] 01 C++"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "507293",
+      "names": [
+        "[ChinaSun] 01 陽光衛視"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "464912",
+      "names": [
+        "[NBA] 01 NBA TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "astro.280.tennis2",
+      "names": [
+        "[astro] 818 Astro Tennis 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.MY.astro.premier.league.4",
+      "names": [
+        "[astro] 808 Astro Premier League 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.MY.astro.premier.league.5",
+      "names": [
+        "[astro] 809 Astro Premier League 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "astro.280.tennis2",
+      "names": [
+        "[astro] 818 Astro Tennis 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[astro] 834 GOLF PLUS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[CN] 2101 五星體育"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 001 NBA 24/7 TV (APP)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 002 NBA 24/7 Channel 1 (NBA Now)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 003 NBA 24/7 Channel 2 (Finals Champion Channel)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 004 NBA 24/7 Channel 3 (NBA Summer League Channel)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 009 NFL Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 010 GolfPass"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 011 Premier League TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[US-II] 012 WWE Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.UK.lfctv",
+      "names": [
+        "[UK-I] 423 LFCTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.karisma.a",
+      "names": [
+        "116 Karisma"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.one.malay.starhubtv",
+      "names": [
+        "124 ONE (Malay)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.zee.tv.a",
+      "names": [
+        "125 Zee TV HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.sony.entertainment.television.starhubtv",
+      "names": [
+        "127 Sony Entertainment Television"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.sony.max.a",
+      "names": [
+        "131 SONY MAX"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.tv.starhubtv",
+      "names": [
+        "135 Vijay TV HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vannathirai.starhubtv",
+      "names": [
+        "136 Vannathirai"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.kalaignar.tv.a",
+      "names": [
+        "141 Kalaignar TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.the.filipino.channel.a",
+      "names": [
+        "144 The Filipino Channel HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.tvmonde.5.starhubtv",
+      "names": [
+        "152 TV5MONDE HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.sports.7.b",
+      "names": [
+        "207 Hub Sports 7 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.sports.8.b",
+      "names": [
+        "208 Hub Sports 8 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.premier.7.a",
+      "names": [
+        "227 Hub Premier 7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.premier.9.a",
+      "names": [
+        "229 Hub Premier 9"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.premier.10.a",
+      "names": [
+        "230 Hub Premier 10"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hub.premier.11.a",
+      "names": [
+        "231 Hub Premier 11"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.mio.sports.a",
+      "names": [
+        "111 mio Sports"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.mio.sports.2.a",
+      "names": [
+        "112 mio Sports 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.mio.sports.3.a",
+      "names": [
+        "113 mio Sports 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fight.sports.b",
+      "names": [
+        "119 Fight Sports (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "141 FIFA World Cup CH01"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "142 FIFA World Cup CH02"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.cnn.a",
+      "names": [
+        "167 CNN International"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.crime.investigation.b",
+      "names": [
+        "206 C+I (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.cgtn.a",
+      "names": [
+        "211 CGTN-Documentary"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.outdoor.channel.a",
+      "names": [
+        "259 (HD) Outdoor Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.now.jelli.a",
+      "names": [
+        "512 now Jelli (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.one.mandarin.a",
+      "names": [
+        "513 ONE HD (Mandarin)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.starhub.tvbsnews",
+      "names": [
+        "516 TVBS News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.starhub.ettvasia",
+      "names": [
+        "521 ETTV Asia (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.cctv.entertainment.a",
+      "names": [
+        "534 CCTV Entertainment"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.starhub.dragontv",
+      "names": [
+        "535 Dragon TV Intl"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.hunan.international.a",
+      "names": [
+        "536 Hunan International"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.brtv.international.a",
+      "names": [
+        "537 BRTV International"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.china.movie.channel.a",
+      "names": [
+        "538 China Movie Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.starhub.phoenixinfonews",
+      "names": [
+        "547 Phoenix InfoNews"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.ettv.asia.b",
+      "names": [
+        "561 ETTV Asia News (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.one.malay.a",
+      "names": [
+        "604 ONE HD (Malay)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.citra.drama.a",
+      "names": [
+        "610 Citra Drama (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.channel.a",
+      "names": [
+        "618 Drama Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.adithya.tv.b",
+      "names": [
+        "628 Adithya TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.sony.yay.a",
+      "names": [
+        "630 Sony YAY"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.zee.tamil.a",
+      "names": [
+        "632 Zee Tamil HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.tv.starhubtv",
+      "names": [
+        "634 Vijay TV (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.asianet.movies.b",
+      "names": [
+        "639 Asianet Movies"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.set.hindi.a",
+      "names": [
+        "644 SET (HINDI)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.zee.tv.a",
+      "names": [
+        "646 Zee TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.sab.tv.a",
+      "names": [
+        "648 SAB TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.star.bharat.a",
+      "names": [
+        "654 Star Bharat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.star.plus.a",
+      "names": [
+        "656 STAR Plus"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.mtv.india.a",
+      "names": [
+        "658 MTV India"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.star.gold.a",
+      "names": [
+        "662 STAR Gold"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.sony.max.a",
+      "names": [
+        "668 Sony MAX"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.maa.movies",
+      "names": [
+        "670 maa movies"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.star.maa.a",
+      "names": [
+        "671 Star Maa"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.times.now.a",
+      "names": [
+        "676 Times Now"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.zoom.tv.a",
+      "names": [
+        "677 Zoom TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.wion.a",
+      "names": [
+        "680 WION"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.gma.pinoy.tv.a",
+      "names": [
+        "688 GMA Pinoy TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.gma.life.tv.a",
+      "names": [
+        "689 GMA Life TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.gma.news.tv.a",
+      "names": [
+        "690 GMA News TV Intl"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.the.filipino.ch.a",
+      "names": [
+        "693 The Filipino Ch (HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.abs.cbn.news.channel.a",
+      "names": [
+        "694 ABS-CBN News Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "107 oktolidays"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "mewatch.spl01",
+      "names": [
+        "107 SPL01"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "mewatch.spl02",
+      "names": [
+        "108 SPL02"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "mewatch.spl01",
+      "names": [
+        "109 SPL01"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "mewatch.spl02",
+      "names": [
+        "110 SPL02"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.live.2.a",
+      "names": [
+        "109 LIVE 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.live.5.a",
+      "names": [
+        "109 LIVE 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.live.6.a",
+      "names": [
+        "110 LIVE 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.asian.para.games.ch01",
+      "names": [
+        "107 Asian Para Games CH1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.asian.para.games.ch02",
+      "names": [
+        "108 Asian Para Games CH2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.masterchef.a",
+      "names": [
+        "109 MasterChef"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.deal.or.no.deal.a",
+      "names": [
+        "110 Deal or No Deal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fear.factor.a",
+      "names": [
+        "111 Fear Factor"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.river.monsters.a",
+      "names": [
+        "112 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.80.a",
+      "names": [
+        "113 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.70.a",
+      "names": [
+        "114 That's 70s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.rock.a",
+      "names": [
+        "115 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.action.hollywood.movies.a",
+      "names": [
+        "116 Action Hollywood"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.filem.mantap",
+      "names": [
+        "117 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.hebat",
+      "names": [
+        "118 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.takkar.a",
+      "names": [
+        "119 Vijay Takkar"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "120 FIFA+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.kartoon.channel.a",
+      "names": [
+        "123 Kartoon Channel!"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.tg.junior.a",
+      "names": [
+        "124 TG Junior"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.masterchef.a",
+      "names": [
+        "110 MasterChef"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.deal.or.no.deal.a",
+      "names": [
+        "111 Deal or No Deal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fear.factor.a",
+      "names": [
+        "112 Fear Factor"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.river.monsters.a",
+      "names": [
+        "113 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.80.a",
+      "names": [
+        "114 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.70.a",
+      "names": [
+        "115 That's 70s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.rock.a",
+      "names": [
+        "116 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.action.hollywood.movies.a",
+      "names": [
+        "117 Action Hollywood"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.filem.mantap",
+      "names": [
+        "118 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.hebat",
+      "names": [
+        "119 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.takkar.a",
+      "names": [
+        "120 Vijay Takkar"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "121 FIFA+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.kartoon.channel.a",
+      "names": [
+        "124 Kartoon Channel!"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.tg.junior.a",
+      "names": [
+        "125 TG Junior"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.river.monsters.a",
+      "names": [
+        "114 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.80.a",
+      "names": [
+        "115 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.70.a",
+      "names": [
+        "116 That's 70s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.rock.a",
+      "names": [
+        "117 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.filem.mantap",
+      "names": [
+        "119 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.hebat",
+      "names": [
+        "120 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.takkar.a",
+      "names": [
+        "121 Vijay Takkar"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "122 FIFA+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.tg.junior.a",
+      "names": [
+        "126 TG Junior"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.river.monsters.a",
+      "names": [
+        "115 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.80.a",
+      "names": [
+        "116 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.70.a",
+      "names": [
+        "117 That's 70s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.rock.a",
+      "names": [
+        "118 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.filem.mantap",
+      "names": [
+        "120 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.hebat",
+      "names": [
+        "121 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.vijay.takkar.a",
+      "names": [
+        "122 Vijay Takkar"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.fifa.a",
+      "names": [
+        "123 FIFA+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.tg.junior.a",
+      "names": [
+        "127 TG Junior"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fuji",
+      "names": [
+        "[JP-I] FU JI"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] 大阪TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] 読売テレビ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] 毎日放送"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] 関西テレビ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] MUSIC ON! TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.kidsstation",
+      "names": [
+        "[JP-I] キッズステーション"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.jsports1",
+      "names": [
+        "[JP-I] JSPORTS 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.jsports2",
+      "names": [
+        "[JP-I] JSPORTS 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tokyomx1",
+      "names": [
+        "[JP-I] TOKYO MX 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tokyomx2",
+      "names": [
+        "[JP-I] TOKYO MX 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.bs.nihoneiga",
+      "names": [
+        "[JP-I] BS日本映画専門Ch"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tvasahi1",
+      "names": [
+        "[JP-I] テレ朝チャンネル1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tvasahi2",
+      "names": [
+        "[JP-I] テレ朝チャンネル2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.ntvgplus",
+      "names": [
+        "[JP-I] 日テレG+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fujione",
+      "names": [
+        "[JP-I] フジone"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fujitwo",
+      "names": [
+        "[JP-I] フジ two"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fujinext",
+      "names": [
+        "[JP-I] フジ next"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tabich",
+      "names": [
+        "[JP-I] 旅チャンネル"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.sportsliveplus",
+      "names": [
+        "[JP-I] スポーツライブ＋"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.eiseigekijo",
+      "names": [
+        "[JP-I] 衛星劇場"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.bs.japan",
+      "names": [
+        "[JP-I] BSジャパン"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.asahi.bc",
+      "names": [
+        "[JP-I] 朝日放送テレビ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tbs2",
+      "names": [
+        "[JP-I] TBS-2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fujitv",
+      "names": [
+        "[JP-I] フジテレビ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tbs3",
+      "names": [
+        "[JP-I] TBS-3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-I] BS-富士"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.fuji.fuji",
+      "names": [
+        "[JP-I] フジテレビ富士"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.bs.tbs2",
+      "names": [
+        "[JP-I] BS-TBS-2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 01 \"キャンプ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 02 \"アニメ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 03 \"韓流\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 04 \"ｱｼﾞｱﾄﾞﾗﾏ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 05 \"九州\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 06 \"ﾌｧｯｼｮﾝ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 07 \"ビジネス\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 08 \"ゴルフ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.jidaigeki",
+      "names": [
+        "[JP-II] 09 \"時代劇\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 10 \"落語\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 11 \"北海道\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 12 \"東海\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 13 \"料理\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 14 \"囲碁・将棋\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 15 \"ｴﾝﾀﾒﾆｭｰｽ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 16 \"ペット\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.JP.tabich",
+      "names": [
+        "[JP-II] 17 \"旅行\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[JP-II] 18 \"バラエティ\""
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "Elshinta TV",
+      "names": [
+        "[Indonesia] 010 ELSHINTA TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "vidio.gtv",
+      "names": [
+        "[Indonesia] 011 GLOBAL TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "dens.magnachannel",
+      "names": [
+        "[Indonesia] 019 MGN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "dens.magnachannel",
+      "names": [
+        "[Indonesia] 019 MGN (a)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Indonesia] 023 NET"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Indonesia] 023 NET (a)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "vidio.nusantaratv",
+      "names": [
+        "[Indonesia] 024 NUSANTARA TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "dens.rodjatv",
+      "names": [
+        "[Indonesia] 027 RODJA TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "dens.rodjatv",
+      "names": [
+        "[Indonesia] 027 RODJA TV (a)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "cubmu.tvri",
+      "names": [
+        "[Indonesia] 038 TVRI NASIONAL"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "cubmu.tvri",
+      "names": [
+        "[Indonesia] 038 TVRI NASIONAL (a)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.nbt2hd",
+      "names": [
+        "[AIS] 002 NBT 2 HD (เอ็นบีที 2 เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tpbs",
+      "names": [
+        "[AIS] 003 TPBS (ไทยพีบีเอส เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.ch5hd",
+      "names": [
+        "[AIS] 005 CH5 HD (5 เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tsports7",
+      "names": [
+        "[AIS] 007 T-Sports 7 (ทีสปอร์ต 7)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.parliament",
+      "names": [
+        "[AIS] 010 Parliament (สถานีวิทยุโทรทัศน์รัฐสภา)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tnn24",
+      "names": [
+        "[AIS] 016 TNN (ทีเอ็นเอ็น)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.nationtv",
+      "names": [
+        "[AIS] 022 Nation TV (เนชั่น ชาแนล)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.workpointtv",
+      "names": [
+        "[AIS] 023 Workpoint TV (เวิร์คพอยท์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.true4u",
+      "names": [
+        "[AIS] 024 True 4 U (ทรูโฟร์ยู)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.gmm25",
+      "names": [
+        "[AIS] 025 GMM25 (จีเอ็มเอ็ม 25)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.mcothd",
+      "names": [
+        "[AIS] 030 MCOT HD (เอ็มคอท เอชดี 30)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.one31hd",
+      "names": [
+        "[AIS] 031 ONE 31 HD (วัน เอชดี 31)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.thairathtvhd",
+      "names": [
+        "[AIS] 032 Thairath TV HD (ไทยรัฐทีวี เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.3hd",
+      "names": [
+        "[AIS] 033 3 HD (3 เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.amarintvhd",
+      "names": [
+        "[AIS] 034 AmarinTV HD (อมรินทร์ ทีวี เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.pptvhd",
+      "names": [
+        "[AIS] 036 PPTV HD (พีพีทีวี เอชดี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.boomerang",
+      "names": [
+        "[AIS] 205 Boomerang (บูมเมอแรง)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 206 Mango Mojito (แมงโก้ โมฮิโต้)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 307 TV5MONDE (เตเวแซ็งก์มงด์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.arirang",
+      "names": [
+        "[AIS] 308 Arirang (อารีรัง)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "openepg.HunanTVHD.th",
+      "names": [
+        "[AIS] 309 Hunan TV (ฮูนาน ทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 313 RT Documentary (สารคดีรัสเซีย)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 607 Channel News Asia (ชาแนลนิวส์เอเชีย)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 611 TVBS News (ข่าวทีวีบีเอส)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 613 RT Channel (รัสเซียชาแนล)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 617 TOP News (ท็อปนิวส์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 618 News 1 (นิวส์1)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 716 ETV (กศน. (อีทีวี))"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[AIS] 802 MVTV (เอ็มวีทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tidyateemtv",
+      "names": [
+        "[TrueID] 001 YATEEM TV (ยาตีมทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tidtopnews",
+      "names": [
+        "[TrueID] 002 TOP News (ท็อปนิวส์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TrueID] 003 Thaichaiyo (ไทไชโย)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.newsnewss1",
+      "names": [
+        "[TrueID] 004 NEWS1 (นิวส์วัน)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TrueID] 005 Top TV (ท็อปทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.boomerang",
+      "names": [
+        "[TrueID] 006 Boomerang (บูมเมอแรง)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TrueID] 007 White Channel (ไวท์แชนแนล)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.parliament",
+      "names": [
+        "[TrueID] 008 TPTV - Thai Parliament TV (ทีพีทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.gmm25",
+      "names": [
+        "[TrueID] 009 GMM 25 (จีเอ็มเอ็ม 25)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.true4u",
+      "names": [
+        "[TrueID] 010 True4U (ทรูโฟร์ยู)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.3hd",
+      "names": [
+        "[TrueID] 011 CH3 HD (ช่อง 3 HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.nbt2hd",
+      "names": [
+        "[TrueID] 012 NBT (เอ็นบีที)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.thairathtvhd",
+      "names": [
+        "[TrueID] 013 Thairath TV HD (ไทยรัฐ ทีวี HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.pptvhd",
+      "names": [
+        "[TrueID] 014 PPTV (พีพีทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.tpbs",
+      "names": [
+        "[TrueID] 015 TPBS (ไทยพีบีเอส)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.realitychannelhd",
+      "names": [
+        "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.amarintvhd",
+      "names": [
+        "[TrueID] 018 Amarin TV (อมรินทร์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.nationtv",
+      "names": [
+        "[TrueID] 019 Nation TV 22 (เนชั่น ทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.workpointtv",
+      "names": [
+        "[TrueID] 020 Workpoint TV (เวิร์คพอยท์ ทีวี)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.ch5hd",
+      "names": [
+        "[TrueID] 022 CH 5 (ช่อง 5)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.ch7hd",
+      "names": [
+        "[TrueID] 023 CH 7HD (ช่อง 7HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[TrueID] 024 True Plookpanya (ทรู ปลูกปัญญา)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.mcothd",
+      "names": [
+        "[TrueID] 025 9 MCOT HD (9 เอ็มคอต HD)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "trueid.mono",
+      "names": [
+        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.중화tv",
+      "names": [
+        "[KR-I] 01 중화TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.cj.온스타일",
+      "names": [
+        "[KR-I] 07 CJ 온스타일+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.ebs",
+      "names": [
+        "[KR-I] 13 EBS1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.매일경제tv",
+      "names": [
+        "[KR-I] 22 매일경제TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.애니박스",
+      "names": [
+        "[KR-I] 25 ANIBOX"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.히스토리",
+      "names": [
+        "[KR-I] 34 히스토리"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.mbc",
+      "names": [
+        "[KR-I] 40 MBC 라디오 시사"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.jtbc",
+      "names": [
+        "[KR-I] 41 JTBC news 아카이브"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 42 TV CHOSUN NEWS24"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.jtbc",
+      "names": [
+        "[KR-I] 43 JTBC news NOW"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.sbs",
+      "names": [
+        "[KR-I] 44 SBS No.1 뉴스라이브"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.mbn",
+      "names": [
+        "[KR-I] 45 MBN NEWS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 46 KBS 인간극장"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 47 KBS 역사저널 그날"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 48 KBS 사극"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 49 KBS 주말드라마 명작"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.mbc",
+      "names": [
+        "[KR-I] 50 MBC 라디오 예능"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 51 KBS 사랑과 전쟁"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.kbs1",
+      "names": [
+        "[KR-I] 52 KBS 1박 2일"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.mbc",
+      "names": [
+        "[KR-I] 53 MBC 뉴스"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 54 한국경제TV 글로벌"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "MTN 머니투데이방송.kr",
+      "names": [
+        "[KR-I] 55 머니투데이방송"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 56 MBC 무한도전"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 57 MBC 나 혼자 산다"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 58 채널A NEWS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 59 MBC 거침없이 하이킥"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 60 MBC 놀면 뭐하니"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 61 MBC 전지적 참견 시점"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 62 MBC 심야괴담회"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[KR-I] 63 MBC 오은영리포트 결혼지옥"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "465239",
+      "names": [
+        "[America] 01 MLB Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "465108",
+      "names": [
+        "[America] 05 ESPN U"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[America] 201 東森中国台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[America] 209 超視美洲台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[America] 210 東森美洲衛視"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[America] 212 東森美洲台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[America] 213 中旺電視台"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK12.PEACOCK",
+      "names": [
+        "[Peacock] 01 Dateline 24/7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK22.PEACOCK",
+      "names": [
+        "[Peacock] 03 NBC Sports on Peacock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK3.PEACOCK",
+      "names": [
+        "[Peacock] 04 SNL Vault"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 05 LOL! Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "THISOH.PEACOCK",
+      "names": [
+        "[Peacock] 06 This Old House"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 07 Nosey"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 08 Confess by Nosey"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 09 MovieSphere by Lionsgate"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 10 Ghost Hunters Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 11 Ebony TV by Lionsgate"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 12 Telemundo Al Dia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 13 NFL Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK24.PEACOCK",
+      "names": [
+        "[Peacock] 14 GolfPass"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 15 Premier League TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK6.PEACOCK",
+      "names": [
+        "[Peacock] 16 WWE Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK13.PEACOCK",
+      "names": [
+        "[Peacock] 17 TEAM USA TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 18 Law & Crime Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 19 Top Gear"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "PK20.PEACOCK",
+      "names": [
+        "[Peacock] 20 TODAY All Day"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 22 Noticias Telemundo Ahora"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 23 NBC Chicago News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 24 NBC New York News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 25 NBC Philadelphia News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 26 NBC South Florida News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 27 NBC Boston News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 28 NBC Los Angeles News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 29 Circle Country"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[Peacock] 30 NBC LX Home"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[CRAVE] 07 Sego1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[CRAVE] 08 Sego2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[CRAVE] 09 Sego3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "[CRAVE] 10 Sego4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.uvagut.tv",
+      "names": [
+        "0118 Uvagut TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0123 JoyTV BC"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.yes.tv.calgary",
+      "names": [
+        "0124 Yes TV Calgary"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.calgary",
+      "names": [
+        "0127 TWN Calgary"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0128 TWN AB"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0145 CW LA"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.halifax",
+      "names": [
+        "0200 CBC Halifax"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.toronto",
+      "names": [
+        "0201 CBC Toronto"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.winnipeg",
+      "names": [
+        "0202 CBC Winnipeg"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.edmonton",
+      "names": [
+        "0203 CBC Edmonton"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.vancouver",
+      "names": [
+        "0205 CBC Vancouver"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.winnipeg",
+      "names": [
+        "0208 CTV Winnipeg"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.citytv.montreal",
+      "names": [
+        "0209 CTV Montreal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.halifax",
+      "names": [
+        "0210 CTV Halifax"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.toronto",
+      "names": [
+        "0211 CTV Toronto"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.edmonton",
+      "names": [
+        "0212 CTV Edmonton"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.vancouver",
+      "names": [
+        "0214 CTV Vancouver"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.halifax",
+      "names": [
+        "0220 Global Halifax"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.global.toronto",
+      "names": [
+        "0221 Global Toronto"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.global.edmonton",
+      "names": [
+        "0222 Global Edmonton"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.vancouver",
+      "names": [
+        "0224 Global Vancouver"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.citytv.toronto",
+      "names": [
+        "0230 Citytv Toronto"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.citytv.edmonton",
+      "names": [
+        "0231 Citytv Edmonton"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.citytv.vancouver",
+      "names": [
+        "0233 Citytv Vancouver"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ntv",
+      "names": [
+        "0240 NTV STJN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0250 ABC Boston"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0255 CBS Boston"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.wbts.cd",
+      "names": [
+        "0260 WBTS NBC"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0265 FOX Boston"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0270 PBS Boston"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0275 MyTV New York HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0280 WSBK MyTV TV38 Boston"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.wgn",
+      "names": [
+        "0285 CW Chicago"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0286 CW New York"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0300 A&E Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.showcase.canada",
+      "names": [
+        "0301 Showcase"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.drama",
+      "names": [
+        "0302 CTV Drama Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.home.network",
+      "names": [
+        "0306 Home Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.home.and.garden.television",
+      "names": [
+        "0308 Home & Garden TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.magnolia.network",
+      "names": [
+        "0312 Magnolia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.food.network",
+      "names": [
+        "0314 Food Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.life",
+      "names": [
+        "0315 CTV Life Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.w.network",
+      "names": [
+        "0328 W Network West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.w.network",
+      "names": [
+        "0329 W Network East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.slice",
+      "names": [
+        "0331 Slice"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.bravo.canada",
+      "names": [
+        "0332 Bravo"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.lifetime",
+      "names": [
+        "0333 E Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0347 OUT tv"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.outtv",
+      "names": [
+        "0348 OUTTV Pacific"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.one.soccer",
+      "names": [
+        "0349 One"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cottage.life",
+      "names": [
+        "0355 Cottage Life"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.aquarium",
+      "names": [
+        "0356 Rural Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.wild.tv",
+      "names": [
+        "0359 Wild TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0360 RFD TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsman",
+      "names": [
+        "0361 Sportsman Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0370 GSN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.gametv.canada",
+      "names": [
+        "0372 GameTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.bbc.first",
+      "names": [
+        "0375 BBC First"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.oxygen.true.crime",
+      "names": [
+        "0378 Oxygen True Crime"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0382 T+E"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.fx",
+      "names": [
+        "0393 FX East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.fx",
+      "names": [
+        "0394 FXX East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.fx",
+      "names": [
+        "0395 FXX West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.fx",
+      "names": [
+        "0396 FX West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.crave.1.west",
+      "names": [
+        "0406 Crave 1 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.crave.2.west",
+      "names": [
+        "0407 Crave 2 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.crave.3.west",
+      "names": [
+        "0408 Crave 3 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.crave1",
+      "names": [
+        "0409 Crave 1 East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.super.fuse",
+      "names": [
+        "0417 Super Channel Fuse"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.super.heart.and.home",
+      "names": [
+        "0418 Super Channel Heart & Home"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.super.vault",
+      "names": [
+        "0419 Super Channel Vault"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.super.quest",
+      "names": [
+        "0420 Super Channel Quest"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0426 Hollywood Suite 70s+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hollywood.suite.80s.and.90s",
+      "names": [
+        "0427 Hollywood Suite 80s & 90s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hollywood.suite.2000s",
+      "names": [
+        "0428 Hollywood Suite 2000s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0429 Hollywood Suite 2010s+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.starz.1.west",
+      "names": [
+        "0431 STARZ 1 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.starz.2.west",
+      "names": [
+        "0432 STARZ 2 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.movietime",
+      "names": [
+        "0445 Movietime"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.adult.swim",
+      "names": [
+        "0449 Adult Swim"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.rewind",
+      "names": [
+        "0457 Rewind"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.silver.screen.classics",
+      "names": [
+        "0460 Silverscreen"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0462 TCM"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.comedy",
+      "names": [
+        "0500 CTV Comedy Channel East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.comedy.west",
+      "names": [
+        "0501 CTV Comedy Channel West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.dtour",
+      "names": [
+        "0504 DTour"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0506 Dejaview"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0511 Peachtree"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.country.music.television",
+      "names": [
+        "0555 CMT"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mu.music",
+      "names": [
+        "0557 MUCH"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.vibe",
+      "names": [
+        "0580 Stingray Vibe"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.retro",
+      "names": [
+        "0582 Stingray Retro"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.country",
+      "names": [
+        "0583 Stingray Country"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.alternative",
+      "names": [
+        "0585 Stingray Classica"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0600 YTV East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.treehouse",
+      "names": [
+        "0601 Treehouse"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hpitv.west",
+      "names": [
+        "0606 Disney West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.omni.east",
+      "names": [
+        "0607 Disney East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytvp",
+      "names": [
+        "0613 YTVP HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.boomerang.network.canada",
+      "names": [
+        "0627 Boomerang Network Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.national.geographic.canada",
+      "names": [
+        "0700 National Geographic"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.usa.network",
+      "names": [
+        "0701 USA Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.nature",
+      "names": [
+        "0702 CTV Nature"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.history",
+      "names": [
+        "0704 History West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.history.television",
+      "names": [
+        "0705 History East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0706 H2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.speed",
+      "names": [
+        "0711 CTV Speed"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.wild",
+      "names": [
+        "0721 CTV Wild"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.national.geographic.wild.canada",
+      "names": [
+        "0723 National Geographic Wild"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0730 Water"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.documentary",
+      "names": [
+        "0731 Documentary"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.z.470775",
+      "names": [
+        "0750 Mezzo"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0752 Museum"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.news.network",
+      "names": [
+        "0800 CBC News Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.news",
+      "names": [
+        "0801 CTV News Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0804 MS NOW"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.bnn.bloomberg",
+      "names": [
+        "0815 BNN Bloomberg"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hln",
+      "names": [
+        "0819 HLN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0834 CGTN News"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0841 CPAC English"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.the.news.forum",
+      "names": [
+        "0842 News Forum West HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ontario.legislature",
+      "names": [
+        "0843 Alberta Legislature"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.global.bc",
+      "names": [
+        "0845 Global BC1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.the.miracle.cjil",
+      "names": [
+        "0870 Miracle Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.vision.tv",
+      "names": [
+        "0871 Vision TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.daystar.canada",
+      "names": [
+        "0872 Daystar"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0873 Salt and Light"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0875 Faith TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ami.audio",
+      "names": [
+        "0888 AMI TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tsn.1",
+      "names": [
+        "0900 TSN 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tsn.2",
+      "names": [
+        "0901 TSN 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tsn.3",
+      "names": [
+        "0902 TSN 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tsn.4",
+      "names": [
+        "0903 TSN 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tsn.5",
+      "names": [
+        "0904 TSN 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.west",
+      "names": [
+        "0911 Sportsnet West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet",
+      "names": [
+        "0912 Sportsnet 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet",
+      "names": [
+        "0913 Sportsnet Oilers"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet",
+      "names": [
+        "0914 Sportsnet Flames"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet",
+      "names": [
+        "0915 Sportsnet Pacific"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.ontario",
+      "names": [
+        "0916 Sportsnet Ontario"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.east",
+      "names": [
+        "0917 Sportsnet East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.360",
+      "names": [
+        "0918 Sportsnet 360"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.game.10",
+      "names": [
+        "0924 Game Plus"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.golf",
+      "names": [
+        "0925 Golf Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.network.alt.canadian.feed",
+      "names": [
+        "0926 NFL Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.tv.canada",
+      "names": [
+        "0937 NBA TV Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.the.fight.network",
+      "names": [
+        "0945 Fight"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.fox.sports.racing",
+      "names": [
+        "0960 FOX Sports Racing"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.rev.tv.canada",
+      "names": [
+        "0962 REV TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.aquarium",
+      "names": [
+        "0971 Cowboy Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.one.soccer",
+      "names": [
+        "0980 One Soccer"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.bein.sports",
+      "names": [
+        "0983 BeIN Sports"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.world",
+      "names": [
+        "1001 Sportsnet World"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1002 SNET World 1 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1003 SNET World 2 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1004 SNET World 3 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1005 SNET World 4 HD"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1101 NHL Center Ice 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1102 NHL Center Ice 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1103 NHL Center Ice 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1104 NHL Center Ice 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1105 NHL Center Ice 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1106 NHL Center Ice 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1107 NHL Center Ice 7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1108 NHL Center Ice 8"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1109 NHL Center Ice 9"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1110 NHL Center Ice 10"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1111 NHL Center Ice 11"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1112 NHL Center Ice 12"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1113 NHL Center Ice 13"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1114 NHL Center Ice 14"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1115 NHL Center Ice 15"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1116 NHL Center Ice 16"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.1",
+      "names": [
+        "1301 MLB Extra Innings 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.2",
+      "names": [
+        "1302 MLB Extra Innings 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.3",
+      "names": [
+        "1303 MLB Extra Innings 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.4",
+      "names": [
+        "1304 MLB Extra Innings 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.5",
+      "names": [
+        "1305 MLB Extra Innings 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.6",
+      "names": [
+        "1306 MLB Extra Innings 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.7",
+      "names": [
+        "1307 MLB Extra Innings 7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.8",
+      "names": [
+        "1308 MLB Extra Innings 8"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mlb.extra.innings.9",
+      "names": [
+        "1309 MLB Extra Innings 9"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1310 MLB Extra Innings 10"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "1311 MLB Extra Innings 11"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.1",
+      "names": [
+        "1401 NBA League Pass 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.2",
+      "names": [
+        "1402 NBA League Pass 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.3",
+      "names": [
+        "1403 NBA League Pass 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.4",
+      "names": [
+        "1404 NBA League Pass 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.5",
+      "names": [
+        "1405 NBA League Pass 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.6",
+      "names": [
+        "1406 NBA League Pass 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.7",
+      "names": [
+        "1407 NBA League Pass 7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.8",
+      "names": [
+        "1408 NBA League Pass 8"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.league.pass.9",
+      "names": [
+        "1409 NBA League Pass 9"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl1",
+      "names": [
+        "1501 NFL Sunday Ticket 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl2",
+      "names": [
+        "1502 NFL Sunday Ticket 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl3",
+      "names": [
+        "1503 NFL Sunday Ticket 3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl4",
+      "names": [
+        "1504 NFL Sunday Ticket 4"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl5",
+      "names": [
+        "1505 NFL Sunday Ticket 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl6",
+      "names": [
+        "1506 NFL Sunday Ticket 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl7",
+      "names": [
+        "1507 NFL Sunday Ticket 7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl8",
+      "names": [
+        "1508 NFL Sunday Ticket 8"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl9",
+      "names": [
+        "1509 NFL Sunday TIcket 9"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl10",
+      "names": [
+        "1510 NFL Sunday Ticket 10"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl11",
+      "names": [
+        "1511 NFL Sunday Ticket 11"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl12",
+      "names": [
+        "1512 NFL Sunday Ticket 12"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl13",
+      "names": [
+        "1513 NFL Sunday Ticket 13"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl14",
+      "names": [
+        "1514 NFL Sunday Ticket 14"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl15",
+      "names": [
+        "1515 NFL Sunday Ticket 15"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nfl.sunday.ticket.nfl16",
+      "names": [
+        "1516 NFL Sunday Ticket 16"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ici.artv",
+      "names": [
+        "2001 ICI Alberta"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.citytv.montreal",
+      "names": [
+        "2002 ICI Montreal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.toronto",
+      "names": [
+        "2003 ICI Toronto"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tva",
+      "names": [
+        "2005 TVA Ouest"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2006 TVA Montreal East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.noovo",
+      "names": [
+        "2007 Noovo Québec"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.d",
+      "names": [
+        "2008 Canal D"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.le.canal.vie",
+      "names": [
+        "2009 Canal Vie"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.zeste",
+      "names": [
+        "2010 Zeste"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ici.artv.canada",
+      "names": [
+        "2011 ARTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.addik",
+      "names": [
+        "2013 ADDIK"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.evasion",
+      "names": [
+        "2015 Evasion"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.historia",
+      "names": [
+        "2017 Historia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.z.470775",
+      "names": [
+        "2019 Z Tele"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tfo",
+      "names": [
+        "2025 TFO"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2032 QUB"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.t.l.toon.fran.ais",
+      "names": [
+        "2033 Télétoon"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.max",
+      "names": [
+        "2041 MAX"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.hits",
+      "names": [
+        "2045 Stingray Hits"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.palmar.sadisq.par.stingray",
+      "names": [
+        "2046 Stingray Palmarès"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.cbc.calgary",
+      "names": [
+        "2050 Meteo Calgary"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2051 CPAC Français"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ici.rdi",
+      "names": [
+        "2053 ICI RDI"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2055 LCN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.s.ries.plus",
+      "names": [
+        "2059 Séries Plus"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2070 Planète+"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ici.explora",
+      "names": [
+        "2071 Explora"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.rds2",
+      "names": [
+        "2080 RDS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.rds2",
+      "names": [
+        "2081 RDS2 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2084 RDSi"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tva.sports",
+      "names": [
+        "2085 TVA Sports 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tva.sports.2",
+      "names": [
+        "2086 TVA Sports 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hpitv.west",
+      "names": [
+        "2088 Unis West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.omni.east",
+      "names": [
+        "2089 TV5 East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.hpitv.west",
+      "names": [
+        "2090 TV5 West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ami.t.l",
+      "names": [
+        "2288 AMI Télé"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.atn.colors",
+      "names": [
+        "2303 ATN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.atn.colors",
+      "names": [
+        "2310 ATN Sony"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.atn.colors",
+      "names": [
+        "2315 ATN Aapka"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.zee.tv.canada",
+      "names": [
+        "2318 Zee TV Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2350 NEWS ONLY"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ndtv.24x7.canada",
+      "names": [
+        "2363 NDTV 24X7"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.atn.colors",
+      "names": [
+        "2371 ATN CBN"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.atn.colors",
+      "names": [
+        "2391 ATN Movies"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2400 Halla Bol"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.aquarium",
+      "names": [
+        "2418 Channel Y"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.aquarium",
+      "names": [
+        "2423 Channel Punjabi"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2424 Sanjha TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.filipino.tv",
+      "names": [
+        "2601 FILIPINO TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2605 Kapatid"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.rai.italia",
+      "names": [
+        "2653 Rai Italia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2655 Canale Quattro"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.mediaset.italia.canada",
+      "names": [
+        "2657 Mediaset Italia Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2690 SIC Noticias"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2692 FPTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2813 CCTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2828 WOW TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.phoenix.satellite.tv",
+      "names": [
+        "2835 Phoenix"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ntv",
+      "names": [
+        "2836 CNTV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2863 New Tang Dynasty Canada (Pacific)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2911 All TV West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2912 All TV K West"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "2923 Nippon"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.tv.canada",
+      "names": [
+        "[NBA LIVE] 01 NBA TV (APP)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Jenny Live"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Foods"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Models"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Spain"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Cuaima"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV LIVE Streaming"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Hilton Miami Aventura"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Miami TV Events"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "V2Beat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "Radiom20"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TotalMusic 2000s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 111 TSN 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 113 Sportsnet 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 114 Sportsnet One 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 115 Travel XP 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 116 INULTRA 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 117 Stingray Now 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 118 Stingray Ambiance 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "TelusTV 119 Stingray Festival 4K"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "001 [動畫-三語]聖鬥士星矢(1986-2008)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "002 [動畫-三語]棋魂/棋灵王2001(1-75全+OVA完結篇)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "003 [電影-雙語]碟中諜/不可能的任務(1996-2025)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "004 [電影-多語]成龍電影合輯"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "005 [電影-雙語]漫威電影宇宙"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "006 [動畫-三語]哆啦A夢電影(1980-2024)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "007 [動畫-三語]龍珠GT(001-064)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "008 [動畫-雙語]龍珠改(099-167)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "009 [動畫-三語]龍珠改(001-098)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "010 [動畫-三語]蜡笔小新電影(1993-2024)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "011 [動畫-普]蜡笔小新(1992)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "012 [動畫-普]哆啦A夢TV版(1979-2005)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "013 [動畫-四語]龍珠Z(001-100)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "014 [動畫-四語]龍珠Z(101-200)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "015 [動畫-四語]龍珠Z(201-291)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "016 [動畫-日]龍珠超(001-131)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "017 [動畫-日]火影忍者(001-180)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "018 [動畫-日]火影忍者(181-360)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "019 [動畫-日]火影忍者(361-540)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "020 [動畫-日]火影忍者(541-720)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "021 [動畫-雙語]火影忍者疾風傳(001-166)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "022 [動畫-雙語]火影忍者疾風傳(167-332)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "023 [動畫-雙語]火影忍者疾風傳(333-500)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "024 [動畫-雙語]犬夜叉(001-167)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "025 [動畫-三語]龍珠(001-153)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "026 [動畫-三語]灌籃高手(001-101)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "027 [動畫-三語]幽遊白書(001-112)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "028 [動畫-三語]亂馬½(001-161)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "029 [電影-雙語]周星馳電影合輯"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "030 [電影-雙語]古惑仔系列"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "031 [電影-雙語]神鬼認證(S1-S5)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "032 [電影-雙語]玩命關頭(S1-S10&特別行動)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "033 [電影-雙語]變形金剛(S1-S7)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "034 [電影-雙語]暮光之城(S1-S5)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "035 [電影-三語]哈利波特(S1-S8)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "036 [電影-英]電鋸驚魂(S1-S10)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "037 [港劇-雙語]我和殭屍有個約會-1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "038 [港劇-雙語]我和殭屍有個約會-2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "039 [港劇-雙語]我和殭屍有個約會-3"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "040 [港劇-雙語]神鵰俠侶(古天樂)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "041 [港劇-雙語]尋秦記(古天樂)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "042 [港劇-雙語]勇探實錄(張家輝)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "043 [港劇-粵]蓋世豪俠(周星馳)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "044 [港劇-粵]他來自江湖(周星馳)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "045 [港劇-粵]鬥氣一族(周星馳)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "046 [港劇-粵]孖仔孖心肝(周星馳)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "047 [港劇-粵]男親女愛(黃子華)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "048 [港劇-粵]絕代商嬌(黃子華)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "049 [港劇-粵]棟篤神探(黃子華)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "050 [港劇-粵]My盛Lady(黃子華)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "051 [港劇-粵]奸人堅(黃子華)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "052 [港劇-粵]溏心風暴Ⅰ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "053 [港劇-粵]溏心風暴Ⅱ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "054 [港劇-粵]溏心風暴Ⅲ"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "055 [美劇-英]權力的遊戲(S1-S2)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "056 [美劇-英]權力的遊戲(S3-S4)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "057 [美劇-英]權力的遊戲(S5-S6)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "058 [美劇-英]權力的遊戲(S7-S8)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "059 [美劇-英]絕命毒師(S1-S3)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "060 [美劇-英]絕命毒師(S4-S5)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "061 [美劇-英]斯巴達克斯(S1-S4)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "062 [美劇-英]越獄(S1)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "063 [美劇-英]越獄(S2)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "064 [美劇-英]越獄(S3-S4)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "065 [美劇-英]越獄(S5)&最後一越"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "066 [美劇-英]絕命律師(S1-S3)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "067 [美劇-英]絕命律師(S4-S6)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "068 [美劇-英]火線重案組(S1-S5)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "069 [紀錄片-英]Ed Stafford 歷險記"
+      ],
+      "reason": "no-verified-image"
+    }
+  ]
+}

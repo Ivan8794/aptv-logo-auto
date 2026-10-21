@@ -2706,6 +2706,11 @@
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
     "epg_channels_read": 2391,
+    "m3u_entries_read": 0,
+    "m3u_loaded": false,
+    "custom_logo_overrides_configured": 0,
+    "custom_logo_overrides_applied": 0,
+    "combined_records_read": 2391,
     "byId_count": 1043,
     "byName_count": 1657,
     "candidate_urls_unique": 1069,
@@ -2717,7 +2722,7 @@
     "pending_unique_urls": 2,
     "unmatched_channels": 719,
     "image_urls_verified": true,
-    "policy": "EPG first, then iptv-org, then existing Fanmingming filenames; verified images only",
-    "note": "Does not edit M3U, stream URLs, or EPG settings. Network errors remain pending."
+    "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
+    "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
   }
 }
