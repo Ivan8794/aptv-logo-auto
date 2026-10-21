@@ -4,20 +4,20 @@
     "epg_channels_read": 2391,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
-    "custom_logo_overrides_configured": 34,
-    "custom_logo_overrides_applied": 72,
+    "custom_logo_overrides_configured": 41,
+    "custom_logo_overrides_applied": 83,
     "combined_records_read": 2391,
-    "byId_count": 1192,
-    "byName_count": 1915,
-    "candidate_urls_unique": 2217,
+    "byId_count": 1198,
+    "byName_count": 1932,
+    "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
       "epg": 1658,
-      "iptv-org": 224,
-      "custom": 72
+      "iptv-org": 233,
+      "custom": 83
     },
     "invalid_unique_urls": 52,
-    "pending_unique_urls": 52,
-    "unmatched_channels": 469,
+    "pending_unique_urls": 46,
+    "unmatched_channels": 456,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -291,11 +291,6 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WWE_Network_logo.svg/500px-WWE_Network_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
@@ -346,17 +341,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
       "source": "epg",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/NBC_LX_Home_2023.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Circle_Country_logo.webp/1280px-Circle_Country_logo.webp.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -376,17 +366,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Home_Network_logo.svg/1920px-Home_Network_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/CTV_Life_Channel_2019.svg/500px-CTV_Life_Channel_2019.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -416,6 +401,16 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/E%21_Logo_Flat_2012.svg/960px-E%21_Logo_Flat_2012.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Movietime.svg/960px-Movietime.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
@@ -436,17 +431,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stingray_Music_logo.svg/960px-Stingray_Music_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MS_NOW_logo.svg/960px-MS_NOW_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -466,16 +451,6 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/SN_360_logo.svg/960px-SN_360_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Golf_Channel_logo_2025.svg/960px-Golf_Channel_logo_2025.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
@@ -487,11 +462,6 @@
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/a/a4/NBA_TV_Canada_2020.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -859,13 +829,6 @@
       "id": "0",
       "names": [
         "[US-II] 011 Premier League TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[US-II] 012 WWE Network"
       ],
       "reason": "no-verified-image"
     },
@@ -1530,27 +1493,6 @@
     {
       "id": "0",
       "names": [
-        "[AIS] 206 Mango Mojito (แมงโก้ โมฮิโต้)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[AIS] 613 RT Channel (รัสเซียชาแนล)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[AIS] 618 News 1 (นิวส์1)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[AIS] 716 ETV (กศน. (อีทีวี))"
       ],
       "reason": "no-verified-image"
@@ -1559,13 +1501,6 @@
       "id": "0",
       "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "trueid.newsnewss1",
-      "names": [
-        "[TrueID] 004 NEWS1 (นิวส์วัน)"
       ],
       "reason": "no-verified-image"
     },
@@ -1580,13 +1515,6 @@
       "id": "trueid.mono",
       "names": [
         "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.중화tv",
-      "names": [
-        "[KR-I] 01 중화TV"
       ],
       "reason": "no-verified-image"
     },
@@ -1836,13 +1764,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "PK6.PEACOCK",
-      "names": [
-        "[Peacock] 16 WWE Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "PK13.PEACOCK",
       "names": [
         "[Peacock] 17 TEAM USA TV"
@@ -1908,7 +1829,7 @@
     {
       "id": "0",
       "names": [
-        "[Peacock] 30 NBC LX Home"
+        "[Peacock] 29 Circle Country"
       ],
       "reason": "no-verified-image"
     },
@@ -2179,13 +2100,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.network",
-      "names": [
-        "0306 Home Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.home.and.garden.television",
       "names": [
         "0308 Home & Garden TV"
@@ -2200,9 +2114,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ctv.life",
+      "id": "pw.CA.flavour.network",
       "names": [
-        "0315 CTV Life Channel"
+        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -2459,13 +2373,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.stingray.country",
-      "names": [
-        "0583 Stingray Country"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.ytv",
       "names": [
         "0600 YTV East"
@@ -2567,13 +2474,6 @@
       "id": "0",
       "names": [
         "0752 Museum"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "0804 MS NOW"
       ],
       "reason": "no-verified-image"
     },
@@ -2690,13 +2590,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.sportsnet.360",
-      "names": [
-        "0918 Sportsnet 360"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.game.10",
       "names": [
         "0924 Game Plus"
@@ -2735,13 +2628,6 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0980 One Soccer"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.sportsnet.world",
-      "names": [
-        "1001 Sportsnet World"
       ],
       "reason": "no-verified-image"
     },
@@ -2994,13 +2880,6 @@
       "id": "pw.CA.max",
       "names": [
         "2041 MAX"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.hits",
-      "names": [
-        "2045 Stingray Hits"
       ],
       "reason": "no-verified-image"
     },
