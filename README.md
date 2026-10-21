@@ -16,4 +16,4 @@ Add persistent manual logo mappings to `custom-logos.json`. Use the exact channe
 }
 ```
 
-The repository is public. Use only public image URLs with no passwords, access tokens, or other credentials. Do not add M3U subscription URLs or stream URLs to this file. The generated `logos-map.json` is rebuilt by the workflow; edit `custom-logos.json` for persistent overrides.
+The repository is public. Use only public image URLs with no passwords, access tokens, or other credentials. Do not add M3U subscription URLs or stream URLs to this file. The generated `logos-map.json` is rebuilt by the workflow; edit `custom-logos.json` for persistent overrides. After editing, run **Actions → Update IPTV logo index → Run workflow**, or wait for the next scheduled run.
