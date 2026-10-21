@@ -1,6 +1,7 @@
 
 import concurrent.futures
 import json
+import os
 import re
 import time
 import unicodedata
@@ -12,6 +13,7 @@ from collections import Counter
 from pathlib import Path
 
 EPG_URL = "https://myeth-epg.github.io/public/epg.a.xml"
+M3U_URL = os.environ.get("M3U_URL", "").strip()
 CHANNELS_URL = "https://iptv-org.github.io/api/channels.json"
 LOGOS_URL = "https://iptv-org.github.io/api/logos.json"
 FAN_TREE_URL = "https://api.github.com/repos/fanmingming/live/git/trees/main?recursive=1"
@@ -81,6 +83,42 @@ def names_of(channel):
     ))
 
 
+def parse_m3u(text):
+    """Read M3U metadata only; stream URLs are never edited or written to the logo index."""
+    lines = text.lstrip("\\ufeff").splitlines()
+    records = []
+    pending = None
+
+    for raw in lines:
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("#EXTINF:"):
+            attrs = {
+                key.casefold(): value.strip()
+                for key, value in re.findall(r'([\\w-]+)\\s*=\\s*"([^"]*)"', line)
+            }
+            title = line.rsplit(",", 1)[1].strip() if "," in line else ""
+            names = list(dict.fromkeys(
+                x for x in (attrs.get("tvg-name", ""), title) if x
+            ))
+            logo = attrs.get("tvg-logo", "")
+            candidates = []
+            add_candidate(candidates, "m3u", logo)
+            pending = {
+                "id": attrs.get("tvg-id", "").strip(),
+                "names": names,
+                "epg_candidates": [],
+                "m3u_candidates": candidates,
+            }
+        elif not line.startswith("#") and pending is not None:
+            # Keep only metadata for matching; do not modify the stream URL.
+            records.append(pending)
+            pending = None
+
+    return records
+
+
 def image_type(data):
     data = data[:8192].lstrip(b"\xef\xbb\xbf \t\r\n")
     low = data.lower()
@@ -137,7 +175,10 @@ def add_candidate(target, source, url):
 
 
 def main():
-    log("[1/5] 读取 EPG，并先清除明显占位符和空地址...")
+    if not M3U_URL:
+        raise RuntimeError("Missing M3U_URL secret. Add the M3U_URL repository Actions secret before running.")
+
+    log("[1/6] 读取 EPG，并先清除明显占位符和空地址...")
     root = ET.fromstring(fetch(EPG_URL))
     channels = root.findall(".//channel")
 
@@ -151,10 +192,22 @@ def main():
             "id": (ch.get("id") or "").strip(),
             "names": names_of(ch),
             "epg_candidates": icons,
+            "m3u_candidates": [],
         })
 
-    log(f"EPG channels: {len(records)}")
-    log("[2/5] 下载 iptv-org 与 Fanmingming 文件清单...")
+    epg_channel_count = len(records)
+    log(f"EPG channels: {epg_channel_count}")
+    log("[2/6] 读取 M3U 频道元数据（不改动节目源地址）...")
+    m3u_req = urllib.request.Request(
+        M3U_URL,
+        headers={"User-Agent": "APTV-Logo-Index/4.0", "Accept": "*/*"},
+    )
+    with urllib.request.urlopen(m3u_req, timeout=TIMEOUT) as response:
+        m3u_text = response.read().decode("utf-8-sig", errors="replace")
+    m3u_records = parse_m3u(m3u_text)
+    records.extend(m3u_records)
+    log(f"M3U entries: {len(m3u_records)}; combined records: {len(records)}")
+    log("[3/6] 下载 iptv-org 与 Fanmingming 文件清单...")
     org_channels = json.loads(fetch(CHANNELS_URL))
     org_logos = json.loads(fetch(LOGOS_URL))
     org_channel_by_id = {
@@ -213,7 +266,7 @@ def main():
             fan_by_name.setdefault(key, [])
             fan_by_name[key].append(urllib.parse.urljoin(FAN_BASE, path))
 
-    log("[3/5] 完成所有候选匹配，之后才统一检测图片...")
+    log("[4/6] 完成 EPG 与 M3U 的候选匹配，之后才统一检测图片...")
     matched = []
     all_urls = set()
 
@@ -221,6 +274,8 @@ def main():
         candidates = []
         for x in rec["epg_candidates"]:
             add_candidate(candidates, "epg", x["url"])
+        for x in rec.get("m3u_candidates", []):
+            add_candidate(candidates, "m3u", x["url"])
 
         id_key = normalize(rec["id"])
         for url in org_by_id.get(id_key, []):
@@ -240,7 +295,7 @@ def main():
         matched.append({**rec, "candidates": candidates})
 
     log(f"Candidate references prepared; unique URLs: {len(all_urls)}")
-    log("[4/5] 统一检测候选图片（404/非图片会淘汰，超时标记待复查）...")
+    log("[5/6] 统一检测候选图片（404/非图片会淘汰，超时标记待复查）...")
     checks = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futures = {pool.submit(check_image, u): u for u in all_urls}
@@ -257,7 +312,7 @@ def main():
     selected = Counter()
     invalid_urls, pending_urls, unmatched = {}, {}, []
 
-    # Select first verified candidate in priority order: EPG, iptv-org, Fanmingming.
+    # Priority: EPG logo, M3U tvg-logo, iptv-org, then Fanmingming.
     for rec in matched:
         chosen = None
         for c in rec["candidates"]:
@@ -292,7 +347,9 @@ def main():
 
     result["meta"] = {
         "epg_url": EPG_URL,
-        "epg_channels_read": len(records),
+        "epg_channels_read": epg_channel_count,
+        "m3u_entries_read": len(m3u_records),
+        "combined_records_read": len(records),
         "byId_count": len(result["byId"]),
         "byName_count": len(result["byName"]),
         "candidate_urls_unique": len(all_urls),
@@ -301,8 +358,8 @@ def main():
         "pending_unique_urls": len(pending_urls),
         "unmatched_channels": len(unmatched),
         "image_urls_verified": True,
-        "policy": "EPG first, then iptv-org, then existing Fanmingming filenames; verified images only",
-        "note": "Does not edit M3U, stream URLs, or EPG settings. Network errors remain pending.",
+        "policy": "EPG logo first, then M3U tvg-logo, then iptv-org, then existing Fanmingming filenames; verified images only",
+        "note": "Reads M3U metadata and EPG only; does not edit stream URLs or EPG settings. Network errors remain pending.",
     }
 
     report = {
@@ -312,7 +369,7 @@ def main():
         "unmatched_channels": unmatched,
     }
 
-    log("[5/5] 写入索引与检测报告...")
+    log("[6/6] 写入索引与检测报告...")
     OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     log(json.dumps(result["meta"], ensure_ascii=False, indent=2))
