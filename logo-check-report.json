@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2391,
+    "epg_channels_read": 2393,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2391,
+    "combined_records_read": 2393,
     "byId_count": 1222,
-    "byName_count": 1963,
+    "byName_count": 1968,
     "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
-      "epg": 1658,
-      "iptv-org": 260,
+      "epg": 1661,
+      "iptv-org": 262,
       "custom": 89
     },
-    "invalid_unique_urls": 53,
-    "pending_unique_urls": 6,
-    "unmatched_channels": 425,
+    "invalid_unique_urls": 54,
+    "pending_unique_urls": 5,
+    "unmatched_channels": 422,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3387,6 +3387,11 @@
       ]
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3449,13 +3454,13 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "source": "iptv-org",
       "reason": "http-429"
     },
     {
@@ -3464,17 +3469,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/BBC_First_Foxtel_logo.svg/960px-BBC_First_Foxtel_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MS_NOW_logo.svg/960px-MS_NOW_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3483,7 +3483,7 @@
     {
       "id": "0",
       "names": [
-        "[TW-II] 1742 Hami美國職籃台"
+        "[TW-II] 1742 Hami體育1台"
       ],
       "reason": "no-verified-image"
     },
@@ -4167,13 +4167,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
-      "names": [
-        "[JP-I] 毎日放送"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4415,13 +4408,6 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -5280,6 +5266,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.ctv.wild",
       "names": [
         "0721 CTV Wild"
@@ -5297,13 +5290,6 @@
       "id": "0",
       "names": [
         "0752 Museum"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "0804 MS NOW"
       ],
       "reason": "no-verified-image"
     },
@@ -5430,13 +5416,6 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0980 One Soccer"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.sportsnet.world",
-      "names": [
-        "1001 Sportsnet World"
       ],
       "reason": "no-verified-image"
     },
