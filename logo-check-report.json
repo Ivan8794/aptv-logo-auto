@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 89,
+    "custom_logo_overrides_applied": 87,
     "combined_records_read": 2393,
-    "byId_count": 1222,
-    "byName_count": 1968,
+    "byId_count": 1216,
+    "byName_count": 1961,
     "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
       "epg": 1661,
-      "iptv-org": 262,
-      "custom": 89
+      "iptv-org": 256,
+      "custom": 87
     },
-    "invalid_unique_urls": 54,
-    "pending_unique_urls": 5,
-    "unmatched_channels": 422,
+    "invalid_unique_urls": 55,
+    "pending_unique_urls": 14,
+    "unmatched_channels": 429,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3387,7 +3387,20 @@
       ]
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "url": "https://www.aptntv.ca/wp-content/themes/aptntv-main/images/APTN%20Languages%20logo-VERT%20COL.png",
+      "source": "epg",
+      "reason": "http-404",
+      "channels": [
+        {
+          "id": "pw.CA.aptn.languages",
+          "names": [
+            "0114 APTN Languages"
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www.aptntv.ca/wp-content/themes/aptntv-main/images/APTN%20Languages%20logo-VERT%20WHT.png",
       "source": "iptv-org",
       "reason": "http-404"
     },
@@ -3459,22 +3472,67 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
+      "source": "custom",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/BBC_First_Foxtel_logo.svg/960px-BBC_First_Foxtel_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Oxygen_TV_%282017_Logo%29.svg/960px-Oxygen_TV_%282017_Logo%29.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4412,6 +4470,20 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "trueid.mono",
+      "names": [
+        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.중화tv",
+      "names": [
+        "[KR-I] 01 중화TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "skylife.히스토리",
       "names": [
         "[KR-I] 34 히스토리"
@@ -4741,9 +4813,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ytv",
+      "id": "pw.CA.aptn.languages",
       "names": [
-        "0123 JoyTV BC"
+        "0114 APTN Languages"
       ],
       "reason": "no-verified-image"
     },
@@ -4979,6 +5051,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.w.network",
       "names": [
         "0328 W Network West"
@@ -5161,6 +5240,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.dtour",
+      "names": [
+        "0504 DTour"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5262,13 +5348,6 @@
       "id": "pw.CA.ctv.speed",
       "names": [
         "0711 CTV Speed"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.smithsonian",
-      "names": [
-        "0715 Smithsonian Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5602,6 +5681,20 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.noovo",
+      "names": [
+        "2007 Noovo Québec"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.d",
+      "names": [
+        "2008 Canal D"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5626,6 +5719,13 @@
       "id": "0",
       "names": [
         "2032 QUB"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
       ],
       "reason": "no-verified-image"
     },
@@ -5794,6 +5894,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
