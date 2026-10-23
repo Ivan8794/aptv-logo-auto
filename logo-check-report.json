@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 89,
+    "custom_logo_overrides_applied": 87,
     "combined_records_read": 2393,
-    "byId_count": 1221,
-    "byName_count": 1964,
+    "byId_count": 1218,
+    "byName_count": 1962,
     "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
       "epg": 1659,
-      "iptv-org": 260,
-      "custom": 89
+      "iptv-org": 259,
+      "custom": 87
     },
-    "invalid_unique_urls": 56,
-    "pending_unique_urls": 7,
-    "unmatched_channels": 426,
+    "invalid_unique_urls": 55,
+    "pending_unique_urls": 8,
+    "unmatched_channels": 428,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3405,11 +3405,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3472,28 +3467,13 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
-      "source": "iptv-org",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
+      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -3504,6 +3484,26 @@
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
       "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "source": "iptv-org",
       "reason": "http-429"
     }
   ],
@@ -4435,13 +4435,6 @@
     {
       "id": "0",
       "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4454,9 +4447,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "skylife.중화tv",
+      "id": "trueid.mono",
       "names": [
-        "[KR-I] 01 중화TV"
+        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
       ],
       "reason": "no-verified-image"
     },
@@ -5038,6 +5031,13 @@
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5686,6 +5686,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.max",
       "names": [
         "2041 MAX"
@@ -5850,6 +5857,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
