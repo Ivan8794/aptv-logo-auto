@@ -5,18 +5,18 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 87,
+    "custom_logo_overrides_applied": 89,
     "combined_records_read": 2393,
     "byId_count": 1218,
     "byName_count": 1962,
     "candidate_urls_unique": 2220,
     "selected_channels_by_source": {
       "epg": 1659,
-      "iptv-org": 259,
-      "custom": 87
+      "iptv-org": 258,
+      "custom": 89
     },
-    "invalid_unique_urls": 55,
-    "pending_unique_urls": 8,
+    "invalid_unique_urls": 54,
+    "pending_unique_urls": 10,
     "unmatched_channels": 428,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
@@ -3405,11 +3405,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3472,8 +3467,8 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
-      "source": "custom",
+      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
+      "source": "iptv-org",
       "reason": "http-429"
     },
     {
@@ -3487,7 +3482,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3497,12 +3497,17 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4447,9 +4452,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "trueid.mono",
+      "id": "skylife.중화tv",
       "names": [
-        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
+        "[KR-I] 01 중화TV"
       ],
       "reason": "no-verified-image"
     },
@@ -5028,16 +5033,16 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.magnolia.network",
+      "id": "pw.CA.ctv.drama",
       "names": [
-        "0312 Magnolia"
+        "0302 CTV Drama Channel"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.flavour.network",
+      "id": "pw.CA.magnolia.network",
       "names": [
-        "0313 Flavour Network"
+        "0312 Magnolia"
       ],
       "reason": "no-verified-image"
     },
@@ -5094,6 +5099,13 @@
       "id": "0",
       "names": [
         "0382 T+E"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5857,13 +5869,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
