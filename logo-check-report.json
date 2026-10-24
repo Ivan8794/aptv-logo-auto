@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 87,
+    "custom_logo_overrides_applied": 86,
     "combined_records_read": 2393,
-    "byId_count": 1220,
-    "byName_count": 1963,
-    "candidate_urls_unique": 2220,
+    "byId_count": 1221,
+    "byName_count": 1964,
+    "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
-      "epg": 1661,
-      "iptv-org": 258,
-      "custom": 87
+      "epg": 1659,
+      "iptv-org": 262,
+      "custom": 86
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 9,
-    "unmatched_channels": 427,
+    "pending_unique_urls": 11,
+    "unmatched_channels": 426,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3477,13 +3477,23 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
-      "source": "iptv-org",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
+      "source": "custom",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
-      "source": "custom",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
+      "source": "iptv-org",
       "reason": "http-429"
     },
     {
@@ -3492,7 +3502,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MS_NOW_logo.svg/960px-MS_NOW_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3502,7 +3512,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -4440,13 +4450,6 @@
     {
       "id": "0",
       "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4459,9 +4462,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "trueid.mono",
+      "id": "skylife.ebs",
       "names": [
-        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
+        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4798,6 +4801,13 @@
       "id": "pw.CA.aptn.languages",
       "names": [
         "0114 APTN Languages"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0123 JoyTV BC"
       ],
       "reason": "no-verified-image"
     },
@@ -5320,13 +5330,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.smithsonian",
-      "names": [
-        "0715 Smithsonian Channel"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.ctv.wild",
       "names": [
         "0721 CTV Wild"
@@ -5344,6 +5347,13 @@
       "id": "0",
       "names": [
         "0752 Museum"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "0804 MS NOW"
       ],
       "reason": "no-verified-image"
     },
@@ -5680,13 +5690,6 @@
       "id": "0",
       "names": [
         "2032 QUB"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.elle.fictions",
-      "names": [
-        "2040 ELLE FICTIONS"
       ],
       "reason": "no-verified-image"
     },
