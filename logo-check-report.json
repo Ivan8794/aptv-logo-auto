@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 86,
+    "custom_logo_overrides_applied": 89,
     "combined_records_read": 2393,
-    "byId_count": 1221,
-    "byName_count": 1964,
+    "byId_count": 1219,
+    "byName_count": 1961,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
       "epg": 1659,
-      "iptv-org": 262,
-      "custom": 86
+      "iptv-org": 257,
+      "custom": 89
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 11,
-    "unmatched_channels": 426,
+    "pending_unique_urls": 9,
+    "unmatched_channels": 429,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3472,13 +3472,8 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",
       "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
-      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -3492,17 +3487,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MS_NOW_logo.svg/960px-MS_NOW_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3512,7 +3502,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/TVASports.svg/960px-TVASports.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -4448,6 +4438,20 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "cubmu.tvri",
+      "names": [
+        "[Indonesia] 038 TVRI NASIONAL"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "cubmu.tvri",
+      "names": [
+        "[Indonesia] 038 TVRI NASIONAL (a)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
@@ -5330,6 +5334,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.ctv.wild",
       "names": [
         "0721 CTV Wild"
@@ -5347,13 +5358,6 @@
       "id": "0",
       "names": [
         "0752 Museum"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "0804 MS NOW"
       ],
       "reason": "no-verified-image"
     },
@@ -5760,6 +5764,13 @@
       "id": "pw.CA.tva.sports",
       "names": [
         "2085 TVA Sports 1"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.tva.sports.2",
+      "names": [
+        "2086 TVA Sports 2"
       ],
       "reason": "no-verified-image"
     },
