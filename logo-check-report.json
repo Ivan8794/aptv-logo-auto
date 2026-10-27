@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2393,
+    "epg_channels_read": 2395,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2393,
+    "combined_records_read": 2395,
     "byId_count": 1223,
-    "byName_count": 1968,
+    "byName_count": 1966,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
       "epg": 1661,
-      "iptv-org": 262,
+      "iptv-org": 261,
       "custom": 89
     },
-    "invalid_unique_urls": 56,
-    "pending_unique_urls": 2,
-    "unmatched_channels": 422,
+    "invalid_unique_urls": 55,
+    "pending_unique_urls": 4,
+    "unmatched_channels": 425,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3405,11 +3405,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3477,7 +3472,17 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a4/NBA_TV_Canada_2020.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -5402,6 +5407,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.nba.tv.canada",
+      "names": [
+        "0937 NBA TV Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.rev.tv.canada",
       "names": [
         "0962 REV TV"
@@ -5797,6 +5809,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
@@ -6434,6 +6453,13 @@
       "id": "0",
       "names": [
         "069 [紀錄片-英]Ed Stafford 歷險記"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "hami.博斯網球台",
+      "names": [
+        "[TW-II] 1903 博斯網球台"
       ],
       "reason": "no-verified-image"
     }
