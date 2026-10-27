@@ -8,16 +8,16 @@
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2393,
     "byId_count": 1223,
-    "byName_count": 1966,
+    "byName_count": 1968,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
       "epg": 1661,
-      "iptv-org": 260,
+      "iptv-org": 262,
       "custom": 89
     },
     "invalid_unique_urls": 56,
-    "pending_unique_urls": 5,
-    "unmatched_channels": 424,
+    "pending_unique_urls": 2,
+    "unmatched_channels": 422,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3472,27 +3472,12 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/NBC_LX_Home_2023.svg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/CTV_Life_Channel_2019.svg/500px-CTV_Life_Channel_2019.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/MS_NOW_logo.svg/960px-MS_NOW_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Golf_Channel_logo_2025.svg/960px-Golf_Channel_logo_2025.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4733,13 +4718,6 @@
     {
       "id": "0",
       "names": [
-        "[Peacock] 30 NBC LX Home"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[CRAVE] 07 Sego1"
       ],
       "reason": "no-verified-image"
@@ -5004,13 +4982,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ctv.life",
-      "names": [
-        "0315 CTV Life Channel"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.w.network",
       "names": [
         "0328 W Network West"
@@ -5214,6 +5185,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.stingray.retro",
       "names": [
         "0582 Stingray Retro"
@@ -5315,13 +5293,6 @@
       "id": "0",
       "names": [
         "0752 Museum"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "0804 MS NOW"
       ],
       "reason": "no-verified-image"
     },
