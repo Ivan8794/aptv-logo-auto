@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2395,
-    "byId_count": 1223,
-    "byName_count": 1966,
+    "byId_count": 1217,
+    "byName_count": 1960,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
-      "epg": 1661,
-      "iptv-org": 261,
+      "epg": 1660,
+      "iptv-org": 256,
       "custom": 89
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 4,
-    "unmatched_channels": 425,
+    "pending_unique_urls": 13,
+    "unmatched_channels": 431,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3467,7 +3467,42 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3477,7 +3512,17 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/a/a4/NBA_TV_Canada_2020.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -4175,6 +4220,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "0",
+      "names": [
+        "[JP-I] 毎日放送"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4416,6 +4468,20 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.중화tv",
+      "names": [
+        "[KR-I] 01 중화TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.ebs",
+      "names": [
+        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4980,9 +5046,23 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ctv.drama",
+      "names": [
+        "0302 CTV Drama Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5039,6 +5119,13 @@
       "id": "0",
       "names": [
         "0382 T+E"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5169,6 +5256,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.dtour",
+      "names": [
+        "0504 DTour"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5186,13 +5280,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5407,13 +5494,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.nba.tv.canada",
-      "names": [
-        "0937 NBA TV Canada"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.rev.tv.canada",
       "names": [
         "0962 REV TV"
@@ -5613,6 +5693,13 @@
       "id": "0",
       "names": [
         "2006 TVA Montreal East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.le.canal.vie",
+      "names": [
+        "2009 Canal Vie"
       ],
       "reason": "no-verified-image"
     },
