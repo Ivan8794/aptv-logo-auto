@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2395,
+    "epg_channels_read": 2370,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2395,
-    "byId_count": 1217,
-    "byName_count": 1960,
-    "candidate_urls_unique": 2221,
+    "combined_records_read": 2370,
+    "byId_count": 1220,
+    "byName_count": 1946,
+    "candidate_urls_unique": 2218,
     "selected_channels_by_source": {
-      "epg": 1660,
-      "iptv-org": 256,
+      "epg": 1637,
+      "iptv-org": 261,
       "custom": 89
     },
-    "invalid_unique_urls": 55,
-    "pending_unique_urls": 13,
-    "unmatched_channels": 431,
+    "invalid_unique_urls": 56,
+    "pending_unique_urls": 6,
+    "unmatched_channels": 424,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3405,6 +3405,11 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3467,12 +3472,12 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3482,32 +3487,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3517,17 +3497,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Golf_Channel_logo_2025.svg/960px-Golf_Channel_logo_2025.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3754,13 +3724,6 @@
       "id": "0",
       "names": [
         "[UTV] 01 C++"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "astro.280.tennis2",
-      "names": [
-        "[astro] 818 Astro Tennis 2"
       ],
       "reason": "no-verified-image"
     },
@@ -4220,13 +4183,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
-      "names": [
-        "[JP-I] 毎日放送"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4460,6 +4416,13 @@
     {
       "id": "0",
       "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4475,13 +4438,6 @@
       "id": "skylife.중화tv",
       "names": [
         "[KR-I] 01 중화TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -5046,9 +5002,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ctv.drama",
+      "id": "pw.CA.home.and.garden.television",
       "names": [
-        "0302 CTV Drama Channel"
+        "0308 Home & Garden TV"
       ],
       "reason": "no-verified-image"
     },
@@ -5056,13 +5012,6 @@
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.flavour.network",
-      "names": [
-        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5119,13 +5068,6 @@
       "id": "0",
       "names": [
         "0382 T+E"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.ctv.sci.fi",
-      "names": [
-        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5252,13 +5194,6 @@
       "id": "pw.CA.ctv.comedy.west",
       "names": [
         "0501 CTV Comedy Channel West"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.dtour",
-      "names": [
-        "0504 DTour"
       ],
       "reason": "no-verified-image"
     },
@@ -5697,13 +5632,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.le.canal.vie",
-      "names": [
-        "2009 Canal Vie"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5896,13 +5824,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
