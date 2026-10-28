@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2370,
-    "byId_count": 1217,
-    "byName_count": 1942,
+    "byId_count": 1220,
+    "byName_count": 1944,
     "candidate_urls_unique": 2218,
     "selected_channels_by_source": {
-      "epg": 1635,
-      "iptv-org": 259,
+      "epg": 1636,
+      "iptv-org": 260,
       "custom": 89
     },
-    "invalid_unique_urls": 54,
-    "pending_unique_urls": 12,
-    "unmatched_channels": 428,
+    "invalid_unique_urls": 56,
+    "pending_unique_urls": 6,
+    "unmatched_channels": 426,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -2911,7 +2911,7 @@
       "reason": "http-404",
       "channels": [
         {
-          "id": "0",
+          "id": "charm.sling.etchina",
           "names": [
             "[America] 201 東森中国台"
           ]
@@ -2937,7 +2937,7 @@
       "reason": "http-404",
       "channels": [
         {
-          "id": "0",
+          "id": "charm.sling.etglobal",
           "names": [
             "[America] 210 東森美洲衛視"
           ]
@@ -2950,7 +2950,7 @@
       "reason": "http-404",
       "channels": [
         {
-          "id": "0",
+          "id": "charm.sling.etnews",
           "names": [
             "[America] 212 東森美洲台"
           ]
@@ -3119,7 +3119,7 @@
       "reason": "http-404",
       "channels": [
         {
-          "id": "0",
+          "id": "charm.sling.nflnetwork",
           "names": [
             "[Peacock] 13 NFL Channel"
           ]
@@ -3405,6 +3405,16 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3462,62 +3472,32 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
       "source": "epg",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Circle_Country_logo.webp/1280px-Circle_Country_logo.webp.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cottage_Life_Logo.svg/960px-Cottage_Life_Logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4203,13 +4183,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
-      "names": [
-        "[JP-I] 毎日放送"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4630,7 +4603,7 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "charm.sling.etchina",
       "names": [
         "[America] 201 東森中国台"
       ],
@@ -4644,14 +4617,14 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "charm.sling.etglobal",
       "names": [
         "[America] 210 東森美洲衛視"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "charm.sling.etnews",
       "names": [
         "[America] 212 東森美洲台"
       ],
@@ -4765,6 +4738,13 @@
     {
       "id": "0",
       "names": [
+        "[Peacock] 29 Circle Country"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[CRAVE] 07 Sego1"
       ],
       "reason": "no-verified-image"
@@ -4794,13 +4774,6 @@
       "id": "pw.CA.aptn.languages",
       "names": [
         "0114 APTN Languages"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.ytv",
-      "names": [
-        "0123 JoyTV BC"
       ],
       "reason": "no-verified-image"
     },
@@ -5029,13 +5002,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.and.garden.television",
-      "names": [
-        "0308 Home & Garden TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
@@ -5078,6 +5044,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.cottage.life",
+      "names": [
+        "0355 Cottage Life"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.aquarium",
       "names": [
         "0356 Rural Channel"
@@ -5095,6 +5068,13 @@
       "id": "0",
       "names": [
         "0382 T+E"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5225,13 +5205,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.dtour",
-      "names": [
-        "0504 DTour"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5249,13 +5222,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5491,13 +5457,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.sportsnet.world",
-      "names": [
-        "1001 Sportsnet World"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "1002 SNET World 1 HD"
@@ -5704,6 +5663,13 @@
       "id": "0",
       "names": [
         "2032 QUB"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
       ],
       "reason": "no-verified-image"
     },
