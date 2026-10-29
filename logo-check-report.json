@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2370,
-    "byId_count": 1220,
-    "byName_count": 1944,
+    "byId_count": 1221,
+    "byName_count": 1945,
     "candidate_urls_unique": 2218,
     "selected_channels_by_source": {
-      "epg": 1636,
+      "epg": 1637,
       "iptv-org": 260,
       "custom": 89
     },
     "invalid_unique_urls": 56,
     "pending_unique_urls": 6,
-    "unmatched_channels": 426,
+    "unmatched_channels": 425,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3472,17 +3472,17 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Circle_Country_logo.webp/1280px-Circle_Country_logo.webp.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cottage_Life_Logo.svg/960px-Cottage_Life_Logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3492,12 +3492,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4416,6 +4416,13 @@
     {
       "id": "0",
       "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4424,13 +4431,6 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4738,13 +4738,6 @@
     {
       "id": "0",
       "names": [
-        "[Peacock] 29 Circle Country"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[CRAVE] 07 Sego1"
       ],
       "reason": "no-verified-image"
@@ -5009,6 +5002,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.w.network",
       "names": [
         "0328 W Network West"
@@ -5040,13 +5040,6 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0349 One"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.cottage.life",
-      "names": [
-        "0355 Cottage Life"
       ],
       "reason": "no-verified-image"
     },
@@ -5667,13 +5660,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.elle.fictions",
-      "names": [
-        "2040 ELLE FICTIONS"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.max",
       "names": [
         "2041 MAX"
@@ -5838,6 +5824,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
