@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2370,
-    "byId_count": 1217,
-    "byName_count": 1938,
+    "byId_count": 1221,
+    "byName_count": 1945,
     "candidate_urls_unique": 2219,
     "selected_channels_by_source": {
-      "epg": 1635,
-      "iptv-org": 255,
+      "epg": 1636,
+      "iptv-org": 261,
       "custom": 89
     },
-    "invalid_unique_urls": 55,
-    "pending_unique_urls": 15,
-    "unmatched_channels": 432,
+    "invalid_unique_urls": 54,
+    "pending_unique_urls": 8,
+    "unmatched_channels": 425,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3405,11 +3405,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3482,11 +3477,6 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
       "source": "epg",
       "reason": "http-429"
@@ -3494,16 +3484,6 @@
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
       "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
-      "source": "iptv-org",
       "reason": "http-429"
     },
     {
@@ -3517,39 +3497,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2016_CPAC_logo.svg/960px-2016_CPAC_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
   ],
   "unmatched_channels": [
-    {
-      "id": "0",
-      "names": [
-        "[TW-II] 1742 Hami體育1台"
-      ],
-      "reason": "no-verified-image"
-    },
     {
       "id": "0",
       "names": [
@@ -4482,13 +4435,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "skylife.중화tv",
-      "names": [
-        "[KR-I] 01 중화TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "skylife.ebs",
       "names": [
         "[KR-I] 13 EBS1"
@@ -5063,13 +5009,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.and.garden.television",
-      "names": [
-        "0308 Home & Garden TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
@@ -5406,13 +5345,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
-      "names": [
-        "0841 CPAC English"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.the.news.forum",
       "names": [
         "0842 News Forum West HD"
@@ -5521,13 +5453,6 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0980 One Soccer"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.sportsnet.world",
-      "names": [
-        "1001 Sportsnet World"
       ],
       "reason": "no-verified-image"
     },
@@ -5710,13 +5635,6 @@
       "id": "0",
       "names": [
         "2006 TVA Montreal East"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.le.canal.vie",
-      "names": [
-        "2009 Canal Vie"
       ],
       "reason": "no-verified-image"
     },
@@ -5913,13 +5831,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
