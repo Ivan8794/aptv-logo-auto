@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2391,
-    "byId_count": 1217,
-    "byName_count": 1952,
+    "byId_count": 1221,
+    "byName_count": 1957,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
-      "epg": 1646,
-      "iptv-org": 258,
+      "epg": 1645,
+      "iptv-org": 264,
       "custom": 89
     },
     "invalid_unique_urls": 54,
-    "pending_unique_urls": 17,
-    "unmatched_channels": 439,
+    "pending_unique_urls": 11,
+    "unmatched_channels": 434,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3462,11 +3462,6 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
       "source": "iptv-org",
       "reason": "http-429"
@@ -3487,17 +3482,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
-      "source": "iptv-org",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+      "source": "epg",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3512,37 +3502,17 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/SN_360_logo.svg/960px-SN_360_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4886,6 +4856,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0123 JoyTV BC"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.cbc.calgary",
       "names": [
         "0127 TWN Calgary"
@@ -5110,23 +5087,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ctv.drama",
-      "names": [
-        "0302 CTV Drama Channel"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.flavour.network",
-      "names": [
-        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5309,13 +5272,6 @@
       "id": "pw.CA.ctv.comedy.west",
       "names": [
         "0501 CTV Comedy Channel West"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.dtour",
-      "names": [
-        "0504 DTour"
       ],
       "reason": "no-verified-image"
     },
@@ -5544,13 +5500,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.sportsnet.360",
-      "names": [
-        "0918 Sportsnet 360"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.game.10",
       "names": [
         "0924 Game Plus"
@@ -5761,27 +5710,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.noovo",
-      "names": [
-        "2007 Noovo Québec"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.canal.d",
-      "names": [
-        "2008 Canal D"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.le.canal.vie",
-      "names": [
-        "2009 Canal Vie"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5974,6 +5902,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
