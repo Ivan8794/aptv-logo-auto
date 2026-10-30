@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2370,
+    "epg_channels_read": 2391,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2370,
-    "byId_count": 1221,
-    "byName_count": 1945,
-    "candidate_urls_unique": 2219,
+    "combined_records_read": 2391,
+    "byId_count": 1217,
+    "byName_count": 1952,
+    "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
-      "epg": 1636,
-      "iptv-org": 261,
+      "epg": 1646,
+      "iptv-org": 258,
       "custom": 89
     },
     "invalid_unique_urls": 54,
-    "pending_unique_urls": 8,
-    "unmatched_channels": 425,
+    "pending_unique_urls": 17,
+    "unmatched_channels": 439,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3462,17 +3462,17 @@
   ],
   "pending_urls": [
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3482,12 +3482,22 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Circle_Country_logo.webp/1280px-Circle_Country_logo.webp.png",
+      "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3497,7 +3507,42 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/SN_360_logo.svg/960px-SN_360_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3980,9 +4025,23 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.SG.live.2.a",
+      "names": [
+        "111 LIVE 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.SG.live.5.a",
       "names": [
         "109 LIVE 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.live.5.a",
+      "names": [
+        "112 LIVE 5"
       ],
       "reason": "no-verified-image"
     },
@@ -3994,16 +4053,23 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.SG.asian.para.games.ch01",
+      "id": "pw.SG.live.6.a",
       "names": [
-        "107 Asian Para Games CH1"
+        "113 LIVE 6"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.SG.asian.para.games.ch02",
+      "id": "0",
       "names": [
-        "108 Asian Para Games CH2"
+        "107 FIFA U-17 WWC Ch01"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
+        "107 FIFA U-17 WWC Ch02"
       ],
       "reason": "no-verified-image"
     },
@@ -4158,6 +4224,41 @@
       "id": "pw.SG.drama.hebat",
       "names": [
         "121 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.river.monsters.a",
+      "names": [
+        "117 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.s.80.a",
+      "names": [
+        "118 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.thats.rock.a",
+      "names": [
+        "120 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.filem.mantap",
+      "names": [
+        "122 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.drama.hebat",
+      "names": [
+        "123 Drama Hebat"
       ],
       "reason": "no-verified-image"
     },
@@ -4416,13 +4517,6 @@
     {
       "id": "0",
       "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4431,6 +4525,13 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.중화tv",
+      "names": [
+        "[KR-I] 01 중화TV"
       ],
       "reason": "no-verified-image"
     },
@@ -4745,6 +4846,13 @@
     {
       "id": "0",
       "names": [
+        "[Peacock] 29 Circle Country"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[CRAVE] 07 Sego1"
       ],
       "reason": "no-verified-image"
@@ -4774,13 +4882,6 @@
       "id": "pw.CA.aptn.languages",
       "names": [
         "0114 APTN Languages"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.ytv",
-      "names": [
-        "0123 JoyTV BC"
       ],
       "reason": "no-verified-image"
     },
@@ -5009,9 +5110,23 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ctv.drama",
+      "names": [
+        "0302 CTV Drama Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5198,6 +5313,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.dtour",
+      "names": [
+        "0504 DTour"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5215,13 +5337,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5425,6 +5540,13 @@
       "id": "pw.CA.sportsnet.east",
       "names": [
         "0917 Sportsnet East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.360",
+      "names": [
+        "0918 Sportsnet 360"
       ],
       "reason": "no-verified-image"
     },
@@ -5635,6 +5757,27 @@
       "id": "0",
       "names": [
         "2006 TVA Montreal East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.noovo",
+      "names": [
+        "2007 Noovo Québec"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.canal.d",
+      "names": [
+        "2008 Canal D"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.le.canal.vie",
+      "names": [
+        "2009 Canal Vie"
       ],
       "reason": "no-verified-image"
     },
