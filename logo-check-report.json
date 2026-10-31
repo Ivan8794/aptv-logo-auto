@@ -5,18 +5,18 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 87,
+    "custom_logo_overrides_applied": 84,
     "combined_records_read": 2391,
-    "byId_count": 1216,
+    "byId_count": 1219,
     "byName_count": 1953,
     "candidate_urls_unique": 2221,
     "selected_channels_by_source": {
-      "epg": 1646,
-      "iptv-org": 260,
-      "custom": 87
+      "epg": 1645,
+      "iptv-org": 263,
+      "custom": 84
     },
-    "invalid_unique_urls": 56,
-    "pending_unique_urls": 13,
+    "invalid_unique_urls": 55,
+    "pending_unique_urls": 12,
     "unmatched_channels": 438,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
@@ -3405,11 +3405,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3472,8 +3467,28 @@
   ],
   "pending_urls": [
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/960px-NBA_TV.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
       "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/960px-Boomerang_2014_logo.svg.png",
+      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -3492,47 +3507,22 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/BBC_First_Foxtel_logo.svg/960px-BBC_First_Foxtel_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/SN_360_logo.svg/960px-SN_360_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3752,6 +3742,13 @@
       "id": "0",
       "names": [
         "[UTV] 01 C++"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "464912",
+      "names": [
+        "[NBA] 01 NBA TV"
       ],
       "reason": "no-verified-image"
     },
@@ -4507,6 +4504,13 @@
     {
       "id": "0",
       "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4876,6 +4880,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0123 JoyTV BC"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.cbc.calgary",
       "names": [
         "0127 TWN Calgary"
@@ -5107,13 +5118,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.flavour.network",
-      "names": [
-        "0313 Flavour Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.w.network",
       "names": [
         "0328 W Network West"
@@ -5317,13 +5321,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.stingray.retro",
       "names": [
         "0582 Stingray Retro"
@@ -5404,6 +5401,13 @@
       "id": "pw.CA.ctv.speed",
       "names": [
         "0711 CTV Speed"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5523,6 +5527,13 @@
       "id": "pw.CA.sportsnet.east",
       "names": [
         "0917 Sportsnet East"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.sportsnet.360",
+      "names": [
+        "0918 Sportsnet 360"
       ],
       "reason": "no-verified-image"
     },
@@ -5737,27 +5748,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.noovo",
-      "names": [
-        "2007 Noovo Québec"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.canal.d",
-      "names": [
-        "2008 Canal D"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.le.canal.vie",
-      "names": [
-        "2009 Canal Vie"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5954,13 +5944,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "2911 All TV West"
@@ -5978,6 +5961,13 @@
       "id": "0",
       "names": [
         "2923 Nippon"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.nba.tv.canada",
+      "names": [
+        "[NBA LIVE] 01 NBA TV (APP)"
       ],
       "reason": "no-verified-image"
     },
