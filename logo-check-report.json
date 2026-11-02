@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2417,
-    "byId_count": 1213,
-    "byName_count": 1967,
-    "candidate_urls_unique": 2225,
+    "byId_count": 1223,
+    "byName_count": 1978,
+    "candidate_urls_unique": 2231,
     "selected_channels_by_source": {
-      "epg": 1653,
-      "iptv-org": 266,
+      "epg": 1661,
+      "iptv-org": 269,
       "custom": 89
     },
-    "invalid_unique_urls": 55,
-    "pending_unique_urls": 10,
-    "unmatched_channels": 450,
+    "invalid_unique_urls": 56,
+    "pending_unique_urls": 5,
+    "unmatched_channels": 439,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3411,6 +3411,11 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-404"
@@ -3473,27 +3478,12 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/WWE_Network_logo.svg/500px-WWE_Network_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3503,22 +3493,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3835,13 +3815,6 @@
     {
       "id": "0",
       "names": [
-        "[US-II] 012 WWE Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "124 ONE (Malay)"
       ],
       "reason": "no-verified-image"
@@ -4018,48 +3991,6 @@
       "id": "charm.mewatch.spl02",
       "names": [
         "116 SPL02"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch01",
-      "names": [
-        "107 YOG CH01"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch02",
-      "names": [
-        "108 YOG CH02"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch03",
-      "names": [
-        "109 YOG CH03"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch04",
-      "names": [
-        "110 YOG CH04"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch05",
-      "names": [
-        "111 YOG CH05"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "charm.mewatch.yogch06",
-      "names": [
-        "112 YOG CH06"
       ],
       "reason": "no-verified-image"
     },
@@ -4358,13 +4289,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
-      "names": [
-        "[JP-I] 毎日放送"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4598,6 +4522,13 @@
     {
       "id": "0",
       "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "0",
+      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4606,13 +4537,6 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4855,13 +4779,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "PK6.PEACOCK",
-      "names": [
-        "[Peacock] 16 WWE Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "PK13.PEACOCK",
       "names": [
         "[Peacock] 17 TEAM USA TV"
@@ -4956,13 +4873,6 @@
       "id": "pw.CA.aptn.languages",
       "names": [
         "0114 APTN Languages"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.ytv",
-      "names": [
-        "0123 JoyTV BC"
       ],
       "reason": "no-verified-image"
     },
@@ -5194,13 +5104,6 @@
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.flavour.network",
-      "names": [
-        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5856,6 +5759,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.max",
       "names": [
         "2041 MAX"
@@ -6020,13 +5930,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
