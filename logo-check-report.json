@@ -5,19 +5,19 @@
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 87,
+    "custom_logo_overrides_applied": 89,
     "combined_records_read": 2417,
-    "byId_count": 1222,
-    "byName_count": 1976,
+    "byId_count": 1221,
+    "byName_count": 1975,
     "candidate_urls_unique": 2232,
     "selected_channels_by_source": {
       "epg": 1659,
-      "iptv-org": 270,
-      "custom": 87
+      "iptv-org": 268,
+      "custom": 89
     },
-    "invalid_unique_urls": 54,
+    "invalid_unique_urls": 56,
     "pending_unique_urls": 9,
-    "unmatched_channels": 441,
+    "unmatched_channels": 442,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3411,6 +3411,16 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3468,6 +3478,11 @@
   ],
   "pending_urls": [
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
       "source": "iptv-org",
       "reason": "http-429"
@@ -3475,11 +3490,6 @@
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
       "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
-      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -3493,7 +3503,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3503,12 +3518,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/SportsnetWorld.svg/960px-SportsnetWorld.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4299,6 +4309,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "0",
+      "names": [
+        "[JP-I] 毎日放送"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.JP.bs.nihoneiga",
       "names": [
         "[JP-I] BS日本映画専門Ch"
@@ -4547,13 +4564,6 @@
       "id": "trueid.realitychannelhd",
       "names": [
         "[TrueID] 017 True Little Monk Reality (สามเณรปลูกปัญญาธรรม)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "trueid.mono",
-      "names": [
-        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
       ],
       "reason": "no-verified-image"
     },
@@ -5342,6 +5352,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.stingray.retro",
       "names": [
         "0582 Stingray Retro"
@@ -5569,13 +5586,6 @@
       "id": "pw.CA.one.soccer",
       "names": [
         "0980 One Soccer"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.sportsnet.world",
-      "names": [
-        "1001 Sportsnet World"
       ],
       "reason": "no-verified-image"
     },
@@ -5954,6 +5964,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
