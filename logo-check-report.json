@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2417,
-    "byId_count": 1221,
-    "byName_count": 1975,
+    "byId_count": 1220,
+    "byName_count": 1974,
     "candidate_urls_unique": 2232,
     "selected_channels_by_source": {
       "epg": 1659,
-      "iptv-org": 268,
+      "iptv-org": 267,
       "custom": 89
     },
-    "invalid_unique_urls": 54,
-    "pending_unique_urls": 10,
-    "unmatched_channels": 442,
+    "invalid_unique_urls": 55,
+    "pending_unique_urls": 9,
+    "unmatched_channels": 443,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3411,6 +3411,11 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3498,22 +3503,17 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TSN2.svg/960px-TSN2.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -5144,6 +5144,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.home.and.garden.television",
+      "names": [
+        "0308 Home & Garden TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
@@ -5333,13 +5340,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.dtour",
-      "names": [
-        "0504 DTour"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5357,6 +5357,13 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
