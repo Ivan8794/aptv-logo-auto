@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2417,
+    "epg_channels_read": 2433,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2417,
-    "byId_count": 1220,
-    "byName_count": 1974,
+    "custom_logo_overrides_applied": 87,
+    "combined_records_read": 2433,
+    "byId_count": 1219,
+    "byName_count": 1986,
     "candidate_urls_unique": 2232,
     "selected_channels_by_source": {
-      "epg": 1659,
-      "iptv-org": 267,
-      "custom": 89
+      "epg": 1667,
+      "iptv-org": 272,
+      "custom": 87
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 9,
-    "unmatched_channels": 443,
+    "pending_unique_urls": 10,
+    "unmatched_channels": 447,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -31,13 +31,13 @@
         {
           "id": "0",
           "names": [
-            "[TW-III] 300 雲端創作音樂台"
+            "[TW-III] 300 華人創作音樂台"
           ]
         },
         {
           "id": "0",
           "names": [
-            "[TW-III] 301 雲端電音音樂台"
+            "[TW-III] 301 CSTV情境音樂台"
           ]
         }
       ]
@@ -3473,28 +3473,8 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mainichi_Broadcasting_System_logo.svg/960px-Mainichi_Broadcasting_System_logo.svg.png?20110904042013",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
+      "source": "custom",
       "reason": "http-429"
     },
     {
@@ -3503,17 +3483,42 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/CTV_Drama_Channel_2019.svg/960px-CTV_Drama_Channel_2019.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/CanalD.svg/960px-CanalD.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -3592,14 +3597,14 @@
     {
       "id": "0",
       "names": [
-        "[TW-III] 300 雲端創作音樂台"
+        "[TW-III] 300 華人創作音樂台"
       ],
       "reason": "no-verified-image"
     },
     {
       "id": "0",
       "names": [
-        "[TW-III] 301 雲端電音音樂台"
+        "[TW-III] 301 CSTV情境音樂台"
       ],
       "reason": "no-verified-image"
     },
@@ -4257,6 +4262,41 @@
     {
       "id": "charm.mewatch.rivermonsters",
       "names": [
+        "119 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.thats80s",
+      "names": [
+        "120 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.thatsrock",
+      "names": [
+        "122 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.filemmantap",
+      "names": [
+        "124 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.dramahebat",
+      "names": [
+        "125 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.rivermonsters",
+      "names": [
         "121 River Monsters"
       ],
       "reason": "no-verified-image"
@@ -4300,13 +4340,6 @@
       "id": "0",
       "names": [
         "[JP-I] 大阪TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[JP-I] 毎日放送"
       ],
       "reason": "no-verified-image"
     },
@@ -4544,13 +4577,6 @@
     {
       "id": "0",
       "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
       ],
       "reason": "no-verified-image"
@@ -4563,16 +4589,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "skylife.중화tv",
+      "id": "trueid.mono",
       "names": [
-        "[KR-I] 01 중화TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
+        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
       ],
       "reason": "no-verified-image"
     },
@@ -5144,9 +5163,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.and.garden.television",
+      "id": "pw.CA.ctv.drama",
       "names": [
-        "0308 Home & Garden TV"
+        "0302 CTV Drama Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5357,13 +5376,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5781,6 +5793,20 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.canal.d",
+      "names": [
+        "2008 Canal D"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.le.canal.vie",
+      "names": [
+        "2009 Canal Vie"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5973,6 +5999,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
