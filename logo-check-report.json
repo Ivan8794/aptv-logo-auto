@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 87,
     "combined_records_read": 2439,
-    "byId_count": 1221,
-    "byName_count": 1992,
+    "byId_count": 1206,
+    "byName_count": 1990,
     "candidate_urls_unique": 2234,
     "selected_channels_by_source": {
-      "epg": 1673,
-      "iptv-org": 271,
+      "epg": 1672,
+      "iptv-org": 270,
       "custom": 87
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 10,
-    "unmatched_channels": 448,
+    "pending_unique_urls": 14,
+    "unmatched_channels": 450,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -837,25 +837,25 @@
           ]
         },
         {
-          "id": "vidio.gtv",
+          "id": "pw.ID.gtv",
           "names": [
             "[Indonesia] 011 GLOBAL TV"
           ]
         },
         {
-          "id": "0",
+          "id": "pw.ID.net.tv",
           "names": [
             "[Indonesia] 023 NET"
           ]
         },
         {
-          "id": "0",
+          "id": "pw.ID.net.tv",
           "names": [
             "[Indonesia] 023 NET (a)"
           ]
         },
         {
-          "id": "vidio.nusantaratv",
+          "id": "pw.ID.nusantara.tv",
           "names": [
             "[Indonesia] 024 NUSANTARA TV"
           ]
@@ -873,19 +873,19 @@
           ]
         },
         {
-          "id": "cubmu.tvri",
+          "id": "pw.ID.tvri",
           "names": [
             "[Indonesia] 038 TVRI NASIONAL"
           ]
         },
         {
-          "id": "cubmu.tvri",
+          "id": "pw.ID.tvri",
           "names": [
             "[Indonesia] 038 TVRI NASIONAL (a)"
           ]
         },
         {
-          "id": "0",
+          "id": "pw.ID.zee.bioskop",
           "names": [
             "[Indonesia] 039 ZEE BIOSKOP"
           ]
@@ -3411,7 +3411,7 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
       "source": "iptv-org",
       "reason": "http-404"
     },
@@ -3478,11 +3478,6 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
       "source": "iptv-org",
       "reason": "http-429"
@@ -3498,8 +3493,33 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
       "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Home_Network_logo.svg/1920px-Home_Network_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Oxygen_TV_%282017_Logo%29.svg/960px-Oxygen_TV_%282017_Logo%29.svg.png",
+      "source": "iptv-org",
       "reason": "http-429"
     },
     {
@@ -3508,12 +3528,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -4561,35 +4581,21 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.ID.net.tv",
       "names": [
         "[Indonesia] 023 NET"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.ID.net.tv",
       "names": [
         "[Indonesia] 023 NET (a)"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "cubmu.tvri",
-      "names": [
-        "[Indonesia] 038 TVRI NASIONAL"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "cubmu.tvri",
-      "names": [
-        "[Indonesia] 038 TVRI NASIONAL (a)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
+      "id": "pw.ID.zee.bioskop",
       "names": [
         "[Indonesia] 039 ZEE BIOSKOP"
       ],
@@ -4613,6 +4619,20 @@
       "id": "trueid.mono",
       "names": [
         "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.중화tv",
+      "names": [
+        "[KR-I] 01 중화TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.ebs",
+      "names": [
+        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -5180,6 +5200,20 @@
       "id": "0",
       "names": [
         "0300 A&E Canada"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.home.network",
+      "names": [
+        "0306 Home Network"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.home.and.garden.television",
+      "names": [
+        "0308 Home & Garden TV"
       ],
       "reason": "no-verified-image"
     },
