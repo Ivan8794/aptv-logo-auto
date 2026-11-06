@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2439,
+    "epg_channels_read": 2460,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 87,
-    "combined_records_read": 2439,
-    "byId_count": 1206,
-    "byName_count": 1990,
-    "candidate_urls_unique": 2234,
+    "custom_logo_overrides_applied": 89,
+    "combined_records_read": 2460,
+    "byId_count": 1214,
+    "byName_count": 2008,
+    "candidate_urls_unique": 2236,
     "selected_channels_by_source": {
-      "epg": 1672,
-      "iptv-org": 270,
-      "custom": 87
+      "epg": 1685,
+      "iptv-org": 274,
+      "custom": 89
     },
     "invalid_unique_urls": 55,
-    "pending_unique_urls": 14,
-    "unmatched_channels": 450,
+    "pending_unique_urls": 9,
+    "unmatched_channels": 453,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3478,37 +3478,7 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
-      "source": "custom",
-      "reason": "http-429"
-    },
-    {
       "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Home_Network_logo.svg/1920px-Home_Network_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3518,12 +3488,12 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Oxygen_TV_%282017_Logo%29.svg/960px-Oxygen_TV_%282017_Logo%29.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3538,28 +3508,33 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
   ],
   "unmatched_channels": [
     {
-      "id": "0",
+      "id": "charm.hami.麥卡貝綜藝",
       "names": [
         "[TW-II] 2115 麥卡貝綜藝"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "hami.HAMI大聯盟1台",
+      "id": "charm.hami.hami大聯盟1台",
       "names": [
         "[TW-II] 2124 Hami大聯盟1台"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "hami.HAMI大聯盟2台",
+      "id": "charm.hami.hami大聯盟2台",
       "names": [
         "[TW-II] 2125 Hami大聯盟2台"
       ],
@@ -3692,7 +3667,7 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "charm.4gtv.灣聲線上音樂廳",
       "names": [
         "088 灣聲線上音樂廳"
       ],
@@ -3800,13 +3775,6 @@
       "id": "0",
       "names": [
         "[astro] 834 GOLF PLUS"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[CN] 2101 五星體育"
       ],
       "reason": "no-verified-image"
     },
@@ -4063,6 +4031,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.SG.live.5.a",
+      "names": [
+        "116 LIVE 5"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.SG.live.6.a",
       "names": [
         "110 LIVE 6"
@@ -4073,6 +4048,13 @@
       "id": "pw.SG.live.6.a",
       "names": [
         "113 LIVE 6"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.SG.live.6.a",
+      "names": [
+        "117 LIVE 6"
       ],
       "reason": "no-verified-image"
     },
@@ -4276,6 +4258,41 @@
       "id": "charm.mewatch.dramahebat",
       "names": [
         "123 Drama Hebat"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.rivermonsters",
+      "names": [
+        "118 River Monsters"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.thats80s",
+      "names": [
+        "119 That's 80s"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.thatsrock",
+      "names": [
+        "121 That's Rock"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.filemmantap",
+      "names": [
+        "123 Filem Mantap"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "charm.mewatch.dramahebat",
+      "names": [
+        "124 Drama Hebat"
       ],
       "reason": "no-verified-image"
     },
@@ -4595,13 +4612,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.ID.zee.bioskop",
-      "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
@@ -4616,23 +4626,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "trueid.mono",
-      "names": [
-        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "skylife.중화tv",
       "names": [
         "[KR-I] 01 중화TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4973,13 +4969,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ytv",
-      "names": [
-        "0123 JoyTV BC"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.cbc.calgary",
       "names": [
         "0127 TWN Calgary"
@@ -5204,13 +5193,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.network",
-      "names": [
-        "0306 Home Network"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.home.and.garden.television",
       "names": [
         "0308 Home & Garden TV"
@@ -5221,6 +5203,13 @@
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.flavour.network",
+      "names": [
+        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5407,6 +5396,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.dtour",
+      "names": [
+        "0504 DTour"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5424,13 +5420,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5848,6 +5837,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.le.canal.vie",
+      "names": [
+        "2009 Canal Vie"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.addik",
       "names": [
         "2013 ADDIK"
@@ -5872,6 +5868,13 @@
       "id": "0",
       "names": [
         "2032 QUB"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.elle.fictions",
+      "names": [
+        "2040 ELLE FICTIONS"
       ],
       "reason": "no-verified-image"
     },
@@ -6040,13 +6043,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
