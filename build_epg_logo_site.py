@@ -5,6 +5,9 @@ import re
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
+import io
+from PIL import Image
+import cairosvg
 from pathlib import Path
 
 EPG_URL = "https://myeth-epg.github.io/public/epg.a.xml"
