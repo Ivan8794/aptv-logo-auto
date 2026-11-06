@@ -7,17 +7,17 @@
     "custom_logo_overrides_configured": 41,
     "custom_logo_overrides_applied": 89,
     "combined_records_read": 2460,
-    "byId_count": 1214,
-    "byName_count": 2008,
-    "candidate_urls_unique": 2236,
+    "byId_count": 1208,
+    "byName_count": 2002,
+    "candidate_urls_unique": 2237,
     "selected_channels_by_source": {
-      "epg": 1685,
-      "iptv-org": 274,
+      "epg": 1683,
+      "iptv-org": 270,
       "custom": 89
     },
-    "invalid_unique_urls": 55,
-    "pending_unique_urls": 9,
-    "unmatched_channels": 453,
+    "invalid_unique_urls": 54,
+    "pending_unique_urls": 18,
+    "unmatched_channels": 459,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -3411,11 +3411,6 @@
       "reason": "http-404"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-404"
-    },
-    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3473,12 +3468,32 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/CGTN_Documentary_logo.png/960px-CGTN_Documentary_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
+      "source": "epg",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3493,7 +3508,22 @@
       "reason": "http-429"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
@@ -3508,12 +3538,22 @@
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
+      "source": "iptv-org",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4612,6 +4652,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.ID.zee.bioskop",
+      "names": [
+        "[Indonesia] 039 ZEE BIOSKOP"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "0",
       "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
@@ -4629,6 +4676,13 @@
       "id": "skylife.중화tv",
       "names": [
         "[KR-I] 01 중화TV"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "skylife.ebs",
+      "names": [
+        "[KR-I] 13 EBS1"
       ],
       "reason": "no-verified-image"
     },
@@ -4969,6 +5023,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ytv",
+      "names": [
+        "0123 JoyTV BC"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.cbc.calgary",
       "names": [
         "0127 TWN Calgary"
@@ -5270,6 +5331,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.CA.ctv.sci.fi",
+      "names": [
+        "0392 CTV Sci-Fi Channel"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.CA.fx",
       "names": [
         "0393 FX East"
@@ -5420,6 +5488,13 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.stingray.loud",
+      "names": [
+        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5837,9 +5912,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.le.canal.vie",
+      "id": "pw.CA.noovo",
       "names": [
-        "2009 Canal Vie"
+        "2007 Noovo Québec"
       ],
       "reason": "no-verified-image"
     },
@@ -6043,6 +6118,13 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.talentvision.vancouver",
+      "names": [
+        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
