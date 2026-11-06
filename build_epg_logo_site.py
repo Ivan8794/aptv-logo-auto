@@ -41,18 +41,21 @@ def main():
             continue
         try:
             data = get(src)
-            # Store as PNG extension only if source bytes are PNG; preserve other formats.
-            ext = ".png"
-            if data.startswith(b"\\xff\\xd8\\xff"): ext = ".jpg"
-            elif data.startswith((b"GIF87a", b"GIF89a")): ext = ".gif"
-            elif data[:4] == b"RIFF" and data[8:12] == b"WEBP": ext = ".webp"
-            elif b"<svg" in data[:4096].lower(): ext = ".svg"
+            # Convert PNG/JPEG/GIF/WebP/SVG sources into PNG for one consistent APTV URL template.
+            if b"<svg" in data[:4096].lower() or data.lstrip().startswith(b"<?xml"):
+                png_data = cairosvg.svg2png(bytestring=data)
+            else:
+                with Image.open(io.BytesIO(data)) as image:
+                    image.seek(0)  # first frame for animated GIFs
+                    buf = io.BytesIO()
+                    image.convert("RGBA").save(buf, format="PNG")
+                    png_data = buf.getvalue()
             for name in names:
-                filename = name + ext
+                filename = name + ".png"
                 path = LOGOS / filename
                 if filename in seen:
                     continue
-                path.write_bytes(data)
+                path.write_bytes(png_data)
                 seen.add(filename)
                 success += 1
         except Exception as e:
