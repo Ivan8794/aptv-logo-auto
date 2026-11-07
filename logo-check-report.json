@@ -1,23 +1,23 @@
 {
   "meta": {
     "epg_url": "https://myeth-epg.github.io/public/epg.a.xml",
-    "epg_channels_read": 2460,
+    "epg_channels_read": 2457,
     "m3u_entries_read": 0,
     "m3u_loaded": false,
     "custom_logo_overrides_configured": 41,
-    "custom_logo_overrides_applied": 89,
-    "combined_records_read": 2460,
-    "byId_count": 1208,
-    "byName_count": 2002,
-    "candidate_urls_unique": 2237,
+    "custom_logo_overrides_applied": 87,
+    "combined_records_read": 2457,
+    "byId_count": 1222,
+    "byName_count": 2017,
+    "candidate_urls_unique": 2258,
     "selected_channels_by_source": {
-      "epg": 1683,
-      "iptv-org": 270,
-      "custom": 89
+      "epg": 1684,
+      "iptv-org": 285,
+      "custom": 87
     },
-    "invalid_unique_urls": 54,
-    "pending_unique_urls": 18,
-    "unmatched_channels": 459,
+    "invalid_unique_urls": 56,
+    "pending_unique_urls": 5,
+    "unmatched_channels": 441,
     "image_urls_verified": true,
     "policy": "Custom overrides first, then EPG logo, M3U tvg-logo, iptv-org, and existing Fanmingming filenames; verified images only",
     "note": "Always uses EPG, adds M3U metadata when available, and applies verified entries from custom-logos.json; does not edit stream URLs or EPG settings."
@@ -548,288 +548,6 @@
       "source": "epg",
       "reason": "http-404",
       "channels": [
-        {
-          "id": "pw.JP.fuji",
-          "names": [
-            "[JP-I] FU JI"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] 大阪TV"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] 読売テレビ"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] 毎日放送"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] 関西テレビ"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] MUSIC ON! TV"
-          ]
-        },
-        {
-          "id": "pw.JP.kidsstation",
-          "names": [
-            "[JP-I] キッズステーション"
-          ]
-        },
-        {
-          "id": "pw.JP.jsports1",
-          "names": [
-            "[JP-I] JSPORTS 1"
-          ]
-        },
-        {
-          "id": "pw.JP.jsports2",
-          "names": [
-            "[JP-I] JSPORTS 2"
-          ]
-        },
-        {
-          "id": "pw.JP.tokyomx1",
-          "names": [
-            "[JP-I] TOKYO MX 1"
-          ]
-        },
-        {
-          "id": "pw.JP.tokyomx2",
-          "names": [
-            "[JP-I] TOKYO MX 2"
-          ]
-        },
-        {
-          "id": "pw.JP.bs.nihoneiga",
-          "names": [
-            "[JP-I] BS日本映画専門Ch"
-          ]
-        },
-        {
-          "id": "pw.JP.tvasahi1",
-          "names": [
-            "[JP-I] テレ朝チャンネル1"
-          ]
-        },
-        {
-          "id": "pw.JP.tvasahi2",
-          "names": [
-            "[JP-I] テレ朝チャンネル2"
-          ]
-        },
-        {
-          "id": "pw.JP.ntvgplus",
-          "names": [
-            "[JP-I] 日テレG+"
-          ]
-        },
-        {
-          "id": "pw.JP.fujione",
-          "names": [
-            "[JP-I] フジone"
-          ]
-        },
-        {
-          "id": "pw.JP.fujitwo",
-          "names": [
-            "[JP-I] フジ two"
-          ]
-        },
-        {
-          "id": "pw.JP.fujinext",
-          "names": [
-            "[JP-I] フジ next"
-          ]
-        },
-        {
-          "id": "pw.JP.tabich",
-          "names": [
-            "[JP-I] 旅チャンネル"
-          ]
-        },
-        {
-          "id": "pw.JP.sportsliveplus",
-          "names": [
-            "[JP-I] スポーツライブ＋"
-          ]
-        },
-        {
-          "id": "pw.JP.eiseigekijo",
-          "names": [
-            "[JP-I] 衛星劇場"
-          ]
-        },
-        {
-          "id": "pw.JP.bs.japan",
-          "names": [
-            "[JP-I] BSジャパン"
-          ]
-        },
-        {
-          "id": "pw.JP.asahi.bc",
-          "names": [
-            "[JP-I] 朝日放送テレビ"
-          ]
-        },
-        {
-          "id": "pw.JP.tbs2",
-          "names": [
-            "[JP-I] TBS-2"
-          ]
-        },
-        {
-          "id": "pw.JP.fujitv",
-          "names": [
-            "[JP-I] フジテレビ"
-          ]
-        },
-        {
-          "id": "pw.JP.tbs3",
-          "names": [
-            "[JP-I] TBS-3"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-I] BS-富士"
-          ]
-        },
-        {
-          "id": "pw.JP.fuji.fuji",
-          "names": [
-            "[JP-I] フジテレビ富士"
-          ]
-        },
-        {
-          "id": "pw.JP.bs.tbs2",
-          "names": [
-            "[JP-I] BS-TBS-2"
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 01 \"キャンプ\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 02 \"アニメ\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 03 \"韓流\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 04 \"ｱｼﾞｱﾄﾞﾗﾏ\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 05 \"九州\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 06 \"ﾌｧｯｼｮﾝ\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 07 \"ビジネス\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 08 \"ゴルフ\""
-          ]
-        },
-        {
-          "id": "pw.JP.jidaigeki",
-          "names": [
-            "[JP-II] 09 \"時代劇\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 10 \"落語\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 11 \"北海道\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 12 \"東海\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 13 \"料理\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 14 \"囲碁・将棋\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 15 \"ｴﾝﾀﾒﾆｭｰｽ\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 16 \"ペット\""
-          ]
-        },
-        {
-          "id": "pw.JP.tabich",
-          "names": [
-            "[JP-II] 17 \"旅行\""
-          ]
-        },
-        {
-          "id": "0",
-          "names": [
-            "[JP-II] 18 \"バラエティ\""
-          ]
-        },
         {
           "id": "Elshinta TV",
           "names": [
@@ -3411,6 +3129,16 @@
       "reason": "http-404"
     },
     {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
+      "source": "iptv-org",
+      "reason": "http-404"
+    },
+    {
       "url": "https://myeth-epg.github.io/icons/f.png",
       "source": "epg",
       "reason": "http-404",
@@ -3468,92 +3196,27 @@
   ],
   "pending_urls": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Zee_Bioskop_(2025).svg/960px-Zee_Bioskop_(2025).svg.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Zee_Bioskop_%282025%29.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MONOMAX_Sports_2026.svg",
+      "source": "custom",
+      "reason": "http-429"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/E%21_Logo_Flat_2012.svg/960px-E%21_Logo_Flat_2012.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/zh/8/84/%EC%A4%91%ED%99%94TV_logo.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/960px-SmithsonianChannellogo.png",
       "source": "iptv-org",
       "reason": "http-429"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/1920px-EBS_1TV_Logo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Joytvlogo.svg/500px-Joytvlogo.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail",
-      "source": "epg",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Showcase_Logo_2015.png/960px-Showcase_Logo_2015.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/HGTV_logo.svg/960px-HGTV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flavour_Network_logo.svg/1920px-Flavour_Network_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/CTV_Sci-Fi_Channel_2019.svg/960px-CTV_Sci-Fi_Channel_2019.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Dtour_Logo.svg/960px-Dtour_Logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Stingray_Loud.jpg",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/7/70/Stingray_Retro.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Vision_TV_logo.svg/500px-Vision_TV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/NBA_League_Pass.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Noovo_logo.png/960px-Noovo_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Elle_Fictions_logo.png/960px-Elle_Fictions_logo.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/FPTV_logo.svg/960px-FPTV_logo.svg.png",
-      "source": "iptv-org",
-      "reason": "http-429"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Talentvision_2013.png",
+      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/CanalVie.svg/960px-CanalVie.svg.png",
       "source": "iptv-org",
       "reason": "http-429"
     }
@@ -4057,6 +3720,13 @@
       "reason": "no-verified-image"
     },
     {
+      "id": "pw.SG.live.2.a",
+      "names": [
+        "115 LIVE 2"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
       "id": "pw.SG.live.5.a",
       "names": [
         "109 LIVE 5"
@@ -4409,91 +4079,21 @@
     {
       "id": "pw.JP.fuji",
       "names": [
-        "[JP-I] FU JI"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[JP-I] 大阪TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.bs.nihoneiga",
-      "names": [
-        "[JP-I] BS日本映画専門Ch"
+        "003 FU JI (富士電視台)"
       ],
       "reason": "no-verified-image"
     },
     {
       "id": "pw.JP.ntvgplus",
       "names": [
-        "[JP-I] 日テレG+"
+        "026 NTV G+ (日テレG+)"
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.JP.fujione",
+      "id": "pw.JP.qvc",
       "names": [
-        "[JP-I] フジone"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.fujitwo",
-      "names": [
-        "[JP-I] フジ two"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.fujinext",
-      "names": [
-        "[JP-I] フジ next"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.bs.japan",
-      "names": [
-        "[JP-I] BSジャパン"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.tbs2",
-      "names": [
-        "[JP-I] TBS-2"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.tbs3",
-      "names": [
-        "[JP-I] TBS-3"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "0",
-      "names": [
-        "[JP-I] BS-富士"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.fuji.fuji",
-      "names": [
-        "[JP-I] フジテレビ富士"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.JP.bs.tbs2",
-      "names": [
-        "[JP-I] BS-TBS-2"
+        "045 QVC Japan (QVCジャパン)"
       ],
       "reason": "no-verified-image"
     },
@@ -4505,21 +4105,21 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.atx",
       "names": [
         "[JP-II] 02 \"アニメ\""
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.homedrama",
       "names": [
         "[JP-II] 03 \"韓流\""
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.asiadrama",
       "names": [
         "[JP-II] 04 \"ｱｼﾞｱﾄﾞﾗﾏ\""
       ],
@@ -4540,14 +4140,14 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.nikkeicnbc",
       "names": [
         "[JP-II] 07 \"ビジネス\""
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.golfnetwork",
       "names": [
         "[JP-II] 08 \"ゴルフ\""
       ],
@@ -4561,7 +4161,7 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.yose",
       "names": [
         "[JP-II] 10 \"落語\""
       ],
@@ -4589,14 +4189,14 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.igoshogi",
       "names": [
         "[JP-II] 14 \"囲碁・将棋\""
       ],
       "reason": "no-verified-image"
     },
     {
-      "id": "0",
+      "id": "pw.JP.entametele",
       "names": [
         "[JP-II] 15 \"ｴﾝﾀﾒﾆｭｰｽ\""
       ],
@@ -4652,13 +4252,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.ID.zee.bioskop",
-      "names": [
-        "[Indonesia] 039 ZEE BIOSKOP"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "[AIS] 801 LunthungTV (ลั่นทุ่ง ทีวี)"
@@ -4673,16 +4266,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "skylife.중화tv",
+      "id": "trueid.mono",
       "names": [
-        "[KR-I] 01 중화TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "skylife.ebs",
-      "names": [
-        "[KR-I] 13 EBS1"
+        "[AIS] 029 MONOMAX SPORTS (โมโนแมกซ์ สปอร์ตส์)"
       ],
       "reason": "no-verified-image"
     },
@@ -5023,13 +4609,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.ytv",
-      "names": [
-        "0123 JoyTV BC"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.cbc.calgary",
       "names": [
         "0127 TWN Calgary"
@@ -5254,23 +4833,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.home.and.garden.television",
-      "names": [
-        "0308 Home & Garden TV"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "pw.CA.magnolia.network",
       "names": [
         "0312 Magnolia"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.flavour.network",
-      "names": [
-        "0313 Flavour Network"
       ],
       "reason": "no-verified-image"
     },
@@ -5327,13 +4892,6 @@
       "id": "0",
       "names": [
         "0382 T+E"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.ctv.sci.fi",
-      "names": [
-        "0392 CTV Sci-Fi Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5464,13 +5022,6 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.dtour",
-      "names": [
-        "0504 DTour"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
       "id": "0",
       "names": [
         "0511 Peachtree"
@@ -5488,13 +5039,6 @@
       "id": "pw.CA.stingray.vibe",
       "names": [
         "0580 Stingray Vibe"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.stingray.loud",
-      "names": [
-        "0581 Stingray Loud"
       ],
       "reason": "no-verified-image"
     },
@@ -5579,6 +5123,13 @@
       "id": "pw.CA.ctv.speed",
       "names": [
         "0711 CTV Speed"
+      ],
+      "reason": "no-verified-image"
+    },
+    {
+      "id": "pw.CA.smithsonian",
+      "names": [
+        "0715 Smithsonian Channel"
       ],
       "reason": "no-verified-image"
     },
@@ -5912,9 +5463,9 @@
       "reason": "no-verified-image"
     },
     {
-      "id": "pw.CA.noovo",
+      "id": "pw.CA.le.canal.vie",
       "names": [
-        "2007 Noovo Québec"
+        "2009 Canal Vie"
       ],
       "reason": "no-verified-image"
     },
@@ -5943,13 +5494,6 @@
       "id": "0",
       "names": [
         "2032 QUB"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.elle.fictions",
-      "names": [
-        "2040 ELLE FICTIONS"
       ],
       "reason": "no-verified-image"
     },
@@ -6118,13 +5662,6 @@
       "id": "0",
       "names": [
         "2701 Afroglobal"
-      ],
-      "reason": "no-verified-image"
-    },
-    {
-      "id": "pw.CA.talentvision.vancouver",
-      "names": [
-        "2831 Talentvision"
       ],
       "reason": "no-verified-image"
     },
